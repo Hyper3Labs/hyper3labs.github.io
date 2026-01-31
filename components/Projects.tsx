@@ -1,16 +1,15 @@
 import { Github, ExternalLink } from 'lucide-react';
 
-// Custom PyPI icon (Python logo simplified)
+// PyPI icon (clean cube/package style)
 function PyPIIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12.042 0c-1.112.014-2.173.093-3.103.24-2.757.437-3.254 1.35-3.254 3.037v2.223h6.511v.74H4.984c-1.891 0-3.548 1.137-4.067 3.3-.599 2.48-.625 4.027 0 6.618.464 1.93 1.572 3.3 3.463 3.3h2.24v-2.974c0-2.147 1.857-4.04 4.067-4.04h6.503c1.81 0 3.254-1.49 3.254-3.311V3.277c0-1.77-1.492-3.098-3.254-3.037-1.113.04-2.29.05-3.148.24zm-3.62 1.789a1.22 1.22 0 011.222 1.233c0 .682-.548 1.232-1.222 1.232a1.231 1.231 0 01-1.222-1.232c0-.682.547-1.233 1.222-1.233z"/>
-      <path d="M18.62 6.24v2.883c0 2.242-1.903 4.13-4.066 4.13h-6.504c-1.781 0-3.254 1.525-3.254 3.311v6.207c0 1.77 1.538 2.81 3.254 3.311 2.054.6 4.023.709 6.504 0 1.65-.47 3.254-1.416 3.254-3.311v-2.483h-6.503v-.74h9.757c1.891 0 2.595-1.319 3.067-3.3.486-2.041.466-4.003 0-6.618-.335-1.883-1.176-3.3-3.067-3.3H18.62zm-3.719 13.32a1.22 1.22 0 011.222 1.233c0 .68-.549 1.232-1.222 1.232a1.231 1.231 0 01-1.222-1.232c0-.682.547-1.233 1.222-1.233z"/>
+      <path d="M23.922 13.58v3.912L20.55 19.5v-3.912zm-7.72 7.22L12.59 22.5v-3.863l3.611-1.701zm7.72-7.75L20.55 11.4v3.658l3.372 1.654zM12.83 14.772l3.372 1.654v3.863l-3.372-1.654zm7.48-3.658L16.68 9.46v3.863l3.63 1.749zM12.59 14.538V10.83l3.851 1.797-3.851 1.91zM8.478 6.595L12.11 4.89v3.862L8.478 10.46zm-4.09 5.704l3.61 1.701v3.912l-3.61-1.75zm0-.53V7.857L.777 9.51v3.912zm4.09-1.414V6.542L12.09 4.64v3.912zm7.72-.24L12.59 8.464V4.6l3.611 1.75zM8.24 14.12l3.61-1.702v3.912L8.24 18.08zm-3.85 1.94l3.61 1.654v3.912l-3.61-1.654zM.537 17.492v-3.863l3.612 1.702v3.863z"/>
     </svg>
   );
 }
 
-// Custom npm icon
+// npm icon (clean block letters)
 function NpmIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -58,7 +57,7 @@ const projects = [
     description:
       'Non-Euclidean embedding encoders with simple API and torch-free ONNX runtime.',
     features: [
-      'HyCoCLIP / MERU',
+      'Hyperbolic encoders',
       'Torch-free ONNX',
       'Auto HF download',
     ],
