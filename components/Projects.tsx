@@ -1,4 +1,23 @@
-import { Github, ExternalLink, Package } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
+
+// Custom PyPI icon (Python logo simplified)
+function PyPIIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.042 0c-1.112.014-2.173.093-3.103.24-2.757.437-3.254 1.35-3.254 3.037v2.223h6.511v.74H4.984c-1.891 0-3.548 1.137-4.067 3.3-.599 2.48-.625 4.027 0 6.618.464 1.93 1.572 3.3 3.463 3.3h2.24v-2.974c0-2.147 1.857-4.04 4.067-4.04h6.503c1.81 0 3.254-1.49 3.254-3.311V3.277c0-1.77-1.492-3.098-3.254-3.037-1.113.04-2.29.05-3.148.24zm-3.62 1.789a1.22 1.22 0 011.222 1.233c0 .682-.548 1.232-1.222 1.232a1.231 1.231 0 01-1.222-1.232c0-.682.547-1.233 1.222-1.233z"/>
+      <path d="M18.62 6.24v2.883c0 2.242-1.903 4.13-4.066 4.13h-6.504c-1.781 0-3.254 1.525-3.254 3.311v6.207c0 1.77 1.538 2.81 3.254 3.311 2.054.6 4.023.709 6.504 0 1.65-.47 3.254-1.416 3.254-3.311v-2.483h-6.503v-.74h9.757c1.891 0 2.595-1.319 3.067-3.3.486-2.041.466-4.003 0-6.618-.335-1.883-1.176-3.3-3.067-3.3H18.62zm-3.719 13.32a1.22 1.22 0 011.222 1.233c0 .68-.549 1.232-1.222 1.232a1.231 1.231 0 01-1.222-1.232c0-.682.547-1.233 1.222-1.233z"/>
+    </svg>
+  );
+}
+
+// Custom npm icon
+function NpmIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M0 7.334v8h6.666v1.332H12v-1.332h12v-8H0zm6.666 6.664H5.334v-4H3.999v4H1.335V8.667h5.331v5.331zm4 0v1.336H8.001V8.667h5.334v5.332h-2.669v-.001zm12.001 0h-1.33v-4h-1.336v4h-1.335v-4h-1.33v4h-2.671V8.667h8.002v5.331zM10.665 10H12v2.667h-1.335V10z"/>
+    </svg>
+  );
+}
 
 const projects = [
   {
@@ -96,7 +115,7 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
               className="p-1.5 text-gray-500 hover:text-yellow-500 hover:bg-white/[0.08] rounded-lg transition-all"
               title="PyPI"
             >
-              <Package className="w-4 h-4" />
+              <PyPIIcon className="w-4 h-4" />
             </a>
           )}
           {project.npm && (
@@ -107,7 +126,7 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
               className="p-1.5 text-gray-500 hover:text-red-400 hover:bg-white/[0.08] rounded-lg transition-all"
               title="npm"
             >
-              <Package className="w-4 h-4" />
+              <NpmIcon className="w-4 h-4" />
             </a>
           )}
         </div>
