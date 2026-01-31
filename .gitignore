@@ -61,7 +61,7 @@ lib/shaders/interstellar-blackhole.ts
 lib/shaders/riemann-zeta-lattice.ts
 lib/shaders/hopf-fibration-flow.ts
 lib/shaders/hyperbolic-dot-disk.ts
+lib/shaders/mobius-lens.ts
+lib/shaders/feedback-portal.ts
 # Active shaders (NOT ignored - needed for build):
 # - lib/shaders/gentle-scroll-warp.ts
-# - lib/shaders/mobius-lens.ts  
-# - lib/shaders/feedback-portal.ts
