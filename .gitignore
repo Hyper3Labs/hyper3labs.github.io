@@ -1,0 +1,65 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+
+# ===========================================
+# LOCAL DEVELOPMENT - Not tracked in git
+# ===========================================
+
+# Logo workspace (local design iterations)
+logo_workspace/
+
+# Design docs & tools (Python logo generator, notes)
+design-docs/
+
+# Python artifacts
+__pycache__/
+*.py[oc]
+.venv/
+*.egg-info
+
+# AI
+.github/agents/
+AGENTS.md
+.vscode/
+
+# Tooling artifacts
+.playwright-mcp/
+.specstory/
+
+# ===========================================
+# ARCHIVED SHADERS - Keep files but don't track
+# ===========================================
+lib/shaders/warped-space.ts
+lib/shaders/zeta-ribbon-lens.ts
+lib/shaders/hyperbolic-tessellation.ts
+lib/shaders/scroll-warp.ts
+lib/shaders/hyperbolic-waves.ts
+lib/shaders/gentle-warp.ts
+lib/shaders/hyper-scatter-disk.ts
+lib/shaders/calm-portal-lens.ts
+lib/shaders/interstellar-blackhole.ts
+lib/shaders/riemann-zeta-lattice.ts
+lib/shaders/hopf-fibration-flow.ts
+lib/shaders/hyperbolic-dot-disk.ts
+lib/shaders/mobius-lens.ts
+lib/shaders/feedback-portal.ts
