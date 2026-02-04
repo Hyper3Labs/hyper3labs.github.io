@@ -247,7 +247,7 @@ function ContentSection() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
           <a
-            href="https://hyper3labs.github.io/HyperView/"
+            href="https://huggingface.co/spaces/Hyper3Labs/HyperView"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-xl transition-all hover:scale-105"

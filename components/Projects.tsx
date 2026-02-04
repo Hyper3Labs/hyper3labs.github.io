@@ -1,22 +1,5 @@
 import { Github, ExternalLink } from 'lucide-react';
-
-// PyPI icon (clean cube/package style)
-function PyPIIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M23.922 13.58v3.912L20.55 19.5v-3.912zm-7.72 7.22L12.59 22.5v-3.863l3.611-1.701zm7.72-7.75L20.55 11.4v3.658l3.372 1.654zM12.83 14.772l3.372 1.654v3.863l-3.372-1.654zm7.48-3.658L16.68 9.46v3.863l3.63 1.749zM12.59 14.538V10.83l3.851 1.797-3.851 1.91zM8.478 6.595L12.11 4.89v3.862L8.478 10.46zm-4.09 5.704l3.61 1.701v3.912l-3.61-1.75zm0-.53V7.857L.777 9.51v3.912zm4.09-1.414V6.542L12.09 4.64v3.912zm7.72-.24L12.59 8.464V4.6l3.611 1.75zM8.24 14.12l3.61-1.702v3.912L8.24 18.08zm-3.85 1.94l3.61 1.654v3.912l-3.61-1.654zM.537 17.492v-3.863l3.612 1.702v3.863z"/>
-    </svg>
-  );
-}
-
-// npm icon (clean block letters)
-function NpmIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M0 7.334v8h6.666v1.332H12v-1.332h12v-8H0zm6.666 6.664H5.334v-4H3.999v4H1.335V8.667h5.331v5.331zm4 0v1.336H8.001V8.667h5.334v5.332h-2.669v-.001zm12.001 0h-1.33v-4h-1.336v4h-1.335v-4h-1.33v4h-2.671V8.667h8.002v5.331zM10.665 10H12v2.667h-1.335V10z"/>
-    </svg>
-  );
-}
+import { SiPypi, SiNpm, SiHuggingface } from '@icons-pack/react-simple-icons';
 
 const projects = [
   {
@@ -30,7 +13,8 @@ const projects = [
       'HuggingFace integration',
     ],
     repo: 'https://github.com/Hyper3Labs/HyperView',
-    demo: 'https://hyper3labs.github.io/HyperView/',
+    demo: 'https://huggingface.co/spaces/Hyper3Labs/HyperView',
+    hfSpaces: 'https://huggingface.co/spaces/Hyper3Labs/HyperView',
     pypi: 'https://pypi.org/project/hyperview/',
     install: 'pip install hyperview',
     language: 'Python',
@@ -63,6 +47,7 @@ const projects = [
     ],
     repo: 'https://github.com/Hyper3Labs/hyper-models',
     demo: 'https://huggingface.co/collections/hyperview-org/hyper-models-67900e48542fa2ea29a26684',
+    hfCollection: 'https://huggingface.co/collections/hyperview-org/hyper-models-67900e48542fa2ea29a26684',
     pypi: 'https://pypi.org/project/hyper-models/',
     install: 'pip install hyper-models',
     language: 'Python',
@@ -114,7 +99,7 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
               className="p-1.5 text-gray-500 hover:text-yellow-500 hover:bg-white/[0.08] rounded-lg transition-all"
               title="PyPI"
             >
-              <PyPIIcon className="w-4 h-4" />
+              <SiPypi className="w-4 h-4" />
             </a>
           )}
           {project.npm && (
@@ -125,7 +110,18 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
               className="p-1.5 text-gray-500 hover:text-red-400 hover:bg-white/[0.08] rounded-lg transition-all"
               title="npm"
             >
-              <NpmIcon className="w-4 h-4" />
+              <SiNpm className="w-4 h-4" />
+            </a>
+          )}
+          {(project.hfSpaces || project.hfCollection) && (
+            <a
+              href={project.hfSpaces || project.hfCollection}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 text-gray-500 hover:text-yellow-400 hover:bg-white/[0.08] rounded-lg transition-all"
+              title={project.hfSpaces ? 'Hugging Face Spaces' : 'Hugging Face Collection'}
+            >
+              <SiHuggingface className="w-4 h-4" />
             </a>
           )}
         </div>

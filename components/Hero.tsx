@@ -1,4 +1,5 @@
-import { Github, Play, ArrowDown } from 'lucide-react';
+import { Github, ArrowDown } from 'lucide-react';
+import { SiHuggingface } from '@icons-pack/react-simple-icons';
 
 export default function Hero() {
   return (
@@ -37,12 +38,12 @@ export default function Hero() {
             View on GitHub
           </a>
           <a
-            href="https://hyper3labs.github.io/HyperView/"
+            href="https://huggingface.co/spaces/Hyper3Labs/HyperView"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-transparent text-gray-300 text-sm font-medium rounded-md border border-white/15 transition-all hover:bg-white/5"
           >
-            <Play className="w-4 h-4" />
+            <SiHuggingface className="w-4 h-4" />
             Try demo
           </a>
         </div>
