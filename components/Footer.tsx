@@ -1,4 +1,4 @@
-import { Github } from 'lucide-react';
+import { SiDiscord, SiGithub } from '@icons-pack/react-simple-icons';
 
 export default function Footer() {
   return (
@@ -36,12 +36,21 @@ export default function Footer() {
 
               <div className="flex items-center gap-2">
                 <a
+                  href="https://discord.gg/Qf2pXtY4Vf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 text-gray-400 hover:text-white hover:bg-white/[0.06] rounded-xl transition-all duration-200 text-xs font-mono"
+                >
+                  <SiDiscord className="w-4 h-4" />
+                  discord
+                </a>
+                <a
                   href="https://github.com/Hyper3Labs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 text-gray-400 hover:text-white hover:bg-white/[0.06] rounded-xl transition-all duration-200 text-xs font-mono"
                 >
-                  <Github className="w-4 h-4" />
+                  <SiGithub className="w-4 h-4" />
                   github
                 </a>
               </div>

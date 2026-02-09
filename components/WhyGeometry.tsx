@@ -24,10 +24,6 @@ export default function WhyGeometry() {
             has exponential volume growth. That matches hierarchy.
           </p>
 
-          <p>
-            Correct interactions matter: Möbius pan/zoom and geodesic-aware selection.
-          </p>
-
           {/* Simple visual comparison - clickable cards */}
           <div className="grid md:grid-cols-2 gap-4 my-10">
             <a 
@@ -91,7 +87,7 @@ export default function WhyGeometry() {
           </div>
 
           <p className="text-sm text-gray-400">
-            HyperView lets you toggle Euclidean ↔ hyperbolic (Poincaré disk) ↔ spherical—fast.
+            HyperView lets you toggle Euclidean ↔ hyperbolic (Poincaré disk) on the same dataset.
           </p>
         </div>
       </div>

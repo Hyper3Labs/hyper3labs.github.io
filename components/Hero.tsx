@@ -1,4 +1,5 @@
-import { Github, ArrowDown } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
+import { SiGithub } from '@icons-pack/react-simple-icons';
 import { SiHuggingface } from '@icons-pack/react-simple-icons';
 
 export default function Hero() {
@@ -21,9 +22,18 @@ export default function Hero() {
 
         {/* Key differentiators - tight, scannable */}
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-400 mb-10 font-mono">
-          <span>→ solves the crowding problem</span>
-          <span>→ agentic data cleanup</span>
-          <span>→ 10x faster (Rust + WebGL)</span>
+          <span className="flex items-center gap-1.5">
+             <span className="w-1.5 h-1.5 rounded-full bg-green-500"/>
+             multi-geometry support
+          </span>
+          <span className="flex items-center gap-1.5">
+             <span className="w-1.5 h-1.5 rounded-full bg-blue-500"/>
+             AI curation copilot
+          </span>
+          <span className="flex items-center gap-1.5">
+             <span className="w-1.5 h-1.5 rounded-full bg-purple-500"/>
+             multimodal native
+          </span>
         </div>
 
         {/* CTAs */}
@@ -34,7 +44,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-white text-gray-900 text-sm font-medium rounded-md transition-all hover:bg-gray-200"
           >
-            <Github className="w-4 h-4" />
+            <SiGithub className="w-4 h-4" />
             View on GitHub
           </a>
           <a

@@ -1,6 +1,7 @@
 'use client';
 
-import { Github, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import { SiDiscord, SiGithub } from '@icons-pack/react-simple-icons';
 import { useState, useEffect } from 'react';
 
 export default function Header() {
@@ -62,12 +63,21 @@ export default function Header() {
                 projects
               </a>
               <a
+                href="https://discord.gg/Qf2pXtY4Vf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-white/[0.06] rounded-xl transition-all duration-200 font-mono"
+              >
+                <SiDiscord className="w-4 h-4" />
+                discord
+              </a>
+              <a
                 href="https://github.com/Hyper3Labs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-white/[0.06] rounded-xl transition-all duration-200 font-mono"
               >
-                <Github className="w-4 h-4" />
+                <SiGithub className="w-4 h-4" />
                 github
               </a>
             </div>
@@ -93,12 +103,21 @@ export default function Header() {
                   projects
                 </a>
                 <a
+                  href="https://discord.gg/Qf2pXtY4Vf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-3 text-gray-300 hover:text-white hover:bg-white/[0.06] rounded-xl transition-all duration-200 font-mono text-sm"
+                >
+                  <SiDiscord className="w-4 h-4" />
+                  discord
+                </a>
+                <a
                   href="https://github.com/Hyper3Labs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-3 text-gray-300 hover:text-white hover:bg-white/[0.06] rounded-xl transition-all duration-200 font-mono text-sm"
                 >
-                  <Github className="w-4 h-4" />
+                  <SiGithub className="w-4 h-4" />
                   github
                 </a>
               </div>

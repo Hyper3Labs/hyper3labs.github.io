@@ -1,20 +1,20 @@
-import { Github, ExternalLink } from 'lucide-react';
-import { SiPypi, SiNpm, SiHuggingface } from '@icons-pack/react-simple-icons';
+import { ExternalLink } from 'lucide-react';
+import { SiGithub, SiPypi, SiNpm, SiHuggingface } from '@icons-pack/react-simple-icons';
 
 const projects = [
   {
     name: 'HyperView',
     tagline: 'Data curation co-pilot',
     description:
-      'Dual-panel curation UI: image grid + embedding map. Euclidean ↔ Poincaré ↔ spherical.',
+      'Multi-panel curation UI: image grid + embedding map. Euclidean ↔ Poincaré disk.',
     features: [
       'Agentic data cleanup',
       'Multi-geometry views',
       'HuggingFace integration',
     ],
     repo: 'https://github.com/Hyper3Labs/HyperView',
-    demo: 'https://huggingface.co/spaces/Hyper3Labs/HyperView',
-    hfSpaces: 'https://huggingface.co/spaces/Hyper3Labs/HyperView',
+    demo: 'https://huggingface.co/spaces/hyper3labs/HyperView',
+    hfSpaces: 'https://huggingface.co/spaces/hyper3labs/HyperView',
     pypi: 'https://pypi.org/project/hyperview/',
     install: 'pip install hyperview',
     language: 'Python',
@@ -46,8 +46,8 @@ const projects = [
       'Auto HF download',
     ],
     repo: 'https://github.com/Hyper3Labs/hyper-models',
-    demo: 'https://huggingface.co/collections/hyperview-org/hyper-models-67900e48542fa2ea29a26684',
-    hfCollection: 'https://huggingface.co/collections/hyperview-org/hyper-models-67900e48542fa2ea29a26684',
+    demo: 'https://huggingface.co/mnm-matin/hyperbolic-clip',
+    hfCollection: 'https://huggingface.co/mnm-matin/hyperbolic-clip',
     pypi: 'https://pypi.org/project/hyper-models/',
     install: 'pip install hyper-models',
     language: 'Python',
@@ -89,7 +89,7 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
             className="p-1.5 text-gray-500 hover:text-white hover:bg-white/[0.08] rounded-lg transition-all"
             title="GitHub"
           >
-            <Github className="w-4 h-4" />
+            <SiGithub className="w-4 h-4" />
           </a>
           {project.pypi && (
             <a
@@ -119,7 +119,7 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 text-gray-500 hover:text-yellow-400 hover:bg-white/[0.08] rounded-lg transition-all"
-              title={project.hfSpaces ? 'Hugging Face Spaces' : 'Hugging Face Collection'}
+              title={project.hfSpaces ? 'Hugging Face Spaces' : 'Hugging Face'}
             >
               <SiHuggingface className="w-4 h-4" />
             </a>

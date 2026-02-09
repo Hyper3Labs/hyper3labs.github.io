@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'hyper₃labs — Non-Euclidean Embeddings',
+  title: 'hyper³labs — Non-Euclidean Tools for Embeddings',
   description:
     'Open-source tools for non-Euclidean embeddings and dataset curation.',
   openGraph: {
-    title: 'hyper₃labs — Non-Euclidean Embeddings',
+    title: 'hyper³labs — Non-Euclidean Tools for Embeddings',
     description:
       'Open-source tools for non-Euclidean embeddings and dataset curation.',
     type: 'website',
