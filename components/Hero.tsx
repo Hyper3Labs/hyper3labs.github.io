@@ -1,6 +1,5 @@
 import { ArrowDown } from 'lucide-react';
-import { SiGithub } from '@icons-pack/react-simple-icons';
-import { SiHuggingface } from '@icons-pack/react-simple-icons';
+import { SiGithub, SiHuggingface } from '@icons-pack/react-simple-icons';
 
 export default function Hero() {
   return (
@@ -8,16 +7,14 @@ export default function Hero() {
       <div className="max-w-4xl mx-auto w-full">
         {/* Main headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-white mb-6 leading-[1.15]">
-          Your data is hierarchical.
-          <br />
-          <span className="text-gray-500">Your tools should be too.</span>
+          See your data in its true shape.
         </h1>
 
-        {/* Subheadline - the actual product description */}
+        {/* Subheadline */}
         <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl leading-relaxed">
-          <strong className="text-white font-medium">HyperView</strong> is an open-source data curation 
-          co-pilot. Explore embeddings in hyperbolic space—where hierarchy has room to breathe—and 
-          let agents find the issues you'd otherwise miss.
+          <strong className="text-white font-medium">HyperView</strong> is open-source dataset curation
+          across multiple geometries. An AI copilot finds label noise, hierarchy errors, and long-tail
+          issues. Multimodal native.
         </p>
 
         {/* Key differentiators - tight, scannable */}
