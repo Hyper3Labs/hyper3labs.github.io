@@ -1,8 +1,6 @@
 import ShaderController from '@/components/ShaderController';
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import WhyGeometry from '@/components/WhyGeometry';
-import Projects from '@/components/Projects';
+import DocsPortal from '@/components/DocsPortal';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -10,12 +8,8 @@ export default function Home() {
     <>
       <ShaderController />
       <Header />
-      <main className="relative z-10 min-h-screen">
-        <Hero />
-        <WhyGeometry />
-        <Projects />
-        <Footer />
-      </main>
+      <DocsPortal />
+      <Footer />
     </>
   );
 }

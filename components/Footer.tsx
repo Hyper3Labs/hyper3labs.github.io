@@ -3,7 +3,7 @@ import { SiDiscord, SiGithub } from '@icons-pack/react-simple-icons';
 export default function Footer() {
   return (
     <footer className="relative py-8 px-6">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-[1440px] mx-auto">
         {/* Liquid Glass Container */}
         <div
           className="
@@ -28,7 +28,12 @@ export default function Footer() {
           {/* Footer content */}
           <div className="relative px-6 py-5">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="flex items-center gap-3 text-gray-400">
+              <div className="flex items-center gap-2.5 text-gray-400">
+                <img
+                  src="/brand-assets/hyper3labs-logo-primary.svg"
+                  alt=""
+                  className="h-7 w-7"
+                />
                 <span className="text-sm font-mono text-gray-300">
                   hyper<sup className="text-[10px]">3</sup>labs
                 </span>
