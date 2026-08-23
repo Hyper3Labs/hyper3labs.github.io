@@ -1,4 +1,4 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Star } from 'lucide-react';
 import { SiGithub, SiPypi, SiNpm, SiHuggingface } from '@icons-pack/react-simple-icons';
 
 const projects = [
@@ -54,39 +54,81 @@ const projects = [
   },
 ];
 
-function ProjectCard({ project }: { project: typeof projects[0] }) {
+function ProjectCard({ project }: { project: typeof projects[0] & { stars?: number } }) {
   return (
     <div 
       className="
-        group h-full flex flex-col p-5 rounded-2xl 
-        bg-white/[0.04] 
-        backdrop-blur-md backdrop-saturate-150
-        border border-white/[0.08] 
-        hover:border-white/[0.15] hover:bg-white/[0.06] 
-        shadow-[0_4px_24px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.05)]
-        hover:shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.08)]
-        transition-all duration-300
+        group h-full flex flex-col p-6 rounded-2xl 
+        bg-white/[0.02] backdrop-blur-md
+        border border-white/[0.05] 
+        shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]
+        hover:border-white/[0.1] hover:bg-white/[0.04]
+        hover:shadow-[0_8px_32px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.08)]
+        transition-all duration-500 hover:-translate-y-1
+        relative overflow-hidden
       "
-      style={{
-        background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 50%, rgba(255,255,255,0.04) 100%)',
-      }}
     >
+      {/* Subtle glow effect on hover */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white/[0.05] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
       {/* Header */}
-      <div className="flex items-start justify-between gap-3 mb-3">
-        <div className="flex-1 min-w-0">
-          <h3 className="text-base font-medium text-white group-hover:text-gray-100 transition-colors mb-1">
-            {project.name}
-          </h3>
-          <p className="text-gray-400 text-sm">
+      <div className="flex items-start justify-between mb-4 relative z-10">
+        <div>
+          <div className="flex items-center gap-2 mb-1.5">
+            <h3 className="text-lg font-semibold text-gray-100 group-hover:text-white transition-colors">
+              {project.name}
+            </h3>
+          </div>
+          <p className="text-gray-400 text-sm font-medium">
             {project.tagline}
           </p>
         </div>
-        <div className="flex items-center gap-1 shrink-0">
+        <div className="flex flex-col items-end gap-2">
+          {project.stars !== undefined && (
+            <span className="flex items-center gap-1 text-xs font-mono text-gray-400">
+              <Star className="w-3.5 h-3.5 text-yellow-500 fill-yellow-500" />
+              {project.stars}
+            </span>
+          )}
+          {project.language === 'Python' ? (
+            <span className="flex items-center gap-1.5 text-xs font-medium text-blue-400/80 bg-blue-400/10 px-2 py-1 rounded-md">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+              {project.language}
+            </span>
+          ) : (
+            <span className="flex items-center gap-1.5 text-xs font-medium text-yellow-400/80 bg-yellow-400/10 px-2 py-1 rounded-md">
+              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>
+              {project.language}
+            </span>
+          )}
+        </div>
+      </div>
+
+      {/* Description */}
+      <p className="text-gray-400/80 text-sm mb-5 leading-relaxed relative z-10 flex-1">
+        {project.description}
+      </p>
+
+      {/* Features as pills */}
+      <div className="flex flex-wrap gap-2 mb-6 relative z-10">
+        {project.features.map((feature, i) => (
+          <span 
+            key={i} 
+            className="text-[11px] font-medium text-gray-400 bg-white/[0.03] border border-white/[0.05] px-2.5 py-1 rounded-full"
+          >
+            {feature}
+          </span>
+        ))}
+      </div>
+
+      {/* Footer / Actions */}
+      <div className="mt-auto pt-4 border-t border-white/[0.05] flex items-center justify-between gap-3 relative z-10">
+        <div className="flex items-center gap-1">
           <a
             href={project.repo}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1.5 text-gray-500 hover:text-white hover:bg-white/[0.08] rounded-lg transition-all"
+            className="p-1.5 text-gray-500 hover:text-white hover:bg-white/[0.1] rounded-md transition-all"
             title="GitHub"
           >
             <SiGithub className="w-4 h-4" />
@@ -96,7 +138,7 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
               href={project.pypi}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1.5 text-gray-500 hover:text-yellow-500 hover:bg-white/[0.08] rounded-lg transition-all"
+              className="p-1.5 text-gray-500 hover:text-blue-400 hover:bg-blue-400/10 rounded-md transition-all"
               title="PyPI"
             >
               <SiPypi className="w-4 h-4" />
@@ -107,7 +149,7 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
               href={project.npm}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1.5 text-gray-500 hover:text-red-400 hover:bg-white/[0.08] rounded-lg transition-all"
+              className="p-1.5 text-gray-500 hover:text-red-400 hover:bg-red-400/10 rounded-md transition-all"
               title="npm"
             >
               <SiNpm className="w-4 h-4" />
@@ -118,53 +160,56 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
               href={project.hfSpaces || project.hfCollection}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1.5 text-gray-500 hover:text-yellow-400 hover:bg-white/[0.08] rounded-lg transition-all"
+              className="p-1.5 text-gray-500 hover:text-yellow-400 hover:bg-yellow-400/10 rounded-md transition-all"
               title={project.hfSpaces ? 'Hugging Face Spaces' : 'Hugging Face'}
             >
               <SiHuggingface className="w-4 h-4" />
             </a>
           )}
         </div>
-      </div>
 
-      {/* Description */}
-      <p className="text-gray-400 text-sm mb-3 leading-relaxed">
-        {project.description}
-      </p>
-
-      {/* Features */}
-      <ul className="mb-4 space-y-1.5 flex-1">
-        {project.features.map((feature, i) => (
-          <li key={i} className="text-gray-300 text-xs flex items-start gap-2">
-            <span className="text-gray-500">→</span>
-            <span>{feature}</span>
-          </li>
-        ))}
-      </ul>
-
-      {/* Footer - pushed to bottom */}
-      <div className="pt-3 border-t border-white/[0.08]">
-        <div className="flex items-center justify-between gap-3">
-          <code className="text-xs text-gray-300 font-mono bg-white/[0.06] px-2 py-1 rounded-lg truncate">
+        {project.demo ? (
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-medium text-gray-300 hover:text-white inline-flex items-center gap-1.5 px-3 py-1.5 hover:bg-white/[0.1] rounded-md transition-all"
+          >
+            Demo <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        ) : (
+          <code className="text-[10px] text-gray-500 font-mono bg-white/[0.03] px-2 py-1 rounded truncate max-w-[120px]">
             {project.install}
           </code>
-          {project.demo && (
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white text-xs font-medium inline-flex items-center gap-1 shrink-0 px-2 py-1 hover:bg-white/[0.06] rounded-lg transition-all"
-            >
-              demo <ExternalLink className="w-3 h-3" />
-            </a>
-          )}
-        </div>
+        )}
       </div>
     </div>
   );
 }
 
-export default function Projects() {
+// Fetch GitHub stars (revalidates every hour so we don't break rate limits on static export / SSR)
+async function getGithubStars(repo: string): Promise<number | undefined> {
+  const repoPath = repo.replace('https://github.com/', '');
+  try {
+    const res = await fetch(`https://api.github.com/repos/${repoPath}`, {
+      next: { revalidate: 3600 } 
+    });
+    if (!res.ok) return undefined;
+    const data = await res.json();
+    return data.stargazers_count;
+  } catch (e) {
+    return undefined;
+  }
+}
+
+export default async function Projects() {
+  const projectWithStars = await Promise.all(
+    projects.map(async (p) => {
+      const stars = await getGithubStars(p.repo);
+      return { ...p, stars };
+    })
+  );
+
   return (
     <section id="projects" className="relative py-20 px-6">
       <div className="max-w-4xl mx-auto">
@@ -177,8 +222,8 @@ export default function Projects() {
 
         {/* Horizontal card grid */}
         <div className="grid md:grid-cols-3 gap-4">
-          {projects.map((project) => (
-            <ProjectCard key={project.name} project={project} />
+          {projectWithStars.map((project) => (
+            <ProjectCard key={project.name} project={project as any} />
           ))}
         </div>
       </div>

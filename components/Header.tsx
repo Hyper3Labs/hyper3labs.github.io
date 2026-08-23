@@ -5,9 +5,9 @@ import { SiDiscord, SiGithub } from '@icons-pack/react-simple-icons';
 import { useEffect, useState } from 'react';
 
 const navigation = [
-  { label: 'overview', href: '#overview' },
-  { label: 'concepts', href: '#concepts' },
-  { label: 'spaces', href: '#spaces' },
+  { label: 'overview', href: '/#overview' },
+  { label: 'concepts', href: '/#concepts' },
+  { label: 'spaces', href: '/spaces/' },
 ];
 
 export default function Header() {

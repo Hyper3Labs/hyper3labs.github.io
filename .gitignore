@@ -25,7 +25,7 @@ yarn-error.log*
 # LOCAL DEVELOPMENT - Not tracked in git
 # ===========================================
 
-# Logo workspace (local design iterations)
+# Logo workspace (local design iterations, variants, instructions, scripts)
 logo_workspace/
 
 # Design docs & tools (Python logo generator, notes)
@@ -45,6 +45,13 @@ AGENTS.md
 # Tooling artifacts
 .playwright-mcp/
 .specstory/
+.tmp-logo/
+
+# Generated from content/blog/* at dev/build time
+public/blog/
+
+# Post-local scratch space and non-published working files
+content/blog/**/work/
 
 # ===========================================
 # ARCHIVED SHADERS - Keep files but don't track
@@ -65,3 +72,6 @@ lib/shaders/mobius-lens.ts
 lib/shaders/feedback-portal.ts
 # Active shaders (NOT ignored - needed for build):
 # - lib/shaders/gentle-scroll-warp.ts
+
+# Unlighthouse SEO audit reports
+.unlighthouse/

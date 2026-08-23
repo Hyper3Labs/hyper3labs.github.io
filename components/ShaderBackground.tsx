@@ -22,9 +22,6 @@ let mouseX = 0;
 let mouseY = 0;
 let scrollY = 0;
 let maxScroll = 1;
-let gyroX = 0; // beta: front/back tilt
-let gyroY = 0; // gamma: left/right tilt
-let gyroZ = 0; // alpha: compass direction
 
 if (typeof window !== 'undefined') {
   window.addEventListener('mousemove', (e) => {
@@ -37,12 +34,6 @@ if (typeof window !== 'undefined') {
     maxScroll = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
   }, { passive: true });
   
-  // Device orientation for mobile
-  window.addEventListener('deviceorientation', (e) => {
-    gyroX = e.beta ?? 0;  // -180 to 180 (front/back tilt)
-    gyroY = e.gamma ?? 0; // -90 to 90 (left/right tilt)
-    gyroZ = e.alpha ?? 0; // 0 to 360 (compass)
-  }, { passive: true });
 }
 
 export default function ShaderBackground({ shaderId = defaultShaderId }: ShaderBackgroundProps) {
@@ -101,8 +92,6 @@ export default function ShaderBackground({ shaderId = defaultShaderId }: ShaderB
         },
         iScroll: (gl: WebGLRenderingContext, loc: WebGLUniformLocation) =>
           gl.uniform1f(loc, scrollY / maxScroll),
-        iGyroscope: (gl: WebGLRenderingContext, loc: WebGLUniformLocation) =>
-          gl.uniform3f(loc, gyroX, gyroY, gyroZ),
       };
 
       swb.shade({

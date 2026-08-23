@@ -1,7 +1,6 @@
 'use client';
 
-import Image from 'next/image';
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import {
   ArrowRight,
   Bot,
@@ -15,14 +14,11 @@ import {
   Github,
   LayoutDashboard,
   Play,
-  Radio,
   ScanSearch,
   Share2,
   Terminal,
 } from 'lucide-react';
-import { HYPERVIEW_SPACES, SPACE_WORKFLOWS, type HyperViewSpace, type SpaceWorkflow } from '@/lib/spaces';
-
-type ActiveWorkflow = 'All' | SpaceWorkflow;
+import { SpacesTeaser } from '@/components/SpacesGallery';
 
 const concepts = [
   {
@@ -42,8 +38,8 @@ const concepts = [
   },
   {
     icon: Share2,
-    title: 'Shareable Spaces',
-    text: 'Package prepared evidence as a read-only Space, or connect a live runtime when new computation is required.',
+    title: 'Spaces',
+    text: 'Publish a portable read-only Space, or use a Live Space when new computation is required.',
   },
 ];
 
@@ -80,50 +76,6 @@ function CopyCommand() {
   );
 }
 
-function SpaceCard({ space }: { space: HyperViewSpace }) {
-  return (
-    <article className="group relative isolate overflow-hidden rounded-2xl border border-white/[0.09] bg-[#0b0f16]/95 shadow-[0_20px_70px_rgba(0,0,0,0.32)] transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 focus-within:border-cyan-300/50">
-      <a
-        href={space.viewerUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute inset-0 z-20 rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-inset"
-        aria-label={`Open ${space.name} read-only HyperView Space`}
-      />
-      <div className="relative aspect-[16/9] overflow-hidden border-b border-white/[0.08] bg-black/30">
-        <Image
-          src={space.preview}
-          alt={`HyperView workspace preview for ${space.name}`}
-          fill
-          sizes="(min-width: 1280px) 38vw, (min-width: 768px) 50vw, 100vw"
-          className="object-cover object-top transition duration-500 group-hover:scale-[1.015]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080b10]/70 via-transparent to-transparent" />
-        <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-white/[0.12] bg-[#070a0f]/80 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.15em] text-gray-200 backdrop-blur-xl">
-          <Radio className="h-3 w-3 text-cyan-300" aria-hidden="true" /> Read-only
-        </span>
-      </div>
-      <div className="relative p-5">
-        <div className="mb-3 flex items-start justify-between gap-3">
-          <div>
-            <p className="mb-1.5 font-mono text-[9px] uppercase tracking-[0.16em] text-gray-500">{space.context}</p>
-            <h3 className="text-xl font-semibold tracking-tight text-white">{space.name}</h3>
-          </div>
-          <span className="shrink-0 rounded-full border border-white/[0.08] bg-white/[0.04] px-2.5 py-1 font-mono text-[9px] text-gray-400">{space.workflow}</span>
-        </div>
-        <p className="text-sm font-medium leading-relaxed text-gray-100">{space.question}</p>
-        <p className="mt-2 text-sm leading-relaxed text-gray-500">{space.description}</p>
-        <div className="mt-4 flex items-center justify-between gap-4 border-t border-white/[0.07] pt-4">
-          <span className="font-mono text-[9px] leading-relaxed text-gray-600">{space.modality}</span>
-          <span className="inline-flex shrink-0 items-center gap-1.5 text-xs font-medium text-gray-300">
-            Open <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
-          </span>
-        </div>
-      </div>
-    </article>
-  );
-}
-
 function DocsSidebar() {
   return (
     <aside className="hidden xl:block">
@@ -141,7 +93,7 @@ function DocsSidebar() {
             <a href="#overview" className="block py-1.5 transition hover:text-white">Overview</a>
             <a href="#quickstart" className="block py-1.5 transition hover:text-white">Quick start</a>
             <a href="#concepts" className="block py-1.5 transition hover:text-white">Core concepts</a>
-            <a href="#spaces" className="block py-1.5 transition hover:text-white">Spaces</a>
+            <a href="/spaces/" className="block py-1.5 transition hover:text-white">Spaces gallery</a>
           </div>
         </nav>
       </div>
@@ -150,12 +102,6 @@ function DocsSidebar() {
 }
 
 export default function DocsPortal() {
-  const [activeWorkflow, setActiveWorkflow] = useState<ActiveWorkflow>('All');
-  const spaces = useMemo(
-    () => activeWorkflow === 'All' ? HYPERVIEW_SPACES : HYPERVIEW_SPACES.filter((space) => space.workflow === activeWorkflow),
-    [activeWorkflow],
-  );
-
   return (
     <main className="relative z-10 min-h-screen px-5 pb-16 pt-28 sm:px-6">
       <div className="mx-auto grid max-w-[1440px] gap-10 xl:grid-cols-[190px_minmax(0,1fr)]">
@@ -179,7 +125,7 @@ export default function DocsPortal() {
                   <a href="#quickstart" className="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-medium text-[#080b10] transition hover:bg-cyan-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400">
                     Get started <ArrowRight className="h-4 w-4" />
                   </a>
-                  <a href="#spaces" className="inline-flex items-center gap-2 rounded-xl border border-white/[0.12] bg-white/[0.04] px-4 py-2.5 text-sm font-medium text-gray-200 transition hover:bg-white/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400">
+                  <a href="/spaces/" className="inline-flex items-center gap-2 rounded-xl border border-white/[0.12] bg-white/[0.04] px-4 py-2.5 text-sm font-medium text-gray-200 transition hover:bg-white/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400">
                     <ScanSearch className="h-4 w-4" /> Explore Spaces
                   </a>
                 </div>
@@ -215,34 +161,13 @@ export default function DocsPortal() {
             </div>
           </section>
 
-          <section id="spaces" className="scroll-mt-24 py-16">
-            <div className="mb-8 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-              <div className="max-w-3xl">
-                <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.19em] text-cyan-300">HyperView Spaces</p>
-                <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Explore the workbench through real questions.</h2>
-                <p className="mt-4 text-sm leading-relaxed text-gray-400 sm:text-base">Each Space is a prepared, shareable HyperView artifact—not a screenshot or stripped-down mini app. Open one to inspect the complete read-only workspace.</p>
-              </div>
-              <div className="flex max-w-full gap-1.5 overflow-x-auto rounded-xl border border-white/[0.07] bg-white/[0.025] p-1.5 sm:flex-wrap sm:justify-end sm:overflow-visible" role="group" aria-label="Filter Spaces by workflow">
-                {SPACE_WORKFLOWS.map((workflow) => {
-                  const active = workflow === activeWorkflow;
-                  return (
-                    <button key={workflow} type="button" aria-pressed={active} onClick={() => setActiveWorkflow(workflow)} className={`shrink-0 rounded-lg px-3 py-2 text-xs font-medium transition focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 ${active ? 'bg-white text-[#080b10]' : 'text-gray-500 hover:bg-white/[0.06] hover:text-white'}`}>
-                      {workflow}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-            <div className="grid gap-5 md:grid-cols-2 2xl:grid-cols-3" aria-live="polite">
-              {spaces.map((space) => <SpaceCard key={space.slug} space={space} />)}
-            </div>
-          </section>
+          <SpacesTeaser />
 
           <section className="rounded-2xl border border-white/[0.09] bg-white/[0.035] p-6 sm:flex sm:items-center sm:justify-between sm:gap-8 sm:p-8">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-cyan-300">Live runtime</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-cyan-300">Live Space</p>
               <h2 className="mt-2 text-xl font-semibold text-white">Use your own data, models, and agents.</h2>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-gray-500">Static Spaces preserve prepared evidence. Connect a runtime to create datasets, run providers, recompute layouts, and keep agent actions in workspace state.</p>
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-gray-500">Read-only Spaces preserve the full HyperView shell and its interactive evidence. Use a Live Space to create datasets, run providers, recompute layouts, and keep agent actions in workspace state.</p>
             </div>
             <a href="https://github.com/Hyper3Labs/HyperView#readme" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-medium text-[#080b10] transition hover:bg-cyan-100 sm:mt-0">
               <Command className="h-4 w-4" /> Run HyperView <ExternalLink className="h-3.5 w-3.5" />
