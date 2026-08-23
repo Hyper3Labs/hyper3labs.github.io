@@ -36,7 +36,6 @@ export const HYPERVIEW_SPACES: HyperViewSpace[] = [
     description: 'Compare text-to-product and image-neighbour retrieval across two model spaces.',
     preview: '/spaces/previews/abo-catalog.png',
     viewerUrl: '/spaces/abo-catalog/',
-    liveSpaceUrl: 'https://hyper3labs-hyperview-abo-catalog.hf.space',
   },
   {
     slug: 'precision-regions',
@@ -59,7 +58,6 @@ export const HYPERVIEW_SPACES: HyperViewSpace[] = [
     description: 'Compare same-product photo matching and typed shopper searches across two models.',
     preview: '/spaces/previews/fashion-products.png',
     viewerUrl: '/spaces/fashion-products/',
-    liveSpaceUrl: 'https://hyper3labs-hyperview-deepfashion-text-search.hf.space',
   },
   {
     slug: 'logo-search',
