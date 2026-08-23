@@ -1,0 +1,24 @@
+{
+  "collection": {
+    "created_at": 1787266777,
+    "dataset_id": "refcocog_text_region_evidence_v3",
+    "entity_set_id": "samples",
+    "id": "selection:ba1b4d715faa",
+    "kind": "selection",
+    "query": {
+      "ids": [
+        "precision-facilities-target",
+        "precision-facilities-hyper3-02",
+        "precision-facilities-hyper3-03",
+        "precision-facilities-hyper3-04",
+        "precision-facilities-hyper3-05"
+      ],
+      "source": "Sofa with pillows \u00b7 hyper3-clip-v0.5 \u00b7 Top 5"
+    },
+    "scores": null
+  },
+  "shards": [
+    "items.json"
+  ],
+  "total": 5
+}

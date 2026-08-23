@@ -3,26 +3,42 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "sync:blog-assets": "node scripts/sync-blog-assets.js",
+    "generate:og": "./.venv/bin/python3 scripts/generate-og-image.py",
+    "predev": "npm run sync:blog-assets",
     "dev": "next dev",
+    "prebuild": "npm run sync:blog-assets",
     "build": "next build",
+    "sync:spaces": "uv run --project ../HyperView python scripts/mount-hyperview-spaces.py",
+    "build:combined": "npm run sync:spaces && npm run build",
+    "preview:combined": "python3 -m http.server 3001 --directory out",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build"
+    "export": "next build",
+    "seo:audit": "unlighthouse --site http://localhost:3000",
+    "seo:audit:ci": "unlighthouse-ci --site http://localhost:3000 --build-static"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^13.8.0",
     "lucide-react": "^0.400.0",
     "next": "^14.2.0",
     "react": "^18.3.0",
-    "react-dom": "^18.3.0"
+    "react-dom": "^18.3.0",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
+    "yaml": "^2.8.3"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^20.0.0",
     "@types/react": "^18.3.0",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "unlighthouse": "^0.17.9"
   }
 }

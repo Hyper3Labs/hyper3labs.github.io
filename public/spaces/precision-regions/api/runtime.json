@@ -1,0 +1,664 @@
+{
+  "active_workspace_id": "precision-region-search-business-evidence-v3",
+  "extensions": [],
+  "panel_definitions": [
+    {
+      "allow_multiple": false,
+      "category": "dataset",
+      "commands": [
+        "workspace.panel.state.get",
+        "workspace.panel.state.patch"
+      ],
+      "data_capabilities": [
+        "collection:samples",
+        "labels"
+      ],
+      "default_layout": {
+        "dock_zone": "left",
+        "id": "explorer",
+        "order": 0,
+        "position": "right"
+      },
+      "default_props": {},
+      "default_state": {},
+      "extension": "core",
+      "icon": "tags",
+      "label": "Explorer",
+      "panel_type": "explorer",
+      "props_schema": {
+        "type": "object"
+      },
+      "queries": [],
+      "renderer": "native:explorer",
+      "source": "shipped",
+      "state_schema": {
+        "type": "object"
+      },
+      "static_compatible": true,
+      "static_reason": null,
+      "title": "Labels"
+    },
+    {
+      "allow_multiple": true,
+      "category": "dataset",
+      "commands": [
+        "workspace.panel.state.get",
+        "workspace.panel.state.patch",
+        "panel.samples.retrieval.set-anchor",
+        "panel.samples.retrieval.set-text-query",
+        "panel.samples.retrieval.set-k",
+        "panel.samples.retrieval.clear"
+      ],
+      "data_capabilities": [
+        "collection:samples",
+        "selection",
+        "text-query",
+        "neighbors"
+      ],
+      "default_layout": {
+        "id": "samples",
+        "order": 10,
+        "position": "center"
+      },
+      "default_props": {},
+      "default_state": {},
+      "extension": "core",
+      "icon": "grid",
+      "label": "Samples",
+      "panel_type": "samples",
+      "props_schema": {
+        "type": "object"
+      },
+      "queries": [
+        "samples.query",
+        "samples.similar"
+      ],
+      "renderer": "native:samples",
+      "source": "shipped",
+      "state_schema": {
+        "type": "object"
+      },
+      "static_compatible": true,
+      "static_reason": null,
+      "title": "Samples"
+    }
+  ],
+  "runtime_id": "3a6fc49cc28d4566b9fa33d0eae031ac",
+  "tools": [],
+  "version": 1,
+  "workspace": {
+    "collections": [
+      {
+        "created_at": 1787266777,
+        "dataset_id": "refcocog_text_region_evidence_v3",
+        "entity_set_id": "samples",
+        "id": "all:bf21a9e8fbc5",
+        "kind": "all",
+        "query": {},
+        "scores": null
+      },
+      {
+        "created_at": 1787266776,
+        "dataset_id": "refcocog_text_region_evidence_v3",
+        "entity_set_id": "samples",
+        "id": "selection:02d17fa2f043",
+        "kind": "selection",
+        "query": {
+          "ids": [
+            "precision-retail-clip-01",
+            "precision-retail-clip-02",
+            "precision-retail-clip-03",
+            "precision-retail-clip-04",
+            "precision-retail-clip-05"
+          ],
+          "source": "Soap bottle \u00b7 openai/clip-vit-base-patch32 \u00b7 Top 5"
+        },
+        "scores": null
+      },
+      {
+        "created_at": 1787266776,
+        "dataset_id": "refcocog_text_region_evidence_v3",
+        "entity_set_id": "samples",
+        "id": "selection:1b93f76781c4",
+        "kind": "selection",
+        "query": {
+          "ids": [
+            "precision-facilities-clip-01",
+            "precision-facilities-clip-02",
+            "precision-facilities-clip-03",
+            "precision-facilities-clip-04",
+            "precision-facilities-clip-05"
+          ],
+          "source": "Sofa with pillows \u00b7 openai/clip-vit-base-patch32 \u00b7 Top 5"
+        },
+        "scores": null
+      },
+      {
+        "created_at": 1787266777,
+        "dataset_id": "refcocog_text_region_evidence_v3",
+        "entity_set_id": "samples",
+        "id": "selection:98a6065d3255",
+        "kind": "selection",
+        "query": {
+          "ids": [
+            "precision-fleet-clip-01",
+            "precision-fleet-clip-02",
+            "precision-fleet-clip-03",
+            "precision-fleet-target",
+            "precision-fleet-clip-05"
+          ],
+          "source": "Double-decker bus \u00b7 openai/clip-vit-base-patch32 \u00b7 Top 5"
+        },
+        "scores": null
+      },
+      {
+        "created_at": 1787266777,
+        "dataset_id": "refcocog_text_region_evidence_v3",
+        "entity_set_id": "samples",
+        "id": "selection:ba1b4d715faa",
+        "kind": "selection",
+        "query": {
+          "ids": [
+            "precision-facilities-target",
+            "precision-facilities-hyper3-02",
+            "precision-facilities-hyper3-03",
+            "precision-facilities-hyper3-04",
+            "precision-facilities-hyper3-05"
+          ],
+          "source": "Sofa with pillows \u00b7 hyper3-clip-v0.5 \u00b7 Top 5"
+        },
+        "scores": null
+      },
+      {
+        "created_at": 1787266776,
+        "dataset_id": "refcocog_text_region_evidence_v3",
+        "entity_set_id": "samples",
+        "id": "selection:c66621f9f75e",
+        "kind": "selection",
+        "query": {
+          "ids": [
+            "precision-fleet-target",
+            "precision-fleet-hyper3-02",
+            "precision-fleet-hyper3-03",
+            "precision-fleet-hyper3-04",
+            "precision-fleet-hyper3-05"
+          ],
+          "source": "Double-decker bus \u00b7 hyper3-clip-v0.5 \u00b7 Top 5"
+        },
+        "scores": null
+      },
+      {
+        "created_at": 1787266776,
+        "dataset_id": "refcocog_text_region_evidence_v3",
+        "entity_set_id": "samples",
+        "id": "selection:d29d28532e90",
+        "kind": "selection",
+        "query": {
+          "ids": [
+            "precision-retail-target",
+            "precision-retail-hyper3-02",
+            "precision-retail-hyper3-03",
+            "precision-retail-hyper3-04",
+            "precision-retail-hyper3-05"
+          ],
+          "source": "Soap bottle \u00b7 hyper3-clip-v0.5 \u00b7 Top 5"
+        },
+        "scores": null
+      }
+    ],
+    "dataset_name": "refcocog_text_region_evidence_v3",
+    "id": "precision-region-search-business-evidence-v3",
+    "ui": {
+      "active_layout_key": null,
+      "active_panel_id": "samples",
+      "custom_panels": [
+        {
+          "active": false,
+          "builtin_panel": "samples",
+          "data": {
+            "module_src": null,
+            "static_compatible": true,
+            "static_reason": null
+          },
+          "direction": null,
+          "extension": null,
+          "extension_panel": null,
+          "geometry": null,
+          "height": null,
+          "id": "samples",
+          "kind": "builtin",
+          "layout": {
+            "direction": null,
+            "height": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": 220,
+            "min_width": 180,
+            "position": "center",
+            "reference_panel_id": null,
+            "width": null
+          },
+          "layout_dimension": null,
+          "layout_key": null,
+          "max_height": null,
+          "max_width": null,
+          "min_height": 220,
+          "min_width": 180,
+          "panel_type": "samples",
+          "position": "center",
+          "props": {
+            "collectionId": "selection:ba1b4d715faa",
+            "mode": "results"
+          },
+          "reference_panel_id": null,
+          "renderer": "native:samples",
+          "source": "shipped",
+          "state_revision": 139,
+          "title": "Hyper3-CLIP \u00b7 Top 5 regions",
+          "visible": true,
+          "width": null
+        },
+        {
+          "active": false,
+          "builtin_panel": "samples",
+          "data": {
+            "module_src": null,
+            "static_compatible": true,
+            "static_reason": null
+          },
+          "direction": "right",
+          "extension": null,
+          "extension_panel": null,
+          "geometry": null,
+          "height": null,
+          "id": "precision-clip-results",
+          "kind": "builtin",
+          "layout": {
+            "direction": "right",
+            "height": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": 220,
+            "min_width": 180,
+            "position": "center",
+            "reference_panel_id": "samples",
+            "width": null
+          },
+          "layout_dimension": null,
+          "layout_key": null,
+          "max_height": null,
+          "max_width": null,
+          "min_height": 220,
+          "min_width": 180,
+          "panel_type": "samples",
+          "position": "center",
+          "props": {
+            "collectionId": "selection:1b93f76781c4",
+            "mode": "results"
+          },
+          "reference_panel_id": "samples",
+          "renderer": "native:samples",
+          "source": "shipped",
+          "state_revision": 0,
+          "title": "OpenAI CLIP \u00b7 Top 5 regions",
+          "visible": true,
+          "width": null
+        },
+        {
+          "active": false,
+          "builtin_panel": null,
+          "data": {
+            "module_src": "/api/panels/content/precision-region-search-business-evidence-v3/precision-region-readout/panel.js",
+            "static_compatible": true,
+            "static_reason": null
+          },
+          "direction": null,
+          "extension": "precision-region-readout",
+          "extension_panel": "precision-region-comparison",
+          "geometry": null,
+          "height": null,
+          "id": "precision-region-readout",
+          "kind": "module",
+          "layout": {
+            "direction": null,
+            "height": null,
+            "max_height": null,
+            "max_width": 520,
+            "min_height": 300,
+            "min_width": 320,
+            "position": "right",
+            "reference_panel_id": null,
+            "width": 400
+          },
+          "layout_dimension": null,
+          "layout_key": null,
+          "max_height": null,
+          "max_width": 520,
+          "min_height": 300,
+          "min_width": 320,
+          "panel_type": "precision-region-readout.precision-region-comparison",
+          "position": "right",
+          "props": {
+            "benchmark": {
+              "clipHit1": "50.6%",
+              "clipHit10": "87.8%",
+              "clipMrr": "0.633",
+              "hyper3Hit1": "55.0%",
+              "hyper3Hit10": "90.0%",
+              "hyper3Mrr": "0.669",
+              "queryCount": 180
+            },
+            "cases": [
+              {
+                "business": "Facilities teams need the exact fixture inside inspection photos, not a broad room-level match.",
+                "collectionIds": {
+                  "clip": "selection:1b93f76781c4",
+                  "hyper3": "selection:ba1b4d715faa"
+                },
+                "context": "Property inspection",
+                "id": "facilities",
+                "label": "Workspace / Facilities",
+                "query": "A grey couch with pillows on it.",
+                "results": {
+                  "clip": [
+                    {
+                      "rank": 1,
+                      "sampleId": "precision-facilities-clip-01",
+                      "text": "Brown loveseat with cushions."
+                    },
+                    {
+                      "rank": 2,
+                      "sampleId": "precision-facilities-clip-02",
+                      "text": "Cream couch in a different room."
+                    },
+                    {
+                      "rank": 3,
+                      "sampleId": "precision-facilities-clip-03",
+                      "text": "Chair beside curtains."
+                    },
+                    {
+                      "rank": 4,
+                      "sampleId": "precision-facilities-clip-04",
+                      "text": "Tan armchair."
+                    },
+                    {
+                      "rank": 5,
+                      "sampleId": "precision-facilities-clip-05",
+                      "text": "Person sitting on a bench."
+                    }
+                  ],
+                  "hyper3": [
+                    {
+                      "isTarget": true,
+                      "rank": 1,
+                      "sampleId": "precision-facilities-target",
+                      "text": "A grey couch with pillows on it."
+                    },
+                    {
+                      "rank": 2,
+                      "sampleId": "precision-facilities-hyper3-02",
+                      "text": "Brown loveseat with cushions."
+                    },
+                    {
+                      "rank": 3,
+                      "sampleId": "precision-facilities-hyper3-03",
+                      "text": "Beige armchair."
+                    },
+                    {
+                      "rank": 4,
+                      "sampleId": "precision-facilities-hyper3-04",
+                      "text": "Cream sofa in a living room."
+                    },
+                    {
+                      "rank": 5,
+                      "sampleId": "precision-facilities-hyper3-05",
+                      "text": "Tan armchair."
+                    }
+                  ]
+                },
+                "shortLabel": "Sofa with pillows",
+                "sourceSampleId": "precision-facilities-source",
+                "target": {
+                  "clipRank": 20,
+                  "hyper3Rank": 1
+                },
+                "targetSampleId": "precision-facilities-target"
+              },
+              {
+                "business": "Retail and food-service teams search busy operational photos for the precise shelf or tabletop item.",
+                "collectionIds": {
+                  "clip": "selection:02d17fa2f043",
+                  "hyper3": "selection:d29d28532e90"
+                },
+                "context": "Store shelf",
+                "id": "retail",
+                "label": "Retail / Tabletop",
+                "query": "The bottle of soap to the left.",
+                "results": {
+                  "clip": [
+                    {
+                      "rank": 1,
+                      "sampleId": "precision-retail-clip-01",
+                      "text": "White sink."
+                    },
+                    {
+                      "rank": 2,
+                      "sampleId": "precision-retail-clip-02",
+                      "text": "Person holding a sandwich."
+                    },
+                    {
+                      "rank": 3,
+                      "sampleId": "precision-retail-clip-03",
+                      "text": "White tabletop."
+                    },
+                    {
+                      "rank": 4,
+                      "sampleId": "precision-retail-clip-04",
+                      "text": "Tabletop edge."
+                    },
+                    {
+                      "rank": 5,
+                      "sampleId": "precision-retail-clip-05",
+                      "text": "Knife in a jar."
+                    }
+                  ],
+                  "hyper3": [
+                    {
+                      "isTarget": true,
+                      "rank": 1,
+                      "sampleId": "precision-retail-target",
+                      "text": "The bottle of soap to the left."
+                    },
+                    {
+                      "rank": 2,
+                      "sampleId": "precision-retail-hyper3-02",
+                      "text": "Milk bottle."
+                    },
+                    {
+                      "rank": 3,
+                      "sampleId": "precision-retail-hyper3-03",
+                      "text": "White sink."
+                    },
+                    {
+                      "rank": 4,
+                      "sampleId": "precision-retail-hyper3-04",
+                      "text": "Tabletop edge."
+                    },
+                    {
+                      "rank": 5,
+                      "sampleId": "precision-retail-hyper3-05",
+                      "text": "Clear drink bottle."
+                    }
+                  ]
+                },
+                "shortLabel": "Soap bottle",
+                "sourceSampleId": "precision-retail-source",
+                "target": {
+                  "clipRank": 12,
+                  "hyper3Rank": 1
+                },
+                "targetSampleId": "precision-retail-target"
+              },
+              {
+                "business": "Fleet operators need to find the exact vehicle or mobile asset in street, depot, and field imagery.",
+                "collectionIds": {
+                  "clip": "selection:98a6065d3255",
+                  "hyper3": "selection:c66621f9f75e"
+                },
+                "context": "Street asset",
+                "id": "fleet",
+                "label": "Fleet / Vehicles",
+                "query": "A double decker bus parked on the right side of the street facing forward.",
+                "results": {
+                  "clip": [
+                    {
+                      "rank": 1,
+                      "sampleId": "precision-fleet-clip-01",
+                      "text": "Green bus."
+                    },
+                    {
+                      "rank": 2,
+                      "sampleId": "precision-fleet-clip-02",
+                      "text": "Bus in front of other vehicles."
+                    },
+                    {
+                      "rank": 3,
+                      "sampleId": "precision-fleet-clip-03",
+                      "text": "White van."
+                    },
+                    {
+                      "isTarget": true,
+                      "rank": 4,
+                      "sampleId": "precision-fleet-target",
+                      "text": "A double decker bus parked on the right side of the street facing forward."
+                    },
+                    {
+                      "rank": 5,
+                      "sampleId": "precision-fleet-clip-05",
+                      "text": "Red single-decker bus."
+                    }
+                  ],
+                  "hyper3": [
+                    {
+                      "isTarget": true,
+                      "rank": 1,
+                      "sampleId": "precision-fleet-target",
+                      "text": "A double decker bus parked on the right side of the street facing forward."
+                    },
+                    {
+                      "rank": 2,
+                      "sampleId": "precision-fleet-hyper3-02",
+                      "text": "Red single-decker bus."
+                    },
+                    {
+                      "rank": 3,
+                      "sampleId": "precision-fleet-hyper3-03",
+                      "text": "Green bus."
+                    },
+                    {
+                      "rank": 4,
+                      "sampleId": "precision-fleet-hyper3-04",
+                      "text": "White van."
+                    },
+                    {
+                      "rank": 5,
+                      "sampleId": "precision-fleet-hyper3-05",
+                      "text": "Bus marked SAI."
+                    }
+                  ]
+                },
+                "shortLabel": "Double-decker bus",
+                "sourceSampleId": "precision-fleet-source",
+                "target": {
+                  "clipRank": 4,
+                  "hyper3Rank": 1
+                },
+                "targetSampleId": "precision-fleet-target"
+              }
+            ],
+            "collectionId": "selection:ba1b4d715faa",
+            "dataset": "lmms-lab/RefCOCOg",
+            "initialCaseId": "facilities",
+            "models": {
+              "clip": "openai/clip-vit-base-patch32",
+              "hyper3": "hyper3-clip-v0.5"
+            },
+            "protocol": "precomputed text-to-region ranking over the same evaluation crop pool for both models",
+            "split": "val"
+          },
+          "reference_panel_id": null,
+          "renderer": "module:panel.jsx",
+          "source": "extension",
+          "state_revision": 20,
+          "title": "Find the exact region",
+          "visible": true,
+          "width": 400
+        }
+      ],
+      "has_explicit_view": true,
+      "layout": null,
+      "layout_revision": 6,
+      "layout_views": {},
+      "panels": {
+        "precision-clip-results": {
+          "state": {
+            "collection": {
+              "created_at": 1787253954,
+              "dataset_id": "refcocog_text_region_evidence_v3",
+              "entity_set_id": "samples",
+              "id": "all:bf21a9e8fbc5",
+              "kind": "all",
+              "query": {},
+              "scores": null
+            },
+            "collection_id": "all:bf21a9e8fbc5"
+          },
+          "state_revision": 0
+        },
+        "precision-region-readout": {
+          "state": {
+            "activeCaseId": "facilities"
+          },
+          "state_revision": 20
+        },
+        "samples": {
+          "state": {
+            "collection": {
+              "created_at": 1787266777,
+              "dataset_id": "refcocog_text_region_evidence_v3",
+              "entity_set_id": "samples",
+              "id": "selection:ba1b4d715faa",
+              "kind": "selection",
+              "query": {
+                "ids": [
+                  "precision-facilities-target",
+                  "precision-facilities-hyper3-02",
+                  "precision-facilities-hyper3-03",
+                  "precision-facilities-hyper3-04",
+                  "precision-facilities-hyper3-05"
+                ],
+                "source": "Sofa with pillows \u00b7 hyper3-clip-v0.5 \u00b7 Top 5"
+              },
+              "scores": null
+            },
+            "collection_id": "selection:ba1b4d715faa",
+            "focus_request": null,
+            "mode": "collection",
+            "retrieval": null
+          },
+          "state_revision": 139
+        }
+      },
+      "selected_ids": [
+        "precision-facilities-target"
+      ],
+      "view_revision": 29
+    }
+  },
+  "workspaces": [
+    {
+      "dataset_name": "refcocog_text_region_evidence_v3",
+      "id": "precision-region-search-business-evidence-v3"
+    }
+  ]
+}

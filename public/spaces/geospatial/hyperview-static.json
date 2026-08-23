@@ -1,0 +1,74 @@
+{
+  "artifacts": {
+    "dataset": "api/dataset.json",
+    "embeddings": "api/embeddings/default.json",
+    "runtime": "api/runtime.json",
+    "samples": "api/samples/index.json",
+    "similarity": "api/search/similar/index.json"
+  },
+  "capabilities": {
+    "browse_samples": true,
+    "lasso_2d": true,
+    "lasso_3d": false,
+    "layouts": true,
+    "panel_state": "ephemeral",
+    "panels": [
+      {
+        "panel_id": "hyper3-neighbours",
+        "panel_type": "samples",
+        "reason": null,
+        "static_compatible": true
+      },
+      {
+        "panel_id": "hyper3-map",
+        "panel_type": "scatter",
+        "reason": null,
+        "static_compatible": true
+      },
+      {
+        "panel_id": "clip-neighbours",
+        "panel_type": "samples",
+        "reason": null,
+        "static_compatible": true
+      },
+      {
+        "panel_id": "clip-map",
+        "panel_type": "scatter",
+        "reason": null,
+        "static_compatible": true
+      },
+      {
+        "panel_id": "geospatial-retrieval-readout",
+        "panel_type": "geospatial-readout.geospatial-comparison",
+        "reason": null,
+        "static_compatible": true
+      }
+    ],
+    "python_tools": false,
+    "runtime_mutations": false,
+    "sample_similarity": true,
+    "selection": true,
+    "similarity_k": 10,
+    "text_search": false
+  },
+  "created_at": "2026-08-23T09:59:55.114502+00:00",
+  "deployment": {
+    "cloudflare": null,
+    "hosting": {
+      "copy_contents_to": "spaces/geospatial",
+      "mode": "path-mounted-static-assets"
+    },
+    "mount_path": "/spaces/geospatial"
+  },
+  "hyperview_version": "0.6.3.dev19+g3ab84f8d9.d20260820",
+  "kind": "hyperview-static-space",
+  "mount_path": "/spaces/geospatial",
+  "schema_version": 1,
+  "static": true,
+  "warnings": [],
+  "workspace": {
+    "dataset_name": "resisc45_clip_hyper3clip_curated_side_by_side",
+    "fingerprint": "342cfa5f5eb51fd4975d9bff81c5f34dd6c105508dcf22598b55b49bfe45ba9d",
+    "id": "geospatial-resisc45-retrieval-evidence-v2"
+  }
+}

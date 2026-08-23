@@ -1,0 +1,62 @@
+{
+  "artifacts": {
+    "dataset": "api/dataset.json",
+    "embeddings": null,
+    "runtime": "api/runtime.json",
+    "samples": "api/samples/index.json",
+    "similarity": null
+  },
+  "capabilities": {
+    "browse_samples": true,
+    "lasso_2d": false,
+    "lasso_3d": false,
+    "layouts": false,
+    "panel_state": "ephemeral",
+    "panels": [
+      {
+        "panel_id": "samples",
+        "panel_type": "samples",
+        "reason": null,
+        "static_compatible": true
+      },
+      {
+        "panel_id": "precision-clip-results",
+        "panel_type": "samples",
+        "reason": null,
+        "static_compatible": true
+      },
+      {
+        "panel_id": "precision-region-readout",
+        "panel_type": "precision-region-readout.precision-region-comparison",
+        "reason": null,
+        "static_compatible": true
+      }
+    ],
+    "python_tools": false,
+    "runtime_mutations": false,
+    "sample_similarity": false,
+    "selection": true,
+    "similarity_k": 0,
+    "text_search": false
+  },
+  "created_at": "2026-08-23T09:59:47.435879+00:00",
+  "deployment": {
+    "cloudflare": null,
+    "hosting": {
+      "copy_contents_to": "spaces/precision-regions",
+      "mode": "path-mounted-static-assets"
+    },
+    "mount_path": "/spaces/precision-regions"
+  },
+  "hyperview_version": "0.6.3.dev19+g3ab84f8d9.d20260820",
+  "kind": "hyperview-static-space",
+  "mount_path": "/spaces/precision-regions",
+  "schema_version": 1,
+  "static": true,
+  "warnings": [],
+  "workspace": {
+    "dataset_name": "refcocog_text_region_evidence_v3",
+    "fingerprint": "d6ece4c946751e893908429c2e5622bb6a1f46cd616be4a60a47e226709d4ac2",
+    "id": "precision-region-search-business-evidence-v3"
+  }
+}

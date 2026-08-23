@@ -1,0 +1,80 @@
+{
+  "artifacts": {
+    "dataset": "api/dataset.json",
+    "embeddings": "api/embeddings/default.json",
+    "runtime": "api/runtime.json",
+    "samples": "api/samples/index.json",
+    "similarity": null
+  },
+  "capabilities": {
+    "browse_samples": true,
+    "lasso_2d": true,
+    "lasso_3d": false,
+    "layouts": true,
+    "panel_state": "ephemeral",
+    "panels": [
+      {
+        "panel_id": "candidate-nearest-neighbours",
+        "panel_type": "samples",
+        "reason": null,
+        "static_compatible": true
+      },
+      {
+        "panel_id": "samples",
+        "panel_type": "samples",
+        "reason": null,
+        "static_compatible": true
+      },
+      {
+        "panel_id": "candidate-catalog-map",
+        "panel_type": "scatter",
+        "reason": null,
+        "static_compatible": true
+      },
+      {
+        "panel_id": "clip-nearest-neighbours",
+        "panel_type": "samples",
+        "reason": null,
+        "static_compatible": true
+      },
+      {
+        "panel_id": "clip-catalog-map",
+        "panel_type": "scatter",
+        "reason": null,
+        "static_compatible": true
+      },
+      {
+        "panel_id": "catalog-hierarchy-readout",
+        "panel_type": "abo-catalog-readout.catalog-comparison",
+        "reason": null,
+        "static_compatible": true
+      }
+    ],
+    "python_tools": false,
+    "runtime_mutations": false,
+    "sample_similarity": false,
+    "selection": true,
+    "similarity_k": 0,
+    "text_search": false
+  },
+  "created_at": "2026-08-23T09:59:46.014470+00:00",
+  "deployment": {
+    "cloudflare": null,
+    "hosting": {
+      "copy_contents_to": "spaces/abo-catalog",
+      "mode": "path-mounted-static-assets"
+    },
+    "mount_path": "/spaces/abo-catalog"
+  },
+  "hyperview_version": "0.6.3.dev19+g3ab84f8d9.d20260820",
+  "kind": "hyperview-static-space",
+  "mount_path": "/spaces/abo-catalog",
+  "schema_version": 1,
+  "static": true,
+  "warnings": [],
+  "workspace": {
+    "dataset_name": "abo_catalog_clip_hyper3clip_side_by_side",
+    "fingerprint": "33f4c5ea7d5746cdabfcc7122a391e43377ee59523536d0ba5797631c6d9230b",
+    "id": "abo-catalog-clip-hyper3clip-split"
+  }
+}

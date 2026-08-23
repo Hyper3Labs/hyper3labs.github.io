@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "shard_size": 500,
+  "shards": [
+    {
+      "count": 32,
+      "label_counts": [
+        {
+          "count": 1,
+          "value": "#1 \u00b7 Brown loveseat with cushions."
+        },
+        {
+          "count": 1,
+          "value": "#1 \u00b7 Green bus."
+        },
+        {
+          "count": 1,
+          "value": "#1 \u00b7 White sink."
+        },
+        {
+          "count": 1,
+          "value": "#2 \u00b7 Brown loveseat with cushions."
+        },
+        {
+          "count": 1,
+          "value": "#2 \u00b7 Bus in front of other vehicles."
+        },
+        {
+          "count": 1,
+          "value": "#2 \u00b7 Cream couch in a different room."
+        },
+        {
+          "count": 1,
+          "value": "#2 \u00b7 Milk bottle."
+        },
+        {
+          "count": 1,
+          "value": "#2 \u00b7 Person holding a sandwich."
+        },
+        {
+          "count": 1,
+          "value": "#2 \u00b7 Red single-decker bus."
+        },
+        {
+          "count": 1,
+          "value": "#3 \u00b7 Beige armchair."
+        },
+        {
+          "count": 1,
+          "value": "#3 \u00b7 Chair beside curtains."
+        },
+        {
+          "count": 1,
+          "value": "#3 \u00b7 Green bus."
+        },
+        {
+          "count": 1,
+          "value": "#3 \u00b7 White sink."
+        },
+        {
+          "count": 1,
+          "value": "#3 \u00b7 White tabletop."
+        },
+        {
+          "count": 1,
+          "value": "#3 \u00b7 White van."
+        },
+        {
+          "count": 1,
+          "value": "#4 \u00b7 Cream sofa in a living room."
+        },
+        {
+          "count": 2,
+          "value": "#4 \u00b7 Tabletop edge."
+        },
+        {
+          "count": 1,
+          "value": "#4 \u00b7 Tan armchair."
+        },
+        {
+          "count": 1,
+          "value": "#4 \u00b7 White van."
+        },
+        {
+          "count": 1,
+          "value": "#5 \u00b7 Bus marked SAI."
+        },
+        {
+          "count": 1,
+          "value": "#5 \u00b7 Clear drink bottle."
+        },
+        {
+          "count": 1,
+          "value": "#5 \u00b7 Knife in a jar."
+        },
+        {
+          "count": 1,
+          "value": "#5 \u00b7 Person sitting on a bench."
+        },
+        {
+          "count": 1,
+          "value": "#5 \u00b7 Red single-decker bus."
+        },
+        {
+          "count": 1,
+          "value": "#5 \u00b7 Tan armchair."
+        },
+        {
+          "count": 1,
+          "value": "Double-decker bus source scene"
+        },
+        {
+          "count": 1,
+          "value": "Soap bottle source scene"
+        },
+        {
+          "count": 1,
+          "value": "Sofa with pillows source scene"
+        },
+        {
+          "count": 1,
+          "value": "TARGET \u00b7 A double decker bus parked on the right side of the street facing forward."
+        },
+        {
+          "count": 1,
+          "value": "TARGET \u00b7 A grey couch with pillows on it."
+        },
+        {
+          "count": 1,
+          "value": "TARGET \u00b7 The bottle of soap to the left."
+        }
+      ],
+      "offset": 0,
+      "path": "shards/000000.json",
+      "sample_ids": [
+        "precision-facilities-source",
+        "precision-facilities-target",
+        "precision-facilities-hyper3-02",
+        "precision-facilities-hyper3-03",
+        "precision-facilities-hyper3-04",
+        "precision-facilities-hyper3-05",
+        "precision-facilities-clip-01",
+        "precision-facilities-clip-02",
+        "precision-facilities-clip-03",
+        "precision-facilities-clip-04",
+        "precision-facilities-clip-05",
+        "precision-retail-source",
+        "precision-retail-target",
+        "precision-retail-hyper3-02",
+        "precision-retail-hyper3-03",
+        "precision-retail-hyper3-04",
+        "precision-retail-hyper3-05",
+        "precision-retail-clip-01",
+        "precision-retail-clip-02",
+        "precision-retail-clip-03",
+        "precision-retail-clip-04",
+        "precision-retail-clip-05",
+        "precision-fleet-source",
+        "precision-fleet-target",
+        "precision-fleet-hyper3-02",
+        "precision-fleet-hyper3-03",
+        "precision-fleet-hyper3-04",
+        "precision-fleet-hyper3-05",
+        "precision-fleet-clip-01",
+        "precision-fleet-clip-02",
+        "precision-fleet-clip-03",
+        "precision-fleet-clip-05"
+      ]
+    }
+  ],
+  "total": 32
+}

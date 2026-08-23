@@ -1,0 +1,212 @@
+{
+  "collection_id": "selection:bcf4edf51589",
+  "items": [
+    {
+      "rank": 0,
+      "sample": {
+        "duration_s": null,
+        "filename": "B0742DR7C2_81jtRdRtkPL.jpg",
+        "height": null,
+        "id": "B0742DR7C2_81jtRdRtkPL",
+        "label": "LAMP",
+        "media_type": null,
+        "media_url": "/api/samples/B0742DR7C2_81jtRdRtkPL/content",
+        "metadata": {
+          "brand": "Stone & Beam",
+          "color": "Clear",
+          "country": "US",
+          "department": "Lighting & Ceiling Fans",
+          "hierarchy": "Lighting & Ceiling Fans -> lamp",
+          "image_id": "81jtRdRtkPL",
+          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/d2/d2af46fc.jpg",
+          "item_id": "B0742DR7C2",
+          "product_type": "LAMP",
+          "product_type_readable": "lamp",
+          "source": "hyper3labs/amazon-berkeley-objects",
+          "style": null,
+          "title": "Stone & Beam Pearl Modern Glass Orb Living RoomTable Lamp With Bulb And Linen Shade - 19.5 x 11.5 x 11.5 Inches, Silver"
+        },
+        "modality": "image",
+        "text": null,
+        "thumbnail": null,
+        "thumbnail_url": "/api/samples/B0742DR7C2_81jtRdRtkPL/thumbnail",
+        "width": null
+      },
+      "sample_id": "B0742DR7C2_81jtRdRtkPL",
+      "score": null
+    },
+    {
+      "rank": 1,
+      "sample": {
+        "duration_s": null,
+        "filename": "B07374K538_71XEFMKYAGL.jpg",
+        "height": null,
+        "id": "B07374K538_71XEFMKYAGL",
+        "label": "LAMP",
+        "media_type": null,
+        "media_url": "/api/samples/B07374K538_71XEFMKYAGL/content",
+        "metadata": {
+          "brand": "Stone & Beam",
+          "color": "Brushed Brass",
+          "country": "US",
+          "department": "Lighting & Ceiling Fans",
+          "hierarchy": "Lighting & Ceiling Fans -> lamp",
+          "image_id": "71XEFMKYAGL",
+          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/28/283d9256.jpg",
+          "item_id": "B07374K538",
+          "product_type": "LAMP",
+          "product_type_readable": "lamp",
+          "source": "hyper3labs/amazon-berkeley-objects",
+          "style": "Table Lamp",
+          "title": "Amazon Brand \u2013 Stone & Beam Glass Column Living Room Table Desk Lamp With Light Bulb and Linen Shade, 23\"H, Brushed Brass"
+        },
+        "modality": "image",
+        "text": null,
+        "thumbnail": null,
+        "thumbnail_url": "/api/samples/B07374K538_71XEFMKYAGL/thumbnail",
+        "width": null
+      },
+      "sample_id": "B07374K538_71XEFMKYAGL",
+      "score": null
+    },
+    {
+      "rank": 2,
+      "sample": {
+        "duration_s": null,
+        "filename": "B001CD1GFM_61lepTd-EmS.jpg",
+        "height": null,
+        "id": "B001CD1GFM_61lepTd-EmS",
+        "label": "LAMP",
+        "media_type": null,
+        "media_url": "/api/samples/B001CD1GFM_61lepTd-EmS/content",
+        "metadata": {
+          "brand": "Pinzon by Amazon",
+          "color": "Polished Nickel",
+          "country": "US",
+          "department": "Lighting & Ceiling Fans",
+          "hierarchy": "Lighting & Ceiling Fans -> lamp",
+          "image_id": "61lepTd-EmS",
+          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/d6/d6344595.jpg",
+          "item_id": "B001CD1GFM",
+          "product_type": "LAMP",
+          "product_type_readable": "lamp",
+          "source": "hyper3labs/amazon-berkeley-objects",
+          "style": "Modern",
+          "title": "Pinzon Polished Nickel Orb Table Lamp with Black Shade"
+        },
+        "modality": "image",
+        "text": null,
+        "thumbnail": null,
+        "thumbnail_url": "/api/samples/B001CD1GFM_61lepTd-EmS/thumbnail",
+        "width": null
+      },
+      "sample_id": "B001CD1GFM_61lepTd-EmS",
+      "score": null
+    },
+    {
+      "rank": 3,
+      "sample": {
+        "duration_s": null,
+        "filename": "B07DBK2P2G_41TnBzn9tFL.jpg",
+        "height": null,
+        "id": "B07DBK2P2G_41TnBzn9tFL",
+        "label": "LAMP",
+        "media_type": null,
+        "media_url": "/api/samples/B07DBK2P2G_41TnBzn9tFL/content",
+        "metadata": {
+          "brand": "Ravenna Home",
+          "color": "Chrome With Blue Glass",
+          "country": "US",
+          "department": "Lighting & Ceiling Fans",
+          "hierarchy": "Lighting & Ceiling Fans -> lamp",
+          "image_id": "41TnBzn9tFL",
+          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/c4/c4e9a238.jpg",
+          "item_id": "B07DBK2P2G",
+          "product_type": "LAMP",
+          "product_type_readable": "lamp",
+          "source": "hyper3labs/amazon-berkeley-objects",
+          "style": "Modern",
+          "title": "Amazon Brand \u2013 Ravenna Home Modern Round Table Lamp With LED Light Bulb - 17.50 Inches, Chrome with Blue Glass"
+        },
+        "modality": "image",
+        "text": null,
+        "thumbnail": null,
+        "thumbnail_url": "/api/samples/B07DBK2P2G_41TnBzn9tFL/thumbnail",
+        "width": null
+      },
+      "sample_id": "B07DBK2P2G_41TnBzn9tFL",
+      "score": null
+    },
+    {
+      "rank": 4,
+      "sample": {
+        "duration_s": null,
+        "filename": "B07HKF59YX_41yzx8pNH6L.jpg",
+        "height": null,
+        "id": "B07HKF59YX_41yzx8pNH6L",
+        "label": "LAMP",
+        "media_type": null,
+        "media_url": "/api/samples/B07HKF59YX_41yzx8pNH6L/content",
+        "metadata": {
+          "brand": "Stone & Beam",
+          "color": "Matte Black and Antique Brass",
+          "country": "US",
+          "department": "Lighting & Ceiling Fans",
+          "hierarchy": "Lighting & Ceiling Fans -> lamp",
+          "image_id": "41yzx8pNH6L",
+          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/82/82255360.jpg",
+          "item_id": "B07HKF59YX",
+          "product_type": "LAMP",
+          "product_type_readable": "lamp",
+          "source": "hyper3labs/amazon-berkeley-objects",
+          "style": "Floor Lamp with Shade",
+          "title": "Amazon Brand \u2013 Stone & Beam Mid-Century Modern Henley Living Room Standing Floor Lamp with LED Light Bulb - 15 x 15 x 58 Inches, Matte Black and Antique Brass"
+        },
+        "modality": "image",
+        "text": null,
+        "thumbnail": null,
+        "thumbnail_url": "/api/samples/B07HKF59YX_41yzx8pNH6L/thumbnail",
+        "width": null
+      },
+      "sample_id": "B07HKF59YX_41yzx8pNH6L",
+      "score": null
+    },
+    {
+      "rank": 5,
+      "sample": {
+        "duration_s": null,
+        "filename": "B07DT153M1_418DZS6SpTL.jpg",
+        "height": null,
+        "id": "B07DT153M1_418DZS6SpTL",
+        "label": "LAMP",
+        "media_type": null,
+        "media_url": "/api/samples/B07DT153M1_418DZS6SpTL/content",
+        "metadata": {
+          "brand": "Stone & Beam",
+          "color": "Matte Black",
+          "country": "US",
+          "department": "Lighting & Ceiling Fans",
+          "hierarchy": "Lighting & Ceiling Fans -> lamp",
+          "image_id": "418DZS6SpTL",
+          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/61/6138372f.jpg",
+          "item_id": "B07DT153M1",
+          "product_type": "LAMP",
+          "product_type_readable": "lamp",
+          "source": "hyper3labs/amazon-berkeley-objects",
+          "style": "Floor Lamp",
+          "title": "Amazon Brand \u2013 Stone & Beam Modern Farmhouse Wood Base Adjustable Living Room Floor Lamp With LED Light Bulb And White Shade- 16 x 16 x 66.25 Inches, Black"
+        },
+        "modality": "image",
+        "text": null,
+        "thumbnail": null,
+        "thumbnail_url": "/api/samples/B07DT153M1_418DZS6SpTL/thumbnail",
+        "width": null
+      },
+      "sample_id": "B07DT153M1_418DZS6SpTL",
+      "score": null
+    }
+  ],
+  "limit": 6,
+  "offset": 0,
+  "total": 6
+}
