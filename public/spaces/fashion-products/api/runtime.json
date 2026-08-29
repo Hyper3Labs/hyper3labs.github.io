@@ -155,7 +155,7 @@
       "title": "Embeddings"
     }
   ],
-  "runtime_id": "bf93ab4ab947481cb683cec9fa430df0",
+  "runtime_id": "328808ca33c94291ac5a9be965966f55",
   "tools": [],
   "version": 1,
   "workspace": {
@@ -167,6 +167,22 @@
         "id": "all:bf21a9e8fbc5",
         "kind": "all",
         "query": {},
+        "scores": null
+      },
+      {
+        "created_at": 1787958058,
+        "dataset_id": "deepfashion_text_search_clip_hyper3clip",
+        "entity_set_id": "samples",
+        "id": "search:faa3d82ea546",
+        "kind": "search",
+        "query": {
+          "indexId": "space:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
+          "k": 18,
+          "layoutId": "embed-anything__openai_clip-vit-base-patch32__4771034973d8__euclidean_umap__2d_1a6bcbc4",
+          "queryText": "olive green wide-leg trousers",
+          "source": "samples-panel",
+          "spaceKey": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
+        },
         "scores": null
       },
       {
@@ -333,7 +349,7 @@
           "reference_panel_id": null,
           "renderer": "native:samples",
           "source": "shipped",
-          "state_revision": 190,
+          "state_revision": 191,
           "title": "Hyper3-CLIP \u00b7 Product matches",
           "visible": true,
           "width": null
@@ -813,35 +829,37 @@
         "samples": {
           "state": {
             "collection": {
-              "created_at": 1787956932,
+              "created_at": 1787958058,
               "dataset_id": "deepfashion_text_search_clip_hyper3clip",
               "entity_set_id": "samples",
-              "id": "selection:8d3f1c3ed208",
-              "kind": "selection",
+              "id": "search:faa3d82ea546",
+              "kind": "search",
               "query": {
-                "ids": [
-                  "fashion-evidence-photo-patterned-romper-hyper3-01",
-                  "fashion-evidence-photo-patterned-romper-hyper3-02",
-                  "fashion-evidence-photo-patterned-romper-hyper3-03",
-                  "fashion-evidence-photo-patterned-romper-hyper3-04",
-                  "fashion-evidence-photo-patterned-romper-hyper3-05",
-                  "fashion-evidence-photo-patterned-romper-hyper3-06"
-                ],
-                "source": "Patterned romper \u00b7 Hyper3-CLIP \u00b7 Top 6"
+                "indexId": "space:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
+                "k": 18,
+                "layoutId": "embed-anything__openai_clip-vit-base-patch32__4771034973d8__euclidean_umap__2d_1a6bcbc4",
+                "queryText": "olive green wide-leg trousers",
+                "source": "samples-panel",
+                "spaceKey": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
               },
               "scores": null
             },
-            "collection_id": "selection:8d3f1c3ed208",
+            "collection_id": "search:faa3d82ea546",
             "focus_request": null,
-            "mode": "collection",
-            "retrieval": null
+            "mode": "retrieval",
+            "retrieval": {
+              "index_id": "space:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
+              "k": 18,
+              "layout_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8__euclidean_umap__2d_1a6bcbc4",
+              "query_text": "olive green wide-leg trousers",
+              "source": "samples-panel",
+              "space_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
+            }
           },
-          "state_revision": 190
+          "state_revision": 191
         }
       },
-      "selected_ids": [
-        "WOMEN_Rompers_Jumpsuits_id_00000076_01_7_additional"
-      ],
+      "selected_ids": [],
       "view_revision": 24
     }
   },

@@ -2,6 +2,12 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "shared-views-review",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-matin-hyperview-org-business-development/43a5cd9e-e73f-44f1-88d4-e37a8cfa0515/scratchpad/serve_static.py", "3002", "out"],
+      "port": 3002
+    },
+    {
       "name": "hyper3labs-site",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],

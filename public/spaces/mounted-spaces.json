@@ -29,16 +29,16 @@
       }
     },
     {
-      "bundle_bytes": 14095736,
+      "bundle_bytes": 14134911,
       "live_space_id": "hyper3labs/HyperView-DeepFashion-Text-Search",
       "live_url": "https://hyper3labs-hyperview-deepfashion-text-search.hf.space",
       "mount_path": "/spaces/fashion-products",
-      "num_files": 1608,
+      "num_files": 1610,
       "slug": "fashion-products",
       "source": "shared-views/fashion-products",
       "workspace": {
         "dataset_name": "deepfashion_text_search_clip_hyper3clip",
-        "fingerprint": "1d5a25c10a991cd1200b1c28ad7b7b6b023a633fead21a3a26471c8e6b186f2e",
+        "fingerprint": "437dcc21933500528fc086299e2d4b6ca7c632ccbde373360863322255844637",
         "id": "fashion-typed-search-business-evidence-v3"
       }
     },
