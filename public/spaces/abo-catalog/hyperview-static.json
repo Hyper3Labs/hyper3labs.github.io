@@ -4,7 +4,7 @@
     "embeddings": "api/embeddings/default.json",
     "runtime": "api/runtime.json",
     "samples": "api/samples/index.json",
-    "similarity": null
+    "similarity": "api/search/similar/index.json"
   },
   "capabilities": {
     "browse_samples": true,
@@ -52,12 +52,12 @@
     ],
     "python_tools": false,
     "runtime_mutations": false,
-    "sample_similarity": false,
+    "sample_similarity": true,
     "selection": true,
-    "similarity_k": 0,
+    "similarity_k": 10,
     "text_search": false
   },
-  "created_at": "2026-08-23T09:59:46.014470+00:00",
+  "created_at": "2026-08-28T22:45:16.918414+00:00",
   "deployment": {
     "cloudflare": null,
     "hosting": {

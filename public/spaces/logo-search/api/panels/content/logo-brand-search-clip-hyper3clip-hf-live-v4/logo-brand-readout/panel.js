@@ -13,6 +13,10 @@ function orderedIds(item, modelKey) {
 function visibleTargetIds(item, modelKey) {
   return (item?.results?.[modelKey] || []).some((result) => result.isTarget) ? [item.target.sampleId] : [];
 }
+function percentage(value) {
+  const parsed = Number.parseFloat(String(value ?? ""));
+  return Number.isFinite(parsed) ? parsed : null;
+}
 export default function LogoBriefDesk() {
   const { props = {}, state = {}, patchState } = usePanelState();
   const { showResults, resetResults } = useSampleResults();
@@ -48,6 +52,9 @@ export default function LogoBriefDesk() {
   }
   const rank = activeModelKey === "hyper3" ? active.target.hyper3Rank : active.target.clipRank;
   const aggregate = props.aggregate || {};
+  const hyper3Hit1 = percentage(aggregate.hyper3Hit1);
+  const clipHit1 = percentage(aggregate.clipHit1);
+  const firstRankRatio = hyper3Hit1 !== null && clipHit1 !== null && clipHit1 > 0 ? (hyper3Hit1 / clipHit1).toFixed(1) : null;
   return /* @__PURE__ */ React.createElement("main", { className: "lb-root" }, /* @__PURE__ */ React.createElement("style", null, `
         .lb-root,.lb-root *{box-sizing:border-box}
         .lb-root{height:100%;overflow:auto;padding:12px 13px;background:var(--hv-color-background);color:var(--hv-color-foreground);font:11px/1.45 system-ui,-apple-system,BlinkMacSystemFont,sans-serif}
@@ -142,5 +149,5 @@ export default function LogoBriefDesk() {
     "Browse all ",
     sampleCount,
     " logos"
-  )), /* @__PURE__ */ React.createElement("p", { className: "lb-note" }, "The map shows visual and style families across all ", sampleCount, " logos."), /* @__PURE__ */ React.createElement("section", { className: "lb-benchmark", "aria-label": "Full benchmark results" }, /* @__PURE__ */ React.createElement("span", { className: "lb-kicker" }, "Full benchmark"), /* @__PURE__ */ React.createElement("h3", null, "Across all ", aggregate.queryCount || 160, " logo briefs"), /* @__PURE__ */ React.createElement("table", { className: "lb-table" }, /* @__PURE__ */ React.createElement("thead", null, /* @__PURE__ */ React.createElement("tr", null, /* @__PURE__ */ React.createElement("th", null, "Exact logo found"), /* @__PURE__ */ React.createElement("th", { style: { color: "#60a5fa" } }, "Hyper3"), /* @__PURE__ */ React.createElement("th", { style: { color: "#f59e0b" } }, "CLIP"))), /* @__PURE__ */ React.createElement("tbody", null, /* @__PURE__ */ React.createElement("tr", null, /* @__PURE__ */ React.createElement("td", null, "Ranked first"), /* @__PURE__ */ React.createElement("td", null, aggregate.hyper3Hit1, " (", aggregate.hyper3Hit1Count, ")"), /* @__PURE__ */ React.createElement("td", null, aggregate.clipHit1, " (", aggregate.clipHit1Count, ")")), /* @__PURE__ */ React.createElement("tr", null, /* @__PURE__ */ React.createElement("td", null, "Within top five"), /* @__PURE__ */ React.createElement("td", null, aggregate.hyper3Hit5, " (", aggregate.hyper3Hit5Count, ")"), /* @__PURE__ */ React.createElement("td", null, aggregate.clipHit5, " (", aggregate.clipHit5Count, ")")))), /* @__PURE__ */ React.createElement("p", { className: "lb-table-note" }, "Each brief searches the same 160-logo catalog. Mean reciprocal rank improves by ", aggregate.mrrDelta, ".")), /* @__PURE__ */ React.createElement("p", { className: "lb-footer" }, props.claim), error ? /* @__PURE__ */ React.createElement("p", { className: "lb-error", role: "alert" }, error) : null);
+  )), /* @__PURE__ */ React.createElement("p", { className: "lb-note" }, "The map shows visual and style families across all ", sampleCount, " logos."), /* @__PURE__ */ React.createElement("section", { className: "lb-benchmark", "aria-label": "Full benchmark results" }, /* @__PURE__ */ React.createElement("span", { className: "lb-kicker" }, "Full benchmark"), /* @__PURE__ */ React.createElement("h3", null, firstRankRatio ? `Hyper3 ranks the exact logo first ${firstRankRatio}\xD7 as often` : "How often does the exact logo reach the first screen?"), /* @__PURE__ */ React.createElement("table", { className: "lb-table" }, /* @__PURE__ */ React.createElement("thead", null, /* @__PURE__ */ React.createElement("tr", null, /* @__PURE__ */ React.createElement("th", null, "Exact logo found"), /* @__PURE__ */ React.createElement("th", { style: { color: "#60a5fa" } }, "Hyper3"), /* @__PURE__ */ React.createElement("th", { style: { color: "#f59e0b" } }, "CLIP"))), /* @__PURE__ */ React.createElement("tbody", null, /* @__PURE__ */ React.createElement("tr", null, /* @__PURE__ */ React.createElement("td", null, "Ranked first"), /* @__PURE__ */ React.createElement("td", null, aggregate.hyper3Hit1, " (", aggregate.hyper3Hit1Count, ")"), /* @__PURE__ */ React.createElement("td", null, aggregate.clipHit1, " (", aggregate.clipHit1Count, ")")), /* @__PURE__ */ React.createElement("tr", null, /* @__PURE__ */ React.createElement("td", null, "Within top five"), /* @__PURE__ */ React.createElement("td", null, aggregate.hyper3Hit5, " (", aggregate.hyper3Hit5Count, ")"), /* @__PURE__ */ React.createElement("td", null, aggregate.clipHit5, " (", aggregate.clipHit5Count, ")")))), /* @__PURE__ */ React.createElement("p", { className: "lb-table-note" }, "Across ", aggregate.queryCount || 160, " briefs, each searching the same 160-logo catalog. Mean reciprocal rank improves by ", aggregate.mrrDelta, ".")), /* @__PURE__ */ React.createElement("p", { className: "lb-footer" }, props.claim), error ? /* @__PURE__ */ React.createElement("p", { className: "lb-error", role: "alert" }, error) : null);
 }

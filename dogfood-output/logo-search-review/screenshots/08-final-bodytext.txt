@@ -1,0 +1,80 @@
+View
+logo_brand_search_clip_hyper3clip_hf_live_v4
+Shared Space
+Top 5 of 160 logos
+Logo style map · Hyper3 multimodal
+Source
+Hyper3-CLIP · Barber Franchise Mark · Top 5 of 160 logos
+Samples
+5
+#1
+Barbershop Hair Salon
+#2
+Flower Store
+#3
+Flower Store
+#4
+Flower Store
+#5
+Barbershop Hair Salon
+Creative brief desk
+CREATIVE BRIEF RETRIEVAL
+Which logos make the first review screen?
+
+Choose a brief, compare the shortlist, and inspect the catalog’s style coverage.
+
+BRIEF 01 · BARBER
+Barber Franchise Mark
+Exact target: H3 #1 · CLIP #30
+BRIEF 02 · FLORAL
+Floral Retail Identity
+Exact target: H3 #1 · CLIP #29
+BRIEF 03 · CONSTRUCTION
+Construction Brand System
+Exact target: H3 #2 · CLIP #17
+BRIEF 04 · HOSPITALITY
+Hospitality Bar Concept
+Exact target: H3 #1 · CLIP #17
+CREATIVE BRIEF
+CATEGORY
+Barbershop / hair salon
+MOTIF
+Vertical scissors with a flower ring
+COMPOSITION
+Arch, two-line inscription, symmetrical leaves
+PALETTE
+Black on white / whitesmoke
+STYLE
+Minimal, modern
+
+Franchise and agency teams can retrieve the exact grooming concept by described symbols, not filename tags.
+
+Original catalog caption
+Hyper3-CLIP v0.5
+#1
+exact asset rank · top 5 of 160 logos
+
+Exact asset at #1; motif and arch composition survive the first-screen cutoff.
+
+OpenAI CLIP ViT-B/32
+#30
+exact asset rank · top 5 of 160 logos
+
+Category is right, but the flower-ring and leaf-arch composition are absent; exact asset first appears at #30.
+
+Hyper3-CLIP v0.5 result set
+Exact target rank #1 of 160. The target is marked in the shortlist.
+Show exact target
+Browse all 160 logos
+
+The map shows visual and style families across all 160 logos.
+
+FULL BENCHMARK
+Across all 160 logo briefs
+EXACT LOGO FOUND	HYPER3	CLIP
+Ranked first	35.6% (57)	16.3% (26)
+Within top five	73.1% (117)	48.8% (78)
+
+Each brief searches the same 160-logo catalog. Mean reciprocal rank improves by +0.207.
+
+Four curated wins illustrate retrieval behavior. The aggregate covers all 160 paired captions; this synthetic/curated probe is not a production DAM or trademark benchmark.

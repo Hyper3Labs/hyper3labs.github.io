@@ -1,11 +1,11 @@
 {
   "spaces": [
     {
-      "bundle_bytes": 9166851,
+      "bundle_bytes": 12373483,
       "live_space_id": "hyper3labs/HyperView-ABO-Catalog",
       "live_url": "https://hyper3labs-hyperview-abo-catalog.hf.space",
       "mount_path": "/spaces/abo-catalog",
-      "num_files": 1117,
+      "num_files": 1148,
       "slug": "abo-catalog",
       "source": "shared-views/abo-catalog",
       "workspace": {
@@ -15,7 +15,7 @@
       }
     },
     {
-      "bundle_bytes": 3238981,
+      "bundle_bytes": 3240657,
       "live_space_id": null,
       "live_url": null,
       "mount_path": "/spaces/precision-regions",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "bundle_bytes": 14093946,
+      "bundle_bytes": 14095736,
       "live_space_id": "hyper3labs/HyperView-DeepFashion-Text-Search",
       "live_url": "https://hyper3labs-hyperview-deepfashion-text-search.hf.space",
       "mount_path": "/spaces/fashion-products",
@@ -38,12 +38,12 @@
       "source": "shared-views/fashion-products",
       "workspace": {
         "dataset_name": "deepfashion_text_search_clip_hyper3clip",
-        "fingerprint": "fd2de6d89e6fe2ca1931c60a29b642383746738ff9e8674f9450cdc87200a6cf",
+        "fingerprint": "1d5a25c10a991cd1200b1c28ad7b7b6b023a633fead21a3a26471c8e6b186f2e",
         "id": "fashion-typed-search-business-evidence-v3"
       }
     },
     {
-      "bundle_bytes": 7626946,
+      "bundle_bytes": 7629120,
       "live_space_id": "mnm-matin/HyperView-Logo-Brand-Search",
       "live_url": "https://mnm-matin-hyperview-logo-brand-search.hf.space",
       "mount_path": "/spaces/logo-search",
@@ -52,12 +52,12 @@
       "source": "shared-views/logo-search",
       "workspace": {
         "dataset_name": "logo_brand_search_clip_hyper3clip_hf_live_v4",
-        "fingerprint": "d202c2aef3c6a48f86e3d3cab245677190a764694cb2b091b4d65bd502ac3eb5",
+        "fingerprint": "bdf75d586201cb279fedf3918fa3194212746728901a9783a9c4e4fea9a49981",
         "id": "logo-brand-search-clip-hyper3clip-hf-live-v4"
       }
     },
     {
-      "bundle_bytes": 3196664,
+      "bundle_bytes": 3198037,
       "live_space_id": "mnm-matin/HyperView-EuroSAT-Geospatial",
       "live_url": "https://mnm-matin-hyperview-eurosat-geospatial.hf.space",
       "mount_path": "/spaces/geospatial",
@@ -66,12 +66,12 @@
       "source": "shared-views/geospatial",
       "workspace": {
         "dataset_name": "resisc45_clip_hyper3clip_curated_side_by_side",
-        "fingerprint": "342cfa5f5eb51fd4975d9bff81c5f34dd6c105508dcf22598b55b49bfe45ba9d",
+        "fingerprint": "8f906b068d1862616aec6a57d74b258437852d53da2a55cf269d0e098db4d153",
         "id": "geospatial-resisc45-retrieval-evidence-v2"
       }
     },
     {
-      "bundle_bytes": 15526061,
+      "bundle_bytes": 15527737,
       "live_space_id": "mnm-matin/HyperView-Visual-Safety",
       "live_url": "https://mnm-matin-hyperview-visual-safety.hf.space",
       "mount_path": "/spaces/visual-safety",

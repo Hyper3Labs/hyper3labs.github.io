@@ -155,7 +155,7 @@
       "title": "Embeddings"
     }
   ],
-  "runtime_id": "6d4166ffd4a94fceb8054b9532c90601",
+  "runtime_id": "82437f5d17cb407f8abbc15a505e0cb3",
   "tools": [],
   "version": 1,
   "workspace": {
@@ -296,7 +296,7 @@
           "renderer": "native:scatter",
           "source": "shipped",
           "state_revision": 0,
-          "title": "Archive topology \u00b7 Hyper3 multimodal",
+          "title": "Archive map \u00b7 Hyper3-CLIP",
           "visible": true,
           "width": null
         },
@@ -420,7 +420,7 @@
           "renderer": "native:scatter",
           "source": "shipped",
           "state_revision": 0,
-          "title": "Archive topology \u00b7 CLIP multimodal",
+          "title": "Archive map \u00b7 OpenAI CLIP",
           "visible": true,
           "width": null
         },
@@ -646,7 +646,7 @@
                 "kind": "Airport",
                 "models": {
                   "clip": {
-                    "consequence": "Stronger exact airport hits and broader transport-parent coverage on this prepared probe.",
+                    "consequence": "Stronger exact airport hits and broader transport-parent coverage on this example.",
                     "exactHits": 4,
                     "layoutKey": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c__euclidean_umap__2d_1a6bcbc4",
                     "offGroupHits": 3,
@@ -698,13 +698,13 @@
                 "geometry": "euclidean",
                 "layoutKey": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c__euclidean_umap__2d_1a6bcbc4",
                 "spaceKey": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c",
-                "title": "CLIP multimodal topology"
+                "title": "CLIP archive map"
               },
               "hyper3": {
                 "geometry": "poincare",
                 "layoutKey": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
                 "spaceKey": "hyper-models__hyper3-clip-v0_5__42052c955756",
-                "title": "Hyper3 multimodal topology"
+                "title": "Hyper3 archive map"
               }
             },
             "models": {
@@ -745,7 +745,7 @@
       ],
       "has_explicit_view": true,
       "layout": null,
-      "layout_revision": 11,
+      "layout_revision": 13,
       "layout_views": {},
       "panels": {
         "clip-neighbours": {
@@ -788,7 +788,7 @@
       "selected_ids": [
         "resisc45_airplane_119"
       ],
-      "view_revision": 23
+      "view_revision": 25
     }
   },
   "workspaces": [

@@ -45,7 +45,7 @@
     "similarity_k": 0,
     "text_search": false
   },
-  "created_at": "2026-08-23T09:59:50.052683+00:00",
+  "created_at": "2026-08-28T22:51:30.706806+00:00",
   "deployment": {
     "cloudflare": null,
     "hosting": {
@@ -62,7 +62,7 @@
   "warnings": [],
   "workspace": {
     "dataset_name": "deepfashion_text_search_clip_hyper3clip",
-    "fingerprint": "fd2de6d89e6fe2ca1931c60a29b642383746738ff9e8674f9450cdc87200a6cf",
+    "fingerprint": "1d5a25c10a991cd1200b1c28ad7b7b6b023a633fead21a3a26471c8e6b186f2e",
     "id": "fashion-typed-search-business-evidence-v3"
   }
 }

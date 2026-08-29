@@ -1,0 +1,116 @@
+- alert
+- banner:
+  - button "View":
+    - text: View
+  - generic "logo_brand_search_clip_hyper3clip_hf_live_v4":
+    - generic: logo_brand_search_clip_hyper3clip_hf_live_v4
+  - generic "This Shared Space is an interactive, read-only snapshot": Shared Space
+  - link "View on GitHub":
+    - /url: https://github.com/Hyper3Labs/HyperView
+  - link "Join our Discord community":
+    - /url: https://discord.gg/Za3rBkTPSf
+  - button "Toggle labels panel":
+  - button "Toggle bottom panel":
+  - button "Toggle right panel":
+  - button "Application settings":
+- generic: Top 5 of 160 logos
+- generic: Logo style map · Hyper3 multimodal
+- button "Open copy to the right":
+- generic: Source
+- generic "Hyper3-CLIP · Barber Franchise Mark · Top 5 of 160 logos"
+- generic: Samples
+- generic "5"
+- button "Sample panel settings":
+- button "Select logo_0132.jpg" [pressed]:
+  - img "logo_0132.jpg"
+  - generic "Prepared result rank 1.": "#1"
+  - generic: Barbershop Hair Salon
+- button "Select logo_0048.jpg":
+  - img "logo_0048.jpg"
+  - generic "Prepared result rank 2.": "#2"
+  - generic: Flower Store
+- button "Select logo_0068.jpg":
+  - img "logo_0068.jpg"
+  - generic "Prepared result rank 3.": "#3"
+  - generic: Flower Store
+- button "Select logo_0040.jpg":
+  - img "logo_0040.jpg"
+  - generic "Prepared result rank 4.": "#4"
+  - generic: Flower Store
+- button "Select logo_0120.jpg":
+  - img "logo_0120.jpg"
+  - generic "Prepared result rank 5.": "#5"
+  - generic: Barbershop Hair Salon
+- generic: Creative brief desk
+- button "Open copy to the right":
+- main:
+  - generic: Creative brief retrieval
+  - heading "Which logos make the first review screen?" [level=2]
+  - paragraph: Choose a brief, compare the shortlist, and inspect the catalog’s style coverage.
+  - navigation "Creative briefs":
+    - 'button "Brief 01 · Barber Barber Franchise Mark Exact target: H3 #1 · CLIP #30" [pressed]':
+      - generic: Brief 01 · Barber
+      - strong: Barber Franchise Mark
+      - generic: "Exact target: H3 #1 · CLIP #30"
+    - 'button "Brief 02 · Floral Floral Retail Identity Exact target: H3 #1 · CLIP #29"':
+      - generic: Brief 02 · Floral
+      - strong: Floral Retail Identity
+      - generic: "Exact target: H3 #1 · CLIP #29"
+    - 'button "Brief 03 · Construction Construction Brand System Exact target: H3 #2 · CLIP #17"':
+      - generic: Brief 03 · Construction
+      - strong: Construction Brand System
+      - generic: "Exact target: H3 #2 · CLIP #17"
+    - 'button "Brief 04 · Hospitality Hospitality Bar Concept Exact target: H3 #1 · CLIP #17"':
+      - generic: Brief 04 · Hospitality
+      - strong: Hospitality Bar Concept
+      - generic: "Exact target: H3 #1 · CLIP #17"
+  - generic: Creative brief
+  - generic "Brief attributes":
+    - term: Category
+    - definition: Barbershop / hair salon
+    - term: Motif
+    - definition: Vertical scissors with a flower ring
+    - term: Composition
+    - definition: Arch, two-line inscription, symmetrical leaves
+    - term: Palette
+    - definition: Black on white / whitesmoke
+    - term: Style
+    - definition: Minimal, modern
+  - paragraph: Franchise and agency teams can retrieve the exact grooming concept by described symbols, not filename tags.
+  - generic "Original catalog caption"
+  - region "Model result sets":
+    - 'button "Hyper3-CLIP v0.5 #1 exact asset rank · top 5 of 160 logos Exact asset at #1; motif and arch composition survive the first-screen cutoff."':
+      - generic: Hyper3-CLIP v0.5
+      - strong: "#1"
+      - generic: exact asset rank · top 5 of 160 logos
+      - paragraph: "Exact asset at #1; motif and arch composition survive the first-screen cutoff."
+    - 'button "OpenAI CLIP ViT-B/32 #30 exact asset rank · top 5 of 160 logos Category is right, but the flower-ring and leaf-arch composition are absent; exact asset first appears at #30."':
+      - generic: OpenAI CLIP ViT-B/32
+      - strong: "#30"
+      - generic: exact asset rank · top 5 of 160 logos
+      - paragraph: "Category is right, but the flower-ring and leaf-arch composition are absent; exact asset first appears at #30."
+  - strong: Hyper3-CLIP v0.5 result set
+  - text: "Exact target rank #1 of 160. The target is marked in the shortlist."
+  - button "Show exact target"
+  - button "Browse all 160 logos"
+  - paragraph: The map shows visual and style families across all 160 logos.
+  - region "Full benchmark results":
+    - generic: Full benchmark
+    - heading "Across all 160 logo briefs" [level=3]
+    - table:
+      - rowgroup:
+        - row "Exact logo found Hyper3 CLIP":
+          - columnheader "Exact logo found"
+          - columnheader "Hyper3"
+          - columnheader "CLIP"
+      - rowgroup:
+        - row "Ranked first 35.6% (57) 16.3% (26)":
+          - cell "Ranked first"
+          - cell "35.6% (57)"
+          - cell "16.3% (26)"
+        - row "Within top five 73.1% (117) 48.8% (78)":
+          - cell "Within top five"
+          - cell "73.1% (117)"
+          - cell "48.8% (78)"
+    - paragraph: Each brief searches the same 160-logo catalog. Mean reciprocal rank improves by +0.207.
+  - paragraph: Four curated wins illustrate retrieval behavior. The aggregate covers all 160 paired captions; this synthetic/curated probe is not a production DAM or trademark benchmark.

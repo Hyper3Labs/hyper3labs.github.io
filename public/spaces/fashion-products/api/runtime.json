@@ -155,13 +155,13 @@
       "title": "Embeddings"
     }
   ],
-  "runtime_id": "2fb88a0dee7242c7a9ec72d034b93241",
+  "runtime_id": "bf93ab4ab947481cb683cec9fa430df0",
   "tools": [],
   "version": 1,
   "workspace": {
     "collections": [
       {
-        "created_at": 1787265161,
+        "created_at": 1787956929,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "all:bf21a9e8fbc5",
@@ -170,7 +170,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265159,
+        "created_at": 1787956925,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:0fb56bf806aa",
@@ -189,7 +189,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265160,
+        "created_at": 1787956926,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:243832bc3176",
@@ -208,7 +208,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265158,
+        "created_at": 1787956922,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:52fa8679928a",
@@ -227,7 +227,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265161,
+        "created_at": 1787956932,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:8d3f1c3ed208",
@@ -246,7 +246,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265160,
+        "created_at": 1787956928,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:bdde175d223e",
@@ -265,7 +265,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265159,
+        "created_at": 1787956923,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:e9a3f545c05a",
@@ -333,8 +333,8 @@
           "reference_panel_id": null,
           "renderer": "native:samples",
           "source": "shipped",
-          "state_revision": 162,
-          "title": "Product search \u00b7 Hyper3 prepared",
+          "state_revision": 190,
+          "title": "Hyper3-CLIP \u00b7 Product matches",
           "visible": true,
           "width": null
         },
@@ -784,7 +784,7 @@
       ],
       "has_explicit_view": true,
       "layout": null,
-      "layout_revision": 15,
+      "layout_revision": 16,
       "layout_views": {},
       "panels": {
         "fashion-clip-results": {
@@ -813,7 +813,7 @@
         "samples": {
           "state": {
             "collection": {
-              "created_at": 1787265161,
+              "created_at": 1787956932,
               "dataset_id": "deepfashion_text_search_clip_hyper3clip",
               "entity_set_id": "samples",
               "id": "selection:8d3f1c3ed208",
@@ -836,13 +836,13 @@
             "mode": "collection",
             "retrieval": null
           },
-          "state_revision": 162
+          "state_revision": 190
         }
       },
       "selected_ids": [
         "WOMEN_Rompers_Jumpsuits_id_00000076_01_7_additional"
       ],
-      "view_revision": 23
+      "view_revision": 24
     }
   },
   "workspaces": [
