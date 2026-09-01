@@ -14,6 +14,14 @@ export type HyperViewSpace = {
   description: string;
   preview: string;
   viewerUrl: string;
+  /**
+   * Only set this for a Space that is currently serving. Every entry here
+   * renders a "Live Space" button, and a visitor who clicks through to a paused
+   * or crashed Space reads that as the product being broken -- the Shared View
+   * next to it works perfectly and gets judged by the same click. Confirm with
+   * `scripts/monitor_spaces.py` in the hyperview-spaces repo before adding one
+   * back; a Space that only sleeps still wakes on visit and may stay listed.
+   */
   liveSpaceUrl?: string;
 };
 
@@ -36,7 +44,7 @@ export const HYPERVIEW_SPACES: HyperViewSpace[] = [
     description: 'Compare text-to-product and image-neighbour retrieval across two model spaces.',
     preview: '/spaces/previews/abo-catalog.png',
     viewerUrl: '/spaces/abo-catalog/',
-    liveSpaceUrl: 'https://hyper3labs-hyperview-abo-catalog.hf.space',
+    // hyper3labs/HyperView-ABO-Catalog is PAUSED.
   },
   {
     slug: 'precision-regions',
@@ -59,7 +67,9 @@ export const HYPERVIEW_SPACES: HyperViewSpace[] = [
     description: 'Compare same-product photo matching and typed shopper searches across two models.',
     preview: '/spaces/previews/fashion-products.png',
     viewerUrl: '/spaces/fashion-products/',
-    liveSpaceUrl: 'https://hyper3labs-hyperview-deepfashion-text-search.hf.space',
+    // hyper3labs/HyperView-DeepFashion-Text-Search is in RUNTIME_ERROR. This is
+    // the demo intended to come back as the one live typed-search Space; relink
+    // it once it is redeployed on hyperview 1.0.0 and answering health checks.
   },
   {
     slug: 'logo-search',
