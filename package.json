@@ -12,6 +12,7 @@
     "sync:spaces": "uv run --project ../HyperView python scripts/mount-hyperview-spaces.py",
     "build:combined": "npm run sync:spaces && npm run build",
     "preview:combined": "python3 -m http.server 3001 --directory out",
+    "previews:capture": "node scripts/capture-space-previews.mjs",
     "start": "next start",
     "lint": "next lint",
     "export": "next build",

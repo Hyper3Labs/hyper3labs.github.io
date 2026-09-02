@@ -25,6 +25,11 @@ Open [http://localhost:3001/spaces/](http://localhost:3001/spaces/). The
 mounting step copies the reviewed Space bundles from the sibling HyperView
 repository and rebases them for their final paths.
 
+With that preview server running, `npm run previews:capture -- --base
+http://localhost:3001` rescreenshots the six Space preview cards in
+`public/spaces/previews/` (`scripts/capture-space-previews.mjs`; it borrows
+Playwright from the sibling HyperView checkout).
+
 ## Build & Deploy
 
 ```bash
