@@ -39,24 +39,26 @@
     "similarity_k": 0,
     "text_search": false
   },
-  "created_at": "2026-08-29T23:25:51.483380+00:00",
+  "created_at": "2026-09-02T10:26:53.449806+00:00",
   "deployment": {
-    "cloudflare": null,
-    "hosting": {
-      "copy_contents_to": "spaces/precision-regions",
-      "mode": "path-mounted-static-assets"
+    "cloudflare": {
+      "command": "npx wrangler deploy --config wrangler.jsonc",
+      "config": "wrangler.jsonc",
+      "mode": "static-assets-only",
+      "worker_name": "hyperview-precision-region-search-business-evidence-v3"
     },
-    "mount_path": "/spaces/precision-regions"
+    "hosting": {
+      "mode": "static-assets"
+    }
   },
-  "hyperview_version": "0.6.3.dev19+g3ab84f8d9.d20260820",
+  "hyperview_version": "1.0.1.dev0+ge71a6b37f.d20260902",
   "kind": "hyperview-static-space",
-  "mount_path": "/spaces/precision-regions",
   "schema_version": 1,
   "static": true,
   "warnings": [],
   "workspace": {
     "dataset_name": "refcocog_text_region_evidence_v3",
-    "fingerprint": "d6ece4c946751e893908429c2e5622bb6a1f46cd616be4a60a47e226709d4ac2",
+    "fingerprint": "ad6ebacca744d1c01c13c91804c4d1e0e4f9e1e69c86d4c4ce72e89450f1804e",
     "id": "precision-region-search-business-evidence-v3"
   }
 }

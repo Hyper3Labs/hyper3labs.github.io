@@ -83,13 +83,13 @@
       "title": "Samples"
     }
   ],
-  "runtime_id": "df14686d43414be6a5b28fa19b9de458",
+  "runtime_id": "c8c3f4e0d2094cdeba3d97bec0adead6",
   "tools": [],
   "version": 1,
   "workspace": {
     "collections": [
       {
-        "created_at": 1787266777,
+        "created_at": 1788280214,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "all:bf21a9e8fbc5",
@@ -98,7 +98,7 @@
         "scores": null
       },
       {
-        "created_at": 1787266776,
+        "created_at": 1788280213,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:02d17fa2f043",
@@ -116,7 +116,7 @@
         "scores": null
       },
       {
-        "created_at": 1787266776,
+        "created_at": 1788280213,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:1b93f76781c4",
@@ -134,7 +134,43 @@
         "scores": null
       },
       {
-        "created_at": 1787266777,
+        "created_at": 1788280214,
+        "dataset_id": "refcocog_text_region_evidence_v3",
+        "entity_set_id": "samples",
+        "id": "selection:2033ffc1cd10",
+        "kind": "selection",
+        "query": {
+          "ids": [
+            "precision-bench-target",
+            "precision-bench-clip-02",
+            "precision-bench-clip-03",
+            "precision-bench-clip-04",
+            "precision-bench-clip-05"
+          ],
+          "source": "Empty bench seat \u00b7 openai/clip-vit-base-patch32 \u00b7 Top 5"
+        },
+        "scores": null
+      },
+      {
+        "created_at": 1788280214,
+        "dataset_id": "refcocog_text_region_evidence_v3",
+        "entity_set_id": "samples",
+        "id": "selection:5830ea2abca4",
+        "kind": "selection",
+        "query": {
+          "ids": [
+            "precision-bench-hyper3-01",
+            "precision-bench-hyper3-02",
+            "precision-bench-hyper3-03",
+            "precision-bench-hyper3-04",
+            "precision-bench-hyper3-05"
+          ],
+          "source": "Empty bench seat \u00b7 hyper3-clip-v0.5 \u00b7 Top 5"
+        },
+        "scores": null
+      },
+      {
+        "created_at": 1788280214,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:98a6065d3255",
@@ -152,7 +188,7 @@
         "scores": null
       },
       {
-        "created_at": 1787266777,
+        "created_at": 1788280215,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:ba1b4d715faa",
@@ -170,7 +206,7 @@
         "scores": null
       },
       {
-        "created_at": 1787266776,
+        "created_at": 1788280214,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:c66621f9f75e",
@@ -188,7 +224,7 @@
         "scores": null
       },
       {
-        "created_at": 1787266776,
+        "created_at": 1788280213,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:d29d28532e90",
@@ -253,7 +289,7 @@
           "reference_panel_id": null,
           "renderer": "native:samples",
           "source": "shipped",
-          "state_revision": 139,
+          "state_revision": 180,
           "title": "Hyper3-CLIP \u00b7 Top 5 regions",
           "visible": true,
           "width": null
@@ -340,13 +376,14 @@
           "position": "right",
           "props": {
             "benchmark": {
-              "clipHit1": "50.6%",
-              "clipHit10": "87.8%",
-              "clipMrr": "0.633",
-              "hyper3Hit1": "55.0%",
-              "hyper3Hit10": "90.0%",
-              "hyper3Mrr": "0.669",
-              "queryCount": 180
+              "clipHit1": "48.3%",
+              "clipHit10": "83.9%",
+              "clipMrr": "0.615",
+              "hyper3Hit1": "52.8%",
+              "hyper3Hit10": "90.6%",
+              "hyper3Mrr": "0.662",
+              "queryCount": 180,
+              "source": "scripts/eval_precision_regions.py"
             },
             "cases": [
               {
@@ -574,6 +611,81 @@
                   "hyper3Rank": 1
                 },
                 "targetSampleId": "precision-fleet-target"
+              },
+              {
+                "business": "Venue and hospitality teams look for one open seat or fixture inside a crowded scene photo. This is a case the baseline wins: hyper3-clip returns five plausible chairs before reaching the annotated bench seat, while CLIP ranks it first.",
+                "collectionIds": {
+                  "clip": "selection:2033ffc1cd10",
+                  "hyper3": "selection:5830ea2abca4"
+                },
+                "context": "Venue seating",
+                "id": "bench",
+                "label": "Hospitality / Seating",
+                "query": "An empty seat at on a bench.",
+                "results": {
+                  "clip": [
+                    {
+                      "isTarget": true,
+                      "rank": 1,
+                      "sampleId": "precision-bench-target",
+                      "text": "An empty seat at on a bench."
+                    },
+                    {
+                      "rank": 2,
+                      "sampleId": "precision-bench-clip-02",
+                      "text": "The chair on the right, closest to the guy with no hat on."
+                    },
+                    {
+                      "rank": 3,
+                      "sampleId": "precision-bench-clip-03",
+                      "text": "The white planter chair with the woman wearing dark clothes and white sneakers sitting in it."
+                    },
+                    {
+                      "rank": 4,
+                      "sampleId": "precision-bench-clip-04",
+                      "text": "An office chair with wheels"
+                    },
+                    {
+                      "rank": 5,
+                      "sampleId": "precision-bench-clip-05",
+                      "text": "A back rest of a wooden chair which was occupied by a man"
+                    }
+                  ],
+                  "hyper3": [
+                    {
+                      "rank": 1,
+                      "sampleId": "precision-bench-hyper3-01",
+                      "text": "the chair on the bottom right"
+                    },
+                    {
+                      "rank": 2,
+                      "sampleId": "precision-bench-hyper3-02",
+                      "text": "An office chair closest to the corner."
+                    },
+                    {
+                      "rank": 3,
+                      "sampleId": "precision-bench-hyper3-03",
+                      "text": "the front bleacher"
+                    },
+                    {
+                      "rank": 4,
+                      "sampleId": "precision-bench-hyper3-04",
+                      "text": "The empty chair on the end of the row."
+                    },
+                    {
+                      "rank": 5,
+                      "sampleId": "precision-bench-hyper3-05",
+                      "text": "The wicker chair to the left."
+                    }
+                  ]
+                },
+                "shortLabel": "Empty bench seat",
+                "sourceSampleId": "precision-bench-source",
+                "target": {
+                  "clipRank": 1,
+                  "hyper3Rank": 9
+                },
+                "targetSampleId": "precision-bench-target"
               }
             ],
             "collectionId": "selection:ba1b4d715faa",
@@ -589,7 +701,7 @@
           "reference_panel_id": null,
           "renderer": "module:panel.jsx",
           "source": "extension",
-          "state_revision": 20,
+          "state_revision": 22,
           "title": "Find the exact region",
           "visible": true,
           "width": 400
@@ -597,7 +709,7 @@
       ],
       "has_explicit_view": true,
       "layout": null,
-      "layout_revision": 6,
+      "layout_revision": 8,
       "layout_views": {},
       "panels": {
         "precision-clip-results": {
@@ -619,12 +731,12 @@
           "state": {
             "activeCaseId": "facilities"
           },
-          "state_revision": 20
+          "state_revision": 22
         },
         "samples": {
           "state": {
             "collection": {
-              "created_at": 1787266777,
+              "created_at": 1788280215,
               "dataset_id": "refcocog_text_region_evidence_v3",
               "entity_set_id": "samples",
               "id": "selection:ba1b4d715faa",
@@ -646,13 +758,13 @@
             "mode": "collection",
             "retrieval": null
           },
-          "state_revision": 139
+          "state_revision": 180
         }
       },
       "selected_ids": [
         "precision-facilities-target"
       ],
-      "view_revision": 29
+      "view_revision": 32
     }
   },
   "workspaces": [

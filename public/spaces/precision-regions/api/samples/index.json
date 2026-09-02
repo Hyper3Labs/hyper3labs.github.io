@@ -3,7 +3,7 @@
   "shard_size": 500,
   "shards": [
     {
-      "count": 32,
+      "count": 43,
       "label_counts": [
         {
           "count": 1,
@@ -16,6 +16,14 @@
         {
           "count": 1,
           "value": "#1 \u00b7 White sink."
+        },
+        {
+          "count": 1,
+          "value": "#1 \u00b7 the chair on the bottom right"
+        },
+        {
+          "count": 1,
+          "value": "#2 \u00b7 An office chair closest to the corner."
         },
         {
           "count": 1,
@@ -43,6 +51,10 @@
         },
         {
           "count": 1,
+          "value": "#2 \u00b7 The chair on the right, closest to the guy with no hat on."
+        },
+        {
+          "count": 1,
           "value": "#3 \u00b7 Beige armchair."
         },
         {
@@ -52,6 +64,10 @@
         {
           "count": 1,
           "value": "#3 \u00b7 Green bus."
+        },
+        {
+          "count": 1,
+          "value": "#3 \u00b7 The white planter chair with the woman wearing dark clothes and white sneakers sitting in it."
         },
         {
           "count": 1,
@@ -67,6 +83,14 @@
         },
         {
           "count": 1,
+          "value": "#3 \u00b7 the front bleacher"
+        },
+        {
+          "count": 1,
+          "value": "#4 \u00b7 An office chair with wheels"
+        },
+        {
+          "count": 1,
           "value": "#4 \u00b7 Cream sofa in a living room."
         },
         {
@@ -79,7 +103,15 @@
         },
         {
           "count": 1,
+          "value": "#4 \u00b7 The empty chair on the end of the row."
+        },
+        {
+          "count": 1,
           "value": "#4 \u00b7 White van."
+        },
+        {
+          "count": 1,
+          "value": "#5 \u00b7 A back rest of a wooden chair which was occupied by a man"
         },
         {
           "count": 1,
@@ -107,7 +139,15 @@
         },
         {
           "count": 1,
+          "value": "#5 \u00b7 The wicker chair to the left."
+        },
+        {
+          "count": 1,
           "value": "Double-decker bus source scene"
+        },
+        {
+          "count": 1,
+          "value": "Empty bench seat source scene"
         },
         {
           "count": 1,
@@ -124,6 +164,10 @@
         {
           "count": 1,
           "value": "TARGET \u00b7 A grey couch with pillows on it."
+        },
+        {
+          "count": 1,
+          "value": "TARGET \u00b7 An empty seat at on a bench."
         },
         {
           "count": 1,
@@ -164,9 +208,20 @@
         "precision-fleet-clip-01",
         "precision-fleet-clip-02",
         "precision-fleet-clip-03",
-        "precision-fleet-clip-05"
+        "precision-fleet-clip-05",
+        "precision-bench-source",
+        "precision-bench-target",
+        "precision-bench-hyper3-01",
+        "precision-bench-hyper3-02",
+        "precision-bench-hyper3-03",
+        "precision-bench-hyper3-04",
+        "precision-bench-hyper3-05",
+        "precision-bench-clip-02",
+        "precision-bench-clip-03",
+        "precision-bench-clip-04",
+        "precision-bench-clip-05"
       ]
     }
   ],
-  "total": 32
+  "total": 43
 }

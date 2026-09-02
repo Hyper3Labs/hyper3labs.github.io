@@ -1,53 +1,53 @@
 {
   "spaces": [
     {
-      "bundle_bytes": 12373483,
+      "bundle_bytes": 12369971,
       "live_space_id": "hyper3labs/HyperView-ABO-Catalog",
       "live_url": "https://hyper3labs-hyperview-abo-catalog.hf.space",
       "mount_path": "/spaces/abo-catalog",
-      "num_files": 1148,
+      "num_files": 1150,
       "slug": "abo-catalog",
       "source": "shared-views/abo-catalog",
       "workspace": {
         "dataset_name": "abo_catalog_clip_hyper3clip_side_by_side",
-        "fingerprint": "33f4c5ea7d5746cdabfcc7122a391e43377ee59523536d0ba5797631c6d9230b",
+        "fingerprint": "1f7e2eca1621b845b2b5c211019a0abc95c4a2fdf6b69110ea549d226aa8a017",
         "id": "abo-catalog-clip-hyper3clip-split"
       }
     },
     {
-      "bundle_bytes": 3240657,
+      "bundle_bytes": 3622321,
       "live_space_id": null,
       "live_url": null,
       "mount_path": "/spaces/precision-regions",
-      "num_files": 112,
+      "num_files": 140,
       "slug": "precision-regions",
       "source": "shared-views/precision-regions",
       "workspace": {
         "dataset_name": "refcocog_text_region_evidence_v3",
-        "fingerprint": "d6ece4c946751e893908429c2e5622bb6a1f46cd616be4a60a47e226709d4ac2",
+        "fingerprint": "ad6ebacca744d1c01c13c91804c4d1e0e4f9e1e69c86d4c4ce72e89450f1804e",
         "id": "precision-region-search-business-evidence-v3"
       }
     },
     {
-      "bundle_bytes": 14134911,
+      "bundle_bytes": 14129722,
       "live_space_id": "hyper3labs/HyperView-DeepFashion-Text-Search",
       "live_url": "https://hyper3labs-hyperview-deepfashion-text-search.hf.space",
       "mount_path": "/spaces/fashion-products",
-      "num_files": 1610,
+      "num_files": 1612,
       "slug": "fashion-products",
       "source": "shared-views/fashion-products",
       "workspace": {
         "dataset_name": "deepfashion_text_search_clip_hyper3clip",
-        "fingerprint": "437dcc21933500528fc086299e2d4b6ca7c632ccbde373360863322255844637",
+        "fingerprint": "042cc03bbe37720f5b2993f51d668e2bfc7a68f616af3fa59a0e38a6b3d40f93",
         "id": "fashion-typed-search-business-evidence-v3"
       }
     },
     {
-      "bundle_bytes": 7629120,
+      "bundle_bytes": 7626155,
       "live_space_id": "mnm-matin/HyperView-Logo-Brand-Search",
       "live_url": "https://mnm-matin-hyperview-logo-brand-search.hf.space",
       "mount_path": "/spaces/logo-search",
-      "num_files": 363,
+      "num_files": 365,
       "slug": "logo-search",
       "source": "shared-views/logo-search",
       "workspace": {
@@ -57,11 +57,11 @@
       }
     },
     {
-      "bundle_bytes": 3198037,
+      "bundle_bytes": 3195253,
       "live_space_id": "mnm-matin/HyperView-EuroSAT-Geospatial",
       "live_url": "https://mnm-matin-hyperview-eurosat-geospatial.hf.space",
       "mount_path": "/spaces/geospatial",
-      "num_files": 166,
+      "num_files": 168,
       "slug": "geospatial",
       "source": "shared-views/geospatial",
       "workspace": {
@@ -71,11 +71,11 @@
       }
     },
     {
-      "bundle_bytes": 15527737,
+      "bundle_bytes": 15524386,
       "live_space_id": "mnm-matin/HyperView-Visual-Safety",
       "live_url": "https://mnm-matin-hyperview-visual-safety.hf.space",
       "mount_path": "/spaces/visual-safety",
-      "num_files": 406,
+      "num_files": 408,
       "slug": "visual-safety",
       "source": "shared-views/visual-safety",
       "workspace": {

@@ -39,18 +39,20 @@
     "similarity_k": 0,
     "text_search": false
   },
-  "created_at": "2026-08-29T23:26:02.718803+00:00",
+  "created_at": "2026-09-02T10:27:13.992924+00:00",
   "deployment": {
-    "cloudflare": null,
-    "hosting": {
-      "copy_contents_to": "spaces/visual-safety",
-      "mode": "path-mounted-static-assets"
+    "cloudflare": {
+      "command": "npx wrangler deploy --config wrangler.jsonc",
+      "config": "wrangler.jsonc",
+      "mode": "static-assets-only",
+      "worker_name": "hyperview-visual-safety-review-queue-evidence-v3"
     },
-    "mount_path": "/spaces/visual-safety"
+    "hosting": {
+      "mode": "static-assets"
+    }
   },
-  "hyperview_version": "0.6.3.dev19+g3ab84f8d9.d20260820",
+  "hyperview_version": "1.0.1.dev0+ge71a6b37f.d20260902",
   "kind": "hyperview-static-space",
-  "mount_path": "/spaces/visual-safety",
   "schema_version": 1,
   "static": true,
   "warnings": [],

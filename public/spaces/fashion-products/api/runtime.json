@@ -155,7 +155,7 @@
       "title": "Embeddings"
     }
   ],
-  "runtime_id": "328808ca33c94291ac5a9be965966f55",
+  "runtime_id": "ccb007d85d3045a18109473de9d88f2f",
   "tools": [],
   "version": 1,
   "workspace": {
@@ -170,18 +170,18 @@
         "scores": null
       },
       {
-        "created_at": 1787958058,
+        "created_at": 1788256479,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
-        "id": "search:faa3d82ea546",
+        "id": "search:f3cfb3ad7429",
         "kind": "search",
         "query": {
-          "indexId": "space:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
+          "indexId": "space:hyper-models__hyper3-clip-v0_5__42052c955756",
           "k": 18,
-          "layoutId": "embed-anything__openai_clip-vit-base-patch32__4771034973d8__euclidean_umap__2d_1a6bcbc4",
-          "queryText": "olive green wide-leg trousers",
+          "layoutId": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
+          "queryText": "a red floral summer dress",
           "source": "samples-panel",
-          "spaceKey": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
+          "spaceKey": "hyper-models__hyper3-clip-v0_5__42052c955756"
         },
         "scores": null
       },
@@ -349,7 +349,7 @@
           "reference_panel_id": null,
           "renderer": "native:samples",
           "source": "shipped",
-          "state_revision": 191,
+          "state_revision": 201,
           "title": "Hyper3-CLIP \u00b7 Product matches",
           "visible": true,
           "width": null
@@ -829,34 +829,34 @@
         "samples": {
           "state": {
             "collection": {
-              "created_at": 1787958058,
+              "created_at": 1788256479,
               "dataset_id": "deepfashion_text_search_clip_hyper3clip",
               "entity_set_id": "samples",
-              "id": "search:faa3d82ea546",
+              "id": "search:f3cfb3ad7429",
               "kind": "search",
               "query": {
-                "indexId": "space:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
+                "indexId": "space:hyper-models__hyper3-clip-v0_5__42052c955756",
                 "k": 18,
-                "layoutId": "embed-anything__openai_clip-vit-base-patch32__4771034973d8__euclidean_umap__2d_1a6bcbc4",
-                "queryText": "olive green wide-leg trousers",
+                "layoutId": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
+                "queryText": "a red floral summer dress",
                 "source": "samples-panel",
-                "spaceKey": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
+                "spaceKey": "hyper-models__hyper3-clip-v0_5__42052c955756"
               },
               "scores": null
             },
-            "collection_id": "search:faa3d82ea546",
+            "collection_id": "search:f3cfb3ad7429",
             "focus_request": null,
             "mode": "retrieval",
             "retrieval": {
-              "index_id": "space:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
+              "index_id": "space:hyper-models__hyper3-clip-v0_5__42052c955756",
               "k": 18,
-              "layout_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8__euclidean_umap__2d_1a6bcbc4",
-              "query_text": "olive green wide-leg trousers",
+              "layout_key": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
+              "query_text": "a red floral summer dress",
               "source": "samples-panel",
-              "space_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
+              "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
             }
           },
-          "state_revision": 191
+          "state_revision": 201
         }
       },
       "selected_ids": [],

@@ -51,11 +51,9 @@ def main() -> None:
             raise RuntimeError(f"Invalid Shared View entry: {entry!r}")
         slug = entry.get("slug")
         bundle_folder = entry.get("bundle_folder")
-        mount_path = entry.get("mount_path")
         if (
             not isinstance(slug, str)
             or not isinstance(bundle_folder, str)
-            or not isinstance(mount_path, str)
         ):
             raise RuntimeError(f"Incomplete Shared View entry: {entry!r}")
         source = bundles_root / bundle_folder
@@ -76,18 +74,14 @@ def main() -> None:
             )
 
         destination = spaces_root / slug
-        result = copy_static_bundle(
-            source,
-            destination,
-            mount_path=mount_path,
-        )
+        result = copy_static_bundle(source, destination)
         mounted_manifest = _read_json(destination / "hyperview-static.json")
-        if mounted_manifest.get("mount_path") != mount_path:
-            raise RuntimeError(f"Mounted Space has the wrong path: {destination}")
 
+        # A bundle that names its own prefix, or links shell assets from the
+        # origin root, only works at one path. These must stay relative.
         index_html = (destination / "index.html").read_text(encoding="utf-8")
-        if f'window.__HYPERVIEW_MOUNT_PATH__ = "{mount_path}";' not in index_html:
-            raise RuntimeError(f"Mounted Space has no runtime path contract: {destination}")
+        if "__HYPERVIEW_MOUNT_PATH__" in index_html:
+            raise RuntimeError(f"Mounted Space pins a URL prefix: {destination}")
         if 'src="/_next/' in index_html or 'href="/_next/' in index_html:
             raise RuntimeError(f"Mounted Space still has root shell assets: {destination}")
 
@@ -95,7 +89,7 @@ def main() -> None:
             {
                 "slug": slug,
                 "source": bundle_folder,
-                "mount_path": mount_path,
+                "mount_path": f"/spaces/{slug}",
                 "live_space_id": entry.get("live_space_id"),
                 "live_url": entry.get("live_url"),
                 "workspace": mounted_manifest.get("workspace"),

@@ -1,0 +1,22 @@
+{
+  "collection": {
+    "created_at": 1788256479,
+    "dataset_id": "deepfashion_text_search_clip_hyper3clip",
+    "entity_set_id": "samples",
+    "id": "search:f3cfb3ad7429",
+    "kind": "search",
+    "query": {
+      "indexId": "space:hyper-models__hyper3-clip-v0_5__42052c955756",
+      "k": 18,
+      "layoutId": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
+      "queryText": "a red floral summer dress",
+      "source": "samples-panel",
+      "spaceKey": "hyper-models__hyper3-clip-v0_5__42052c955756"
+    },
+    "scores": null
+  },
+  "shards": [
+    "items.json"
+  ],
+  "total": 18
+}

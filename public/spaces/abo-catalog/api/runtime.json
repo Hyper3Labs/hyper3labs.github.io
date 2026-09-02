@@ -155,13 +155,13 @@
       "title": "Embeddings"
     }
   ],
-  "runtime_id": "36c172d78744469c8989a9d41bb8771c",
+  "runtime_id": "50158bc67bd7498d9b3b825384b888ac",
   "tools": [],
   "version": 1,
   "workspace": {
     "collections": [
       {
-        "created_at": 1787265179,
+        "created_at": 1788344385,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
         "id": "all:bf21a9e8fbc5",
@@ -170,7 +170,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265178,
+        "created_at": 1788344385,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
         "id": "selection:2dca57fcfb12",
@@ -189,7 +189,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265176,
+        "created_at": 1788344384,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
         "id": "selection:42f8cfb2cb3d",
@@ -208,7 +208,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265178,
+        "created_at": 1788344385,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
         "id": "selection:487fcc2029a2",
@@ -227,7 +227,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265176,
+        "created_at": 1788344384,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
         "id": "selection:ac9aa4bdc346",
@@ -246,7 +246,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265177,
+        "created_at": 1788344385,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
         "id": "selection:bcf4edf51589",
@@ -265,7 +265,7 @@
         "scores": null
       },
       {
-        "created_at": 1787265179,
+        "created_at": 1788344385,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
         "id": "selection:db9fa3359602",
@@ -325,15 +325,9 @@
           "panel_type": "samples",
           "position": "center",
           "props": {
+            "collectionId": "selection:ac9aa4bdc346",
             "labelField": "title",
-            "mode": "ranked",
-            "rank": {
-              "anchorSampleId": "B07HK5WXQP_510lSNJKiyL",
-              "k": 10,
-              "layoutKey": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
-              "showDistance": false,
-              "source": "Hyper3-CLIP image neighbours"
-            }
+            "mode": "results"
           },
           "reference_panel_id": null,
           "renderer": "native:samples",
@@ -385,7 +379,7 @@
           "reference_panel_id": "candidate-nearest-neighbours",
           "renderer": "native:samples",
           "source": "shipped",
-          "state_revision": 123,
+          "state_revision": 131,
           "title": "Catalog browse",
           "visible": true,
           "width": null
@@ -497,15 +491,9 @@
           "panel_type": "samples",
           "position": "center",
           "props": {
+            "collectionId": "selection:42f8cfb2cb3d",
             "labelField": "title",
-            "mode": "ranked",
-            "rank": {
-              "anchorSampleId": "B07HK5WXQP_510lSNJKiyL",
-              "k": 10,
-              "layoutKey": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c__euclidean_umap__2d_1a6bcbc4",
-              "showDistance": false,
-              "source": "CLIP image neighbours"
-            }
+            "mode": "results"
           },
           "reference_panel_id": "candidate-nearest-neighbours",
           "renderer": "native:samples",
@@ -1201,7 +1189,7 @@
           "reference_panel_id": null,
           "renderer": "module:panel.jsx",
           "source": "extension",
-          "state_revision": 11,
+          "state_revision": 12,
           "title": "Catalog retrieval questions",
           "visible": true,
           "width": 400
@@ -1234,10 +1222,10 @@
         "catalog-hierarchy-readout": {
           "state": {
             "activeImageCaseId": "lighting",
-            "activeSection": "image",
+            "activeSection": "text",
             "activeTextCaseId": "grey-velvet-sofa"
           },
-          "state_revision": 11
+          "state_revision": 12
         },
         "clip-catalog-map": {
           "state": {},
@@ -1261,7 +1249,7 @@
         "samples": {
           "state": {
             "collection": {
-              "created_at": 1787265179,
+              "created_at": 1788344385,
               "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
               "entity_set_id": "samples",
               "id": "all:bf21a9e8fbc5",
@@ -1274,13 +1262,13 @@
             "mode": "collection",
             "retrieval": null
           },
-          "state_revision": 123
+          "state_revision": 131
         }
       },
       "selected_ids": [
         "B07HK5WXQP_510lSNJKiyL"
       ],
-      "view_revision": 72
+      "view_revision": 74
     }
   },
   "workspaces": [
