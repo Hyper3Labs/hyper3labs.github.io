@@ -17,7 +17,7 @@ export type HyperViewSpace = {
   /**
    * Only set this for a Space that is currently serving. Every entry here
    * renders a "Live Space" button, and a visitor who clicks through to a paused
-   * or crashed Space reads that as the product being broken -- the Shared View
+   * or crashed Space reads that as the product being broken -- the Static Space
    * next to it works perfectly and gets judged by the same click. Confirm with
    * `scripts/monitor_spaces.py` in the hyperview-spaces repo before adding one
    * back; a Space that only sleeps still wakes on visit and may stay listed.

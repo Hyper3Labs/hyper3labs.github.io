@@ -7,7 +7,7 @@
       "mount_path": "/spaces/abo-catalog",
       "num_files": 1150,
       "slug": "abo-catalog",
-      "source": "shared-views/abo-catalog",
+      "source": "static-spaces/abo-catalog",
       "workspace": {
         "dataset_name": "abo_catalog_clip_hyper3clip_side_by_side",
         "fingerprint": "1f7e2eca1621b845b2b5c211019a0abc95c4a2fdf6b69110ea549d226aa8a017",
@@ -21,7 +21,7 @@
       "mount_path": "/spaces/precision-regions",
       "num_files": 140,
       "slug": "precision-regions",
-      "source": "shared-views/precision-regions",
+      "source": "static-spaces/precision-regions",
       "workspace": {
         "dataset_name": "refcocog_text_region_evidence_v3",
         "fingerprint": "ad6ebacca744d1c01c13c91804c4d1e0e4f9e1e69c86d4c4ce72e89450f1804e",
@@ -35,7 +35,7 @@
       "mount_path": "/spaces/fashion-products",
       "num_files": 1612,
       "slug": "fashion-products",
-      "source": "shared-views/fashion-products",
+      "source": "static-spaces/fashion-products",
       "workspace": {
         "dataset_name": "deepfashion_text_search_clip_hyper3clip",
         "fingerprint": "042cc03bbe37720f5b2993f51d668e2bfc7a68f616af3fa59a0e38a6b3d40f93",
@@ -49,7 +49,7 @@
       "mount_path": "/spaces/logo-search",
       "num_files": 365,
       "slug": "logo-search",
-      "source": "shared-views/logo-search",
+      "source": "static-spaces/logo-search",
       "workspace": {
         "dataset_name": "logo_brand_search_clip_hyper3clip_hf_live_v4",
         "fingerprint": "bdf75d586201cb279fedf3918fa3194212746728901a9783a9c4e4fea9a49981",
@@ -63,7 +63,7 @@
       "mount_path": "/spaces/geospatial",
       "num_files": 168,
       "slug": "geospatial",
-      "source": "shared-views/geospatial",
+      "source": "static-spaces/geospatial",
       "workspace": {
         "dataset_name": "resisc45_clip_hyper3clip_curated_side_by_side",
         "fingerprint": "8f906b068d1862616aec6a57d74b258437852d53da2a55cf269d0e098db4d153",
@@ -77,7 +77,7 @@
       "mount_path": "/spaces/visual-safety",
       "num_files": 408,
       "slug": "visual-safety",
-      "source": "shared-views/visual-safety",
+      "source": "static-spaces/visual-safety",
       "workspace": {
         "dataset_name": "openimages_visual_proxy_evidence_v3",
         "fingerprint": "d046e0d10e84b3fad6692d6920353511c439b5950fbfba2ffaf157e6594e58a7",

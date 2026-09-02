@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'HyperView Spaces',
   description:
-    'Browse read-only HyperView Spaces and open their runtime-connected Live Spaces.',
+    'Browse HyperView Static Spaces and open their runtime-connected Live Spaces.',
   alternates: {
     canonical: '/spaces/',
   },

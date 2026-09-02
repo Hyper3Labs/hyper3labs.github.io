@@ -39,7 +39,7 @@ const concepts = [
   {
     icon: Share2,
     title: 'Spaces',
-    text: 'Publish a portable read-only Space, or use a Live Space when new computation is required.',
+    text: 'Publish a portable Static Space, or use a Live Space when new computation is required.',
   },
 ];
 
@@ -167,7 +167,7 @@ export default function DocsPortal() {
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-cyan-300">Live Space</p>
               <h2 className="mt-2 text-xl font-semibold text-white">Use your own data, models, and agents.</h2>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-gray-500">Read-only Spaces preserve the full HyperView shell and its interactive evidence. Use a Live Space to create datasets, run providers, recompute layouts, and keep agent actions in workspace state.</p>
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-gray-500">A Static Space preserves the full HyperView shell and its interactive evidence. Use a Live Space to create datasets, run providers, recompute layouts, and keep agent actions in workspace state.</p>
             </div>
             <a href="https://github.com/Hyper3Labs/HyperView#readme" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-medium text-[#080b10] transition hover:bg-cyan-100 sm:mt-0">
               <Command className="h-4 w-4" /> Run HyperView <ExternalLink className="h-3.5 w-3.5" />

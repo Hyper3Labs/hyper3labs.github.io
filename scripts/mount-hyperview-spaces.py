@@ -1,4 +1,4 @@
-"""Mount reviewed HyperView Shared Views into public/spaces/.
+"""Mount reviewed HyperView Static Spaces into public/spaces/.
 
 The mounted bundles are committed, so the GitHub Pages workflow's plain
 `next build` ships working viewers without any cross-repository checkout.
@@ -32,13 +32,13 @@ def main() -> None:
             hyperview_root / "hyperview-spaces",
         )
     ).expanduser().resolve()
-    registry_path = spaces_repo / "shared-views.registry.json"
+    registry_path = spaces_repo / "static-spaces.registry.json"
     registry = _read_json(registry_path)
-    shared_views = registry.get("shared_views")
-    if not isinstance(shared_views, list):
-        raise RuntimeError(f"{registry_path} must contain a shared_views list.")
+    static_spaces = registry.get("static_spaces")
+    if not isinstance(static_spaces, list):
+        raise RuntimeError(f"{registry_path} must contain a static_spaces list.")
     bundles_root = Path(
-        os.environ.get("HYPERVIEW_SHARED_VIEWS_ROOT", spaces_repo)
+        os.environ.get("HYPERVIEW_STATIC_SPACES_ROOT", spaces_repo)
     ).expanduser().resolve()
     spaces_root = Path(
         os.environ.get("HYPERVIEW_MOUNT_ROOT", site_root / "public" / "spaces")
@@ -46,20 +46,20 @@ def main() -> None:
     spaces_root.mkdir(parents=True, exist_ok=True)
 
     mounted: list[dict[str, object]] = []
-    for entry in shared_views:
+    for entry in static_spaces:
         if not isinstance(entry, dict):
-            raise RuntimeError(f"Invalid Shared View entry: {entry!r}")
+            raise RuntimeError(f"Invalid Static Space entry: {entry!r}")
         slug = entry.get("slug")
         bundle_folder = entry.get("bundle_folder")
         if (
             not isinstance(slug, str)
             or not isinstance(bundle_folder, str)
         ):
-            raise RuntimeError(f"Incomplete Shared View entry: {entry!r}")
+            raise RuntimeError(f"Incomplete Static Space entry: {entry!r}")
         source = bundles_root / bundle_folder
         source_manifest_path = source / "hyperview-static.json"
         if not source_manifest_path.is_file():
-            raise RuntimeError(f"Missing reviewed HyperView Shared View: {source}")
+            raise RuntimeError(f"Missing reviewed HyperView Static Space: {source}")
         source_manifest = _read_json(source_manifest_path)
         capabilities = source_manifest.get("capabilities")
         if (
@@ -70,7 +70,7 @@ def main() -> None:
             or capabilities.get("text_search") is not False
         ):
             raise RuntimeError(
-                f"Shared View {slug} does not satisfy the reviewed static contract."
+                f"Static Space {slug} does not satisfy the reviewed static contract."
             )
 
         destination = spaces_root / slug
@@ -103,7 +103,7 @@ def main() -> None:
         encoding="utf-8",
     )
     print(
-        f"Mounted {len(mounted)} HyperView Shared Views under {spaces_root} "
+        f"Mounted {len(mounted)} HyperView Static Spaces under {spaces_root} "
         f"({sum(int(item['bundle_bytes']) for item in mounted)} bytes)."
     )
 

@@ -6,13 +6,13 @@ Updated 2026-07-23.
 
 The site is a documentation hub for tools built by hyper³labs. HyperView is
 the first tool. Its overview remains on the documentation home page, while
-`/spaces/` is a dedicated browse page for complete, read-only HyperView
-artifacts. Each card leads to a full viewer at `/spaces/<slug>/` on the same
-origin.
+`/spaces/` is a dedicated browse page for complete HyperView Static Spaces
+(the exported bundle served as plain files). Each card leads to a full viewer
+at `/spaces/<slug>/` on the same origin.
 
 The collection is defined in `lib/spaces.ts`, so adding a Space requires one
 data entry and one reviewed static export. Cards communicate the workflow,
-modality, business question, and static/read-only status without presenting
+modality, business question, and hosting mode without presenting
 the artifacts as screenshots or separate mini applications.
 
 ## Build and mount

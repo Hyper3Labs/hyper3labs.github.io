@@ -13,7 +13,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-To build the docs site together with the six read-only HyperView Spaces, using
+To build the docs site together with the six HyperView Static Spaces, using
 one origin and stable `/spaces/<slug>/` paths:
 
 ```bash

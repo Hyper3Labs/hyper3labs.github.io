@@ -29,7 +29,7 @@ function SpaceCard({ space }: { space: HyperViewSpace }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#080b10]/70 via-transparent to-transparent" />
         <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-white/[0.12] bg-[#070a0f]/80 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.15em] text-gray-200 backdrop-blur-xl">
-          <Eye className="h-3 w-3 text-cyan-300" aria-hidden="true" /> Read-only
+          <Eye className="h-3 w-3 text-cyan-300" aria-hidden="true" /> Static Space
         </span>
       </a>
       <div className="relative p-5">
@@ -155,7 +155,7 @@ export default function SpacesGallery() {
               Explore multimodal work through the questions it answers.
             </h1>
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-gray-400 sm:text-lg">
-              Each read-only Space is a complete HyperView workspace comparing{' '}
+              Each Static Space is a complete HyperView workspace comparing{' '}
               <span className="text-gray-200">hyper3-clip-v0.5</span> with OpenAI CLIP
               ViT-B/32 on one retrieval workflow. Inspect samples, layouts, linked
               evidence, and purpose-built panels without a backend.
@@ -165,11 +165,12 @@ export default function SpacesGallery() {
             <div className="rounded-xl border border-cyan-300/15 bg-cyan-300/[0.045] p-4">
               <div className="flex items-center gap-2 text-sm font-semibold text-white">
                 <Eye className="h-4 w-4 text-cyan-300" aria-hidden="true" />
-                Read-only Space
+                Static Space
               </div>
               <p className="mt-2 text-sm leading-relaxed text-gray-500">
-                Portable and inexpensive to host. The full viewer and its interactive
-                evidence remain available.
+                The exported bundle served as plain files: portable and inexpensive
+                to host. The full viewer and its interactive evidence remain
+                available.
               </p>
             </div>
             <div className="rounded-xl border border-white/[0.09] bg-white/[0.025] p-4">
@@ -192,7 +193,7 @@ export default function SpacesGallery() {
                 Browse the collection
               </h2>
               <p className="mt-2 text-sm text-gray-500">
-                Filter by workflow, then open its read-only or Live Space.
+                Filter by workflow, then open its Static Space or Live Space.
               </p>
             </div>
             <div
