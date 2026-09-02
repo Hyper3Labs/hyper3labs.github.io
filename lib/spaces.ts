@@ -13,7 +13,7 @@ export type HyperViewSpace = {
   question: string;
   description: string;
   preview: string;
-  viewerUrl: string;
+  staticSpaceUrl: string;
   /**
    * Only set this for a Space that is currently serving. Every entry here
    * renders a "Live Space" button, and a visitor who clicks through to a paused
@@ -43,7 +43,7 @@ export const HYPERVIEW_SPACES: HyperViewSpace[] = [
     question: 'Does the model find the right product—not just a plausible category match?',
     description: 'Compare text-to-product and image-neighbour retrieval across two model spaces.',
     preview: '/spaces/previews/abo-catalog.png',
-    viewerUrl: '/spaces/abo-catalog/',
+    staticSpaceUrl: '/spaces/abo-catalog/',
     // hyper3labs/HyperView-ABO-Catalog is PAUSED.
   },
   {
@@ -55,7 +55,7 @@ export const HYPERVIEW_SPACES: HyperViewSpace[] = [
     question: "Does the exact region reach the operator's first screen?",
     description: 'Inspect the source scene, target crop, and aligned Top 5 results over the same candidate pool.',
     preview: '/spaces/previews/precision-regions.png',
-    viewerUrl: '/spaces/precision-regions/',
+    staticSpaceUrl: '/spaces/precision-regions/',
   },
   {
     slug: 'fashion-products',
@@ -66,7 +66,7 @@ export const HYPERVIEW_SPACES: HyperViewSpace[] = [
     question: 'Can the catalog recognize the same product from a different photo?',
     description: 'Compare same-product photo matching and typed shopper searches across two models.',
     preview: '/spaces/previews/fashion-products.png',
-    viewerUrl: '/spaces/fashion-products/',
+    staticSpaceUrl: '/spaces/fashion-products/',
     // hyper3labs/HyperView-DeepFashion-Text-Search is in RUNTIME_ERROR. This is
     // the demo intended to come back as the one live typed-search Space; relink
     // it once it is redeployed on hyperview 1.0.0 and answering health checks.
@@ -80,7 +80,7 @@ export const HYPERVIEW_SPACES: HyperViewSpace[] = [
     question: 'Which existing logo best satisfies a detailed creative brief?',
     description: 'Compare creative-brief results, exact-asset ranks, and archive coverage without relying on folders or tags.',
     preview: '/spaces/previews/logo-search.png',
-    viewerUrl: '/spaces/logo-search/',
+    staticSpaceUrl: '/spaces/logo-search/',
     liveSpaceUrl: 'https://mnm-matin-hyperview-logo-brand-search.hf.space',
   },
   {
@@ -92,7 +92,7 @@ export const HYPERVIEW_SPACES: HyperViewSpace[] = [
     question: 'Which aerial tiles belong together?',
     description: 'Compare same-class and land-use-group neighbours, then inspect the full archive maps.',
     preview: '/spaces/previews/geospatial.png',
-    viewerUrl: '/spaces/geospatial/',
+    staticSpaceUrl: '/spaces/geospatial/',
     liveSpaceUrl: 'https://mnm-matin-hyperview-eurosat-geospatial.hf.space',
   },
   {
@@ -105,7 +105,7 @@ export const HYPERVIEW_SPACES: HyperViewSpace[] = [
     description:
       'Audit the review batches both models build around a confirmed item, with the full missed-item and precision/recall ledger.',
     preview: '/spaces/previews/visual-safety.png',
-    viewerUrl: '/spaces/visual-safety/',
+    staticSpaceUrl: '/spaces/visual-safety/',
     liveSpaceUrl: 'https://mnm-matin-hyperview-visual-safety.hf.space',
   },
 ];

@@ -16,7 +16,7 @@ function SpaceCard({ space }: { space: HyperViewSpace }) {
   return (
     <article className="group relative isolate overflow-hidden rounded-2xl border border-white/[0.09] bg-[#0b0f16]/95 shadow-[0_20px_70px_rgba(0,0,0,0.32)] transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 focus-within:border-cyan-300/50">
       <a
-        href={space.viewerUrl}
+        href={space.staticSpaceUrl}
         className="relative block aspect-[16/9] overflow-hidden border-b border-white/[0.08] bg-black/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-inset"
         aria-label={`Explore the ${space.name} HyperView Space`}
       >
@@ -50,7 +50,7 @@ function SpaceCard({ space }: { space: HyperViewSpace }) {
           <span className="font-mono text-[9px] leading-relaxed text-gray-600">{space.modality}</span>
           <div className="mt-3 flex flex-wrap gap-2">
             <a
-              href={space.viewerUrl}
+              href={space.staticSpaceUrl}
               className="inline-flex items-center gap-1.5 rounded-lg bg-white px-3 py-2 text-xs font-semibold text-[#080b10] transition hover:bg-cyan-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
             >
               Explore Space <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
@@ -99,7 +99,7 @@ export function SpacesTeaser() {
         {HYPERVIEW_SPACES.slice(0, 3).map((space) => (
           <a
             key={space.slug}
-            href={space.viewerUrl}
+            href={space.staticSpaceUrl}
             className="group overflow-hidden rounded-xl border border-white/[0.08] bg-[#0b0f16]/90 transition hover:border-cyan-300/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
           >
             <div className="relative aspect-[16/9] overflow-hidden border-b border-white/[0.07]">
