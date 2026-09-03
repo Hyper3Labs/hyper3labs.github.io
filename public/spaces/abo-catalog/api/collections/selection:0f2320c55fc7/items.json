@@ -1,5 +1,5 @@
 {
-  "collection_id": "selection:db9fa3359602",
+  "collection_id": "selection:0f2320c55fc7",
   "items": [
     {
       "rank": 0,
@@ -39,6 +39,40 @@
       "rank": 1,
       "sample": {
         "duration_s": null,
+        "filename": "B075Z8769G_918OhgZ71BL.jpg",
+        "height": null,
+        "id": "B075Z8769G_918OhgZ71BL",
+        "label": "CHAIR",
+        "media_type": null,
+        "media_url": "/api/samples/B075Z8769G_918OhgZ71BL/content",
+        "metadata": {
+          "brand": "Rivet",
+          "color": "Grey",
+          "country": "US",
+          "department": "Furniture",
+          "hierarchy": "Furniture -> chair",
+          "image_id": "918OhgZ71BL",
+          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/ad/adb9ea28.jpg",
+          "item_id": "B075Z8769G",
+          "product_type": "CHAIR",
+          "product_type_readable": "chair",
+          "source": "hyper3labs/amazon-berkeley-objects",
+          "style": null,
+          "title": "Amazon Brand \u2013 Rivet Mid-Century Swope Curved Arm Swivel Office Chair, 26\"W, Felt Grey"
+        },
+        "modality": "image",
+        "text": null,
+        "thumbnail": null,
+        "thumbnail_url": "/api/samples/B075Z8769G_918OhgZ71BL/thumbnail",
+        "width": null
+      },
+      "sample_id": "B075Z8769G_918OhgZ71BL",
+      "score": null
+    },
+    {
+      "rank": 2,
+      "sample": {
+        "duration_s": null,
         "filename": "B0853L3W72_81mvF2gJy5L.jpg",
         "height": null,
         "id": "B0853L3W72_81mvF2gJy5L",
@@ -70,7 +104,41 @@
       "score": null
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "sample": {
+        "duration_s": null,
+        "filename": "B07QTD9VPM_81EXO8kXnhL.jpg",
+        "height": null,
+        "id": "B07QTD9VPM_81EXO8kXnhL",
+        "label": "CHAIR",
+        "media_type": null,
+        "media_url": "/api/samples/B07QTD9VPM_81EXO8kXnhL/content",
+        "metadata": {
+          "brand": "Movian",
+          "color": "Light Grey",
+          "country": "GB",
+          "department": "Home & Kitchen",
+          "hierarchy": "Home & Kitchen -> chair",
+          "image_id": "81EXO8kXnhL",
+          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/2c/2c927913.jpg",
+          "item_id": "B07QTD9VPM",
+          "product_type": "CHAIR",
+          "product_type_readable": "chair",
+          "source": "hyper3labs/amazon-berkeley-objects",
+          "style": "Set of 2 Bar Stools",
+          "title": "Amazon Brand - Movian Arendsee Set of 2 Dining Chairs, 55 x 48.5 x 85 cm, Light grey"
+        },
+        "modality": "image",
+        "text": null,
+        "thumbnail": null,
+        "thumbnail_url": "/api/samples/B07QTD9VPM_81EXO8kXnhL/thumbnail",
+        "width": null
+      },
+      "sample_id": "B07QTD9VPM_81EXO8kXnhL",
+      "score": null
+    },
+    {
+      "rank": 4,
       "sample": {
         "duration_s": null,
         "filename": "B0853KZW7Z_71LY8AELiuL.jpg",
@@ -104,7 +172,7 @@
       "score": null
     },
     {
-      "rank": 3,
+      "rank": 5,
       "sample": {
         "duration_s": null,
         "filename": "B07B7B244W_71DNWOd-5bL.jpg",
@@ -135,74 +203,6 @@
         "width": null
       },
       "sample_id": "B07B7B244W_71DNWOd-5bL",
-      "score": null
-    },
-    {
-      "rank": 4,
-      "sample": {
-        "duration_s": null,
-        "filename": "B07B7B3RVS_7196wQbG7KL.jpg",
-        "height": null,
-        "id": "B07B7B3RVS_7196wQbG7KL",
-        "label": "CHAIR",
-        "media_type": null,
-        "media_url": "/api/samples/B07B7B3RVS_7196wQbG7KL/content",
-        "metadata": {
-          "brand": "Rivet",
-          "color": "Grey",
-          "country": "US",
-          "department": "Furniture",
-          "hierarchy": "Furniture -> chair",
-          "image_id": "7196wQbG7KL",
-          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/0a/0a0aa317.jpg",
-          "item_id": "B07B7B3RVS",
-          "product_type": "CHAIR",
-          "product_type_readable": "chair",
-          "source": "hyper3labs/amazon-berkeley-objects",
-          "style": null,
-          "title": "Amazon Brand \u2013 Rivet Allie Velvet Industrial Mid-Century Dining Kitchen Chair, 33\"H, Grey and Antique Brass"
-        },
-        "modality": "image",
-        "text": null,
-        "thumbnail": null,
-        "thumbnail_url": "/api/samples/B07B7B3RVS_7196wQbG7KL/thumbnail",
-        "width": null
-      },
-      "sample_id": "B07B7B3RVS_7196wQbG7KL",
-      "score": null
-    },
-    {
-      "rank": 5,
-      "sample": {
-        "duration_s": null,
-        "filename": "B075YN3HN9_81Rub8QQCvL.jpg",
-        "height": null,
-        "id": "B075YN3HN9_81Rub8QQCvL",
-        "label": "CHAIR",
-        "media_type": null,
-        "media_url": "/api/samples/B075YN3HN9_81Rub8QQCvL/content",
-        "metadata": {
-          "brand": "Rivet",
-          "color": "Charcoal",
-          "country": "US",
-          "department": "Furniture",
-          "hierarchy": "Furniture -> chair",
-          "image_id": "81Rub8QQCvL",
-          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/45/45573415.jpg",
-          "item_id": "B075YN3HN9",
-          "product_type": "CHAIR",
-          "product_type_readable": "chair",
-          "source": "hyper3labs/amazon-berkeley-objects",
-          "style": null,
-          "title": "Amazon Brand \u2013 Rivet Ray Mid-Century Modern Kitchen Dining Room Chairs, Set of 2, 34.3\"H, Charcoal Faux Leather"
-        },
-        "modality": "image",
-        "text": null,
-        "thumbnail": null,
-        "thumbnail_url": "/api/samples/B075YN3HN9_81Rub8QQCvL/thumbnail",
-        "width": null
-      },
-      "sample_id": "B075YN3HN9_81Rub8QQCvL",
       "score": null
     }
   ],

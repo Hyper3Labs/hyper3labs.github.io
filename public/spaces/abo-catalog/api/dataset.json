@@ -179,61 +179,81 @@
     {
       "count": 531,
       "geometry": "poincare",
+      "layout_dimension": 2,
       "layout_key": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
       "method": "umap",
+      "modality": "multimodal",
+      "model_id": "hyper3-clip-v0.5",
       "params": {
         "metric": "cosine",
         "min_dist": 0.08,
         "n_neighbors": 20
       },
+      "provider": "hyper-models",
       "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
     },
     {
       "count": 531,
       "geometry": "euclidean",
+      "layout_dimension": 2,
       "layout_key": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c__euclidean_umap__2d_1a6bcbc4",
       "method": "umap",
+      "modality": "multimodal",
+      "model_id": "openai/clip-vit-base-patch32",
       "params": {
         "metric": "cosine",
         "min_dist": 0.08,
         "n_neighbors": 20
       },
+      "provider": "embed-anything",
       "space_key": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c"
     },
     {
       "count": 500,
       "geometry": "poincare",
+      "layout_dimension": 2,
       "layout_key": "hyper3-clip__hyper3labs_hyper3-clip-v0_5__3ba218e7cbb8__poincare_umap__2d_1a6bcbc4",
       "method": "umap",
+      "modality": "image",
+      "model_id": "hyper3labs/hyper3-clip-v0.5",
       "params": {
         "metric": "cosine",
         "min_dist": 0.08,
         "n_neighbors": 20
       },
+      "provider": "hyper3-clip",
       "space_key": "hyper3-clip__hyper3labs_hyper3-clip-v0_5__3ba218e7cbb8"
     },
     {
       "count": 530,
       "geometry": "euclidean",
+      "layout_dimension": 2,
       "layout_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8__euclidean_umap__2d_1a6bcbc4",
       "method": "umap",
+      "modality": "image",
+      "model_id": "openai/clip-vit-base-patch32",
       "params": {
         "metric": "cosine",
         "min_dist": 0.08,
         "n_neighbors": 20
       },
+      "provider": "embed-anything",
       "space_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
     },
     {
       "count": 530,
       "geometry": "poincare",
+      "layout_dimension": 2,
       "layout_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15__poincare_umap__2d_1a6bcbc4",
       "method": "umap",
+      "modality": "image",
+      "model_id": "hyper3-clip-v0.5",
       "params": {
         "metric": "cosine",
         "min_dist": 0.08,
         "n_neighbors": 20
       },
+      "provider": "hyper-models",
       "space_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15"
     }
   ],

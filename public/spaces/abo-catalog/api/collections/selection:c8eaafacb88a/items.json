@@ -1,42 +1,8 @@
 {
-  "collection_id": "selection:487fcc2029a2",
+  "collection_id": "selection:c8eaafacb88a",
   "items": [
     {
       "rank": 0,
-      "sample": {
-        "duration_s": null,
-        "filename": "B001CD1GC0_71oh4KcBXJS.jpg",
-        "height": null,
-        "id": "B001CD1GC0_71oh4KcBXJS",
-        "label": "HOME_LIGHTING_AND_LAMPS",
-        "media_type": null,
-        "media_url": "/api/samples/B001CD1GC0_71oh4KcBXJS/content",
-        "metadata": {
-          "brand": "Pinzon by Amazon",
-          "color": "Chrome",
-          "country": "US",
-          "department": "Lighting & Ceiling Fans",
-          "hierarchy": "Lighting & Ceiling Fans -> home lighting and lamps",
-          "image_id": "71oh4KcBXJS",
-          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/0a/0a50ffba.jpg",
-          "item_id": "B001CD1GC0",
-          "product_type": "HOME_LIGHTING_AND_LAMPS",
-          "product_type_readable": "home lighting and lamps",
-          "source": "hyper3labs/amazon-berkeley-objects",
-          "style": "Modern",
-          "title": "Pinzon Galaxy 28-Inch Table Lamp, Chrome"
-        },
-        "modality": "image",
-        "text": null,
-        "thumbnail": null,
-        "thumbnail_url": "/api/samples/B001CD1GC0_71oh4KcBXJS/thumbnail",
-        "width": null
-      },
-      "sample_id": "B001CD1GC0_71oh4KcBXJS",
-      "score": null
-    },
-    {
-      "rank": 1,
       "sample": {
         "duration_s": null,
         "filename": "B07DBK2P2G_41TnBzn9tFL.jpg",
@@ -70,7 +36,7 @@
       "score": null
     },
     {
-      "rank": 2,
+      "rank": 1,
       "sample": {
         "duration_s": null,
         "filename": "B07DBHB6B5_41SHn0jzPOL.jpg",
@@ -104,7 +70,109 @@
       "score": null
     },
     {
+      "rank": 2,
+      "sample": {
+        "duration_s": null,
+        "filename": "B001CD1GC0_71oh4KcBXJS.jpg",
+        "height": null,
+        "id": "B001CD1GC0_71oh4KcBXJS",
+        "label": "HOME_LIGHTING_AND_LAMPS",
+        "media_type": null,
+        "media_url": "/api/samples/B001CD1GC0_71oh4KcBXJS/content",
+        "metadata": {
+          "brand": "Pinzon by Amazon",
+          "color": "Chrome",
+          "country": "US",
+          "department": "Lighting & Ceiling Fans",
+          "hierarchy": "Lighting & Ceiling Fans -> home lighting and lamps",
+          "image_id": "71oh4KcBXJS",
+          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/0a/0a50ffba.jpg",
+          "item_id": "B001CD1GC0",
+          "product_type": "HOME_LIGHTING_AND_LAMPS",
+          "product_type_readable": "home lighting and lamps",
+          "source": "hyper3labs/amazon-berkeley-objects",
+          "style": "Modern",
+          "title": "Pinzon Galaxy 28-Inch Table Lamp, Chrome"
+        },
+        "modality": "image",
+        "text": null,
+        "thumbnail": null,
+        "thumbnail_url": "/api/samples/B001CD1GC0_71oh4KcBXJS/thumbnail",
+        "width": null
+      },
+      "sample_id": "B001CD1GC0_71oh4KcBXJS",
+      "score": null
+    },
+    {
       "rank": 3,
+      "sample": {
+        "duration_s": null,
+        "filename": "B07MBFDJQ3_51nyDMjCmHL.jpg",
+        "height": null,
+        "id": "B07MBFDJQ3_51nyDMjCmHL",
+        "label": "LAMP",
+        "media_type": null,
+        "media_url": "/api/samples/B07MBFDJQ3_51nyDMjCmHL/content",
+        "metadata": {
+          "brand": "Ravenna Home",
+          "color": "Silver",
+          "country": "US",
+          "department": "Lighting & Ceiling Fans",
+          "hierarchy": "Lighting & Ceiling Fans -> lamp",
+          "image_id": "51nyDMjCmHL",
+          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/0c/0c84de5f.jpg",
+          "item_id": "B07MBFDJQ3",
+          "product_type": "LAMP",
+          "product_type_readable": "lamp",
+          "source": "hyper3labs/amazon-berkeley-objects",
+          "style": null,
+          "title": "Amazon Brand \u2013 Ravenna Home Textured Ceramic Base Table Lamp with LED Light Bulb, 18\"H, Silver - 20465-002"
+        },
+        "modality": "image",
+        "text": null,
+        "thumbnail": null,
+        "thumbnail_url": "/api/samples/B07MBFDJQ3_51nyDMjCmHL/thumbnail",
+        "width": null
+      },
+      "sample_id": "B07MBFDJQ3_51nyDMjCmHL",
+      "score": null
+    },
+    {
+      "rank": 4,
+      "sample": {
+        "duration_s": null,
+        "filename": "B073P3NK7T_81oTHF1PcUL.jpg",
+        "height": null,
+        "id": "B073P3NK7T_81oTHF1PcUL",
+        "label": "LAMP",
+        "media_type": null,
+        "media_url": "/api/samples/B073P3NK7T_81oTHF1PcUL/content",
+        "metadata": {
+          "brand": "Stone & Beam",
+          "color": "Polished Nickel",
+          "country": "US",
+          "department": "Lighting & Ceiling Fans",
+          "hierarchy": "Lighting & Ceiling Fans -> lamp",
+          "image_id": "81oTHF1PcUL",
+          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/f1/f154a661.jpg",
+          "item_id": "B073P3NK7T",
+          "product_type": "LAMP",
+          "product_type_readable": "lamp",
+          "source": "hyper3labs/amazon-berkeley-objects",
+          "style": "Rectangle",
+          "title": "Amazon Brand \u2013 Stone & Beam Modern Crystal Glass Rectangle Table Desk Lamp With Bulb And White Shade - 18 x 12 x 12 Inches"
+        },
+        "modality": "image",
+        "text": null,
+        "thumbnail": null,
+        "thumbnail_url": "/api/samples/B073P3NK7T_81oTHF1PcUL/thumbnail",
+        "width": null
+      },
+      "sample_id": "B073P3NK7T_81oTHF1PcUL",
+      "score": null
+    },
+    {
+      "rank": 5,
       "sample": {
         "duration_s": null,
         "filename": "B07DBJQC4S_41Jv3-wdZ3L.jpg",
@@ -135,74 +203,6 @@
         "width": null
       },
       "sample_id": "B07DBJQC4S_41Jv3-wdZ3L",
-      "score": null
-    },
-    {
-      "rank": 4,
-      "sample": {
-        "duration_s": null,
-        "filename": "B07DTFBDTL_414HtkR3QZL.jpg",
-        "height": null,
-        "id": "B07DTFBDTL_414HtkR3QZL",
-        "label": "LAMP",
-        "media_type": null,
-        "media_url": "/api/samples/B07DTFBDTL_414HtkR3QZL/content",
-        "metadata": {
-          "brand": "Rivet",
-          "color": "Brushed Brass",
-          "country": "US",
-          "department": "Lighting & Ceiling Fans",
-          "hierarchy": "Lighting & Ceiling Fans -> lamp",
-          "image_id": "414HtkR3QZL",
-          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/18/18caf37e.jpg",
-          "item_id": "B07DTFBDTL",
-          "product_type": "LAMP",
-          "product_type_readable": "lamp",
-          "source": "hyper3labs/amazon-berkeley-objects",
-          "style": "Table Lamp",
-          "title": "Amazon Brand \u2013 Rivet Modern Gold Globe Table Lamp 22\" H, Integrated LED Light"
-        },
-        "modality": "image",
-        "text": null,
-        "thumbnail": null,
-        "thumbnail_url": "/api/samples/B07DTFBDTL_414HtkR3QZL/thumbnail",
-        "width": null
-      },
-      "sample_id": "B07DTFBDTL_414HtkR3QZL",
-      "score": null
-    },
-    {
-      "rank": 5,
-      "sample": {
-        "duration_s": null,
-        "filename": "B0742DR7C2_81jtRdRtkPL.jpg",
-        "height": null,
-        "id": "B0742DR7C2_81jtRdRtkPL",
-        "label": "LAMP",
-        "media_type": null,
-        "media_url": "/api/samples/B0742DR7C2_81jtRdRtkPL/content",
-        "metadata": {
-          "brand": "Stone & Beam",
-          "color": "Clear",
-          "country": "US",
-          "department": "Lighting & Ceiling Fans",
-          "hierarchy": "Lighting & Ceiling Fans -> lamp",
-          "image_id": "81jtRdRtkPL",
-          "image_url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/small/d2/d2af46fc.jpg",
-          "item_id": "B0742DR7C2",
-          "product_type": "LAMP",
-          "product_type_readable": "lamp",
-          "source": "hyper3labs/amazon-berkeley-objects",
-          "style": null,
-          "title": "Stone & Beam Pearl Modern Glass Orb Living RoomTable Lamp With Bulb And Linen Shade - 19.5 x 11.5 x 11.5 Inches, Silver"
-        },
-        "modality": "image",
-        "text": null,
-        "thumbnail": null,
-        "thumbnail_url": "/api/samples/B0742DR7C2_81jtRdRtkPL/thumbnail",
-        "width": null
-      },
-      "sample_id": "B0742DR7C2_81jtRdRtkPL",
       "score": null
     }
   ],

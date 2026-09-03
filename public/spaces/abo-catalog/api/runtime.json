@@ -67,6 +67,76 @@
       "label": "Samples",
       "panel_type": "samples",
       "props_schema": {
+        "properties": {
+          "anchorSampleId": {
+            "type": "string"
+          },
+          "anchor_sample_id": {
+            "type": "string"
+          },
+          "collectionId": {
+            "type": "string"
+          },
+          "collection_id": {
+            "type": "string"
+          },
+          "labelField": {
+            "type": "string"
+          },
+          "label_field": {
+            "type": "string"
+          },
+          "mode": {
+            "enum": [
+              "auto",
+              "browse",
+              "ranked",
+              "results"
+            ],
+            "type": "string"
+          },
+          "rank": {
+            "properties": {
+              "anchorSampleId": {
+                "type": "string"
+              },
+              "anchor_sample_id": {
+                "type": "string"
+              },
+              "k": {
+                "type": "integer"
+              },
+              "layoutKey": {
+                "type": "string"
+              },
+              "layout_key": {
+                "type": "string"
+              },
+              "showDistance": {
+                "type": "boolean"
+              },
+              "show_distance": {
+                "type": "boolean"
+              },
+              "source": {
+                "type": "string"
+              },
+              "spaceKey": {
+                "type": "string"
+              },
+              "space_key": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "showTextSearch": {
+            "type": "boolean"
+          },
+          "show_text_search": {
+            "type": "boolean"
+          }
+        },
         "type": "object"
       },
       "queries": [
@@ -139,6 +209,48 @@
       "label": "Scatter",
       "panel_type": "scatter",
       "props_schema": {
+        "properties": {
+          "geometry": {
+            "enum": [
+              "euclidean",
+              "poincare",
+              "spherical"
+            ],
+            "type": "string"
+          },
+          "layoutDimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layoutKey": {
+            "type": "string"
+          },
+          "layout_dimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layout_key": {
+            "type": "string"
+          },
+          "pinnedLayout": {
+            "type": "boolean"
+          },
+          "pinned_layout": {
+            "type": "boolean"
+          },
+          "preset": {
+            "type": "string"
+          },
+          "presets": {
+            "type": "object"
+          }
+        },
         "type": "object"
       },
       "queries": [
@@ -155,13 +267,13 @@
       "title": "Embeddings"
     }
   ],
-  "runtime_id": "50158bc67bd7498d9b3b825384b888ac",
+  "runtime_id": "594569850fc54f088e2c319851c15cc2",
   "tools": [],
   "version": 1,
   "workspace": {
     "collections": [
       {
-        "created_at": 1788344385,
+        "created_at": 1788363744,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
         "id": "all:bf21a9e8fbc5",
@@ -170,67 +282,105 @@
         "scores": null
       },
       {
-        "created_at": 1788344385,
+        "created_at": 1788363744,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
-        "id": "selection:2dca57fcfb12",
+        "id": "selection:0f2320c55fc7",
         "kind": "selection",
         "query": {
           "ids": [
-            "B075YPTG2Q_710tYWSG8SL",
-            "B07HSB4WV6_71k4-giCqJL",
-            "B075YP3C53_81tDegaK7zL",
-            "B07HSLKKXG_81MUeTeLXVL",
-            "B07HSK3534_81WypZMR_2L",
-            "B0853KZW7Z_71LY8AELiuL"
+            "B0746HFVWY_91-Pi95Hy9L",
+            "B075Z8769G_918OhgZ71BL",
+            "B0853L3W72_81mvF2gJy5L",
+            "B07QTD9VPM_81EXO8kXnhL",
+            "B0853KZW7Z_71LY8AELiuL",
+            "B07B7B244W_71DNWOd-5bL"
           ],
-          "source": "CLIP \u00b7 Silver mid-century chair \u00b7 Top 6"
+          "source": "Hyper3-CLIP \u00b7 Silver mid-century chair \u00b7 Top 6"
         },
         "scores": null
       },
       {
-        "created_at": 1788344384,
+        "created_at": 1788363742,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
-        "id": "selection:42f8cfb2cb3d",
+        "id": "selection:192ad4e543f0",
         "kind": "selection",
         "query": {
           "ids": [
-            "B075X4VM73_81oPx1e8s_L",
-            "B082VLYCPC_71pzr1IKkIL",
             "B075X4F56V_81Oy-OJ68KL",
-            "B07J2Z2BS5_81xPV3Ey1kL",
-            "B07J2R9TVF_A1cLonmKWvL",
-            "B075X4N4W9_81Z8ICQ9dUL"
+            "B075X4VM73_81oPx1e8s_L",
+            "B075X4N4W9_81Z8ICQ9dUL",
+            "B082VLYCPC_71pzr1IKkIL",
+            "B082VLTCM4_816VP-arPsL",
+            "B075X2X4GY_81RzuSu3GLL"
           ],
           "source": "CLIP \u00b7 Grey velvet sofa \u00b7 Top 6"
         },
         "scores": null
       },
       {
-        "created_at": 1788344385,
+        "created_at": 1788363743,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
-        "id": "selection:487fcc2029a2",
+        "id": "selection:5ab36572af15",
         "kind": "selection",
         "query": {
           "ids": [
-            "B001CD1GC0_71oh4KcBXJS",
+            "B07HSLKKXG_81MUeTeLXVL",
+            "B07QFRSLZB_81t7ILRrXDL",
+            "B075YPTG2Q_710tYWSG8SL",
+            "B075YP3C53_81tDegaK7zL",
+            "B0853KZW7Z_71LY8AELiuL",
+            "B07B7B3RVS_7196wQbG7KL"
+          ],
+          "source": "CLIP \u00b7 Silver mid-century chair \u00b7 Top 6"
+        },
+        "scores": null
+      },
+      {
+        "created_at": 1788363743,
+        "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
+        "entity_set_id": "samples",
+        "id": "selection:9258bc882cd2",
+        "kind": "selection",
+        "query": {
+          "ids": [
+            "B07DBDV3FH_41YZdSq2qBL",
+            "B07DT153M1_418DZS6SpTL",
+            "B07374K538_71XEFMKYAGL",
+            "B07DBK2P2G_41TnBzn9tFL",
+            "B07DBJQC4S_41Jv3-wdZ3L",
+            "B0825CP3NS_41GKLMSqyIL"
+          ],
+          "source": "CLIP \u00b7 Chrome clear-glass lamp \u00b7 Top 6"
+        },
+        "scores": null
+      },
+      {
+        "created_at": 1788363743,
+        "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
+        "entity_set_id": "samples",
+        "id": "selection:c8eaafacb88a",
+        "kind": "selection",
+        "query": {
+          "ids": [
             "B07DBK2P2G_41TnBzn9tFL",
             "B07DBHB6B5_41SHn0jzPOL",
-            "B07DBJQC4S_41Jv3-wdZ3L",
-            "B07DTFBDTL_414HtkR3QZL",
-            "B0742DR7C2_81jtRdRtkPL"
+            "B001CD1GC0_71oh4KcBXJS",
+            "B07MBFDJQ3_51nyDMjCmHL",
+            "B073P3NK7T_81oTHF1PcUL",
+            "B07DBJQC4S_41Jv3-wdZ3L"
           ],
           "source": "Hyper3-CLIP \u00b7 Chrome clear-glass lamp \u00b7 Top 6"
         },
         "scores": null
       },
       {
-        "created_at": 1788344384,
+        "created_at": 1788363743,
         "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
         "entity_set_id": "samples",
-        "id": "selection:ac9aa4bdc346",
+        "id": "selection:edfc19aaf048",
         "kind": "selection",
         "query": {
           "ids": [
@@ -239,47 +389,9 @@
             "B07B4DBBPG_81dwblf8ogL",
             "B07B4N29DG_81f4K_PGY-L",
             "B075X2X4GY_81RzuSu3GLL",
-            "B082VLYCPC_71pzr1IKkIL"
+            "B075X4F56V_81Oy-OJ68KL"
           ],
           "source": "Hyper3-CLIP \u00b7 Grey velvet sofa \u00b7 Top 6"
-        },
-        "scores": null
-      },
-      {
-        "created_at": 1788344385,
-        "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
-        "entity_set_id": "samples",
-        "id": "selection:bcf4edf51589",
-        "kind": "selection",
-        "query": {
-          "ids": [
-            "B0742DR7C2_81jtRdRtkPL",
-            "B07374K538_71XEFMKYAGL",
-            "B001CD1GFM_61lepTd-EmS",
-            "B07DBK2P2G_41TnBzn9tFL",
-            "B07HKF59YX_41yzx8pNH6L",
-            "B07DT153M1_418DZS6SpTL"
-          ],
-          "source": "CLIP \u00b7 Chrome clear-glass lamp \u00b7 Top 6"
-        },
-        "scores": null
-      },
-      {
-        "created_at": 1788344385,
-        "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
-        "entity_set_id": "samples",
-        "id": "selection:db9fa3359602",
-        "kind": "selection",
-        "query": {
-          "ids": [
-            "B0746HFVWY_91-Pi95Hy9L",
-            "B0853L3W72_81mvF2gJy5L",
-            "B0853KZW7Z_71LY8AELiuL",
-            "B07B7B244W_71DNWOd-5bL",
-            "B07B7B3RVS_7196wQbG7KL",
-            "B075YN3HN9_81Rub8QQCvL"
-          ],
-          "source": "Hyper3-CLIP \u00b7 Silver mid-century chair \u00b7 Top 6"
         },
         "scores": null
       }
@@ -325,7 +437,7 @@
           "panel_type": "samples",
           "position": "center",
           "props": {
-            "collectionId": "selection:ac9aa4bdc346",
+            "collectionId": "selection:edfc19aaf048",
             "labelField": "title",
             "mode": "results"
           },
@@ -379,7 +491,7 @@
           "reference_panel_id": "candidate-nearest-neighbours",
           "renderer": "native:samples",
           "source": "shipped",
-          "state_revision": 131,
+          "state_revision": 139,
           "title": "Catalog browse",
           "visible": true,
           "width": null
@@ -491,7 +603,7 @@
           "panel_type": "samples",
           "position": "center",
           "props": {
-            "collectionId": "selection:42f8cfb2cb3d",
+            "collectionId": "selection:192ad4e543f0",
             "labelField": "title",
             "mode": "results"
           },
@@ -929,8 +1041,8 @@
               },
               {
                 "collectionIds": {
-                  "candidate": "selection:ac9aa4bdc346",
-                  "clip": "selection:42f8cfb2cb3d"
+                  "candidate": "selection:edfc19aaf048",
+                  "clip": "selection:192ad4e543f0"
                 },
                 "family": "Furniture / sofa",
                 "id": "grey-velvet-sofa",
@@ -960,33 +1072,34 @@
                       "rank": 5
                     },
                     {
-                      "id": "B082VLYCPC_71pzr1IKkIL",
+                      "id": "B075X4F56V_81Oy-OJ68KL",
                       "rank": 6
                     }
                   ],
                   "clip": [
                     {
-                      "id": "B075X4VM73_81oPx1e8s_L",
+                      "id": "B075X4F56V_81Oy-OJ68KL",
                       "rank": 1
                     },
                     {
-                      "id": "B082VLYCPC_71pzr1IKkIL",
+                      "id": "B075X4VM73_81oPx1e8s_L",
                       "rank": 2
                     },
                     {
-                      "id": "B075X4F56V_81Oy-OJ68KL",
+                      "id": "B075X4N4W9_81Z8ICQ9dUL",
                       "rank": 3
                     },
                     {
-                      "id": "B07J2Z2BS5_81xPV3Ey1kL",
+                      "id": "B082VLYCPC_71pzr1IKkIL",
                       "rank": 4
                     },
                     {
-                      "id": "B07J2R9TVF_A1cLonmKWvL",
-                      "rank": 5
+                      "id": "B082VLTCM4_816VP-arPsL",
+                      "rank": 5,
+                      "target": true
                     },
                     {
-                      "id": "B075X4N4W9_81Z8ICQ9dUL",
+                      "id": "B075X2X4GY_81RzuSu3GLL",
                       "rank": 6
                     }
                   ]
@@ -994,12 +1107,12 @@
                 "summaries": {
                   "candidate": {
                     "rank": 1,
-                    "text": "Hyper3 ranks the exact grey velvet target first and keeps the sofa set coherent.",
+                    "text": "Ranks the exact target first out of 531 products.",
                     "typePrecision": 1.0
                   },
                   "clip": {
-                    "rank": 20,
-                    "text": "CLIP stays in the sofa family, but the exact grey velvet target first appears at rank 20.",
+                    "rank": 5,
+                    "text": "The exact target first appears at rank 5 of 531.",
                     "typePrecision": 0.7
                   }
                 },
@@ -1009,8 +1122,8 @@
               },
               {
                 "collectionIds": {
-                  "candidate": "selection:487fcc2029a2",
-                  "clip": "selection:bcf4edf51589"
+                  "candidate": "selection:c8eaafacb88a",
+                  "clip": "selection:9258bc882cd2"
                 },
                 "family": "Home / lamp",
                 "id": "chrome-clear-glass-lamp",
@@ -1019,42 +1132,42 @@
                 "results": {
                   "candidate": [
                     {
-                      "id": "B001CD1GC0_71oh4KcBXJS",
+                      "id": "B07DBK2P2G_41TnBzn9tFL",
                       "rank": 1
                     },
                     {
-                      "id": "B07DBK2P2G_41TnBzn9tFL",
-                      "rank": 2
-                    },
-                    {
                       "id": "B07DBHB6B5_41SHn0jzPOL",
-                      "rank": 3,
+                      "rank": 2,
                       "target": true
                     },
                     {
-                      "id": "B07DBJQC4S_41Jv3-wdZ3L",
+                      "id": "B001CD1GC0_71oh4KcBXJS",
+                      "rank": 3
+                    },
+                    {
+                      "id": "B07MBFDJQ3_51nyDMjCmHL",
                       "rank": 4
                     },
                     {
-                      "id": "B07DTFBDTL_414HtkR3QZL",
+                      "id": "B073P3NK7T_81oTHF1PcUL",
                       "rank": 5
                     },
                     {
-                      "id": "B0742DR7C2_81jtRdRtkPL",
+                      "id": "B07DBJQC4S_41Jv3-wdZ3L",
                       "rank": 6
                     }
                   ],
                   "clip": [
                     {
-                      "id": "B0742DR7C2_81jtRdRtkPL",
+                      "id": "B07DBDV3FH_41YZdSq2qBL",
                       "rank": 1
                     },
                     {
-                      "id": "B07374K538_71XEFMKYAGL",
+                      "id": "B07DT153M1_418DZS6SpTL",
                       "rank": 2
                     },
                     {
-                      "id": "B001CD1GFM_61lepTd-EmS",
+                      "id": "B07374K538_71XEFMKYAGL",
                       "rank": 3
                     },
                     {
@@ -1062,24 +1175,24 @@
                       "rank": 4
                     },
                     {
-                      "id": "B07HKF59YX_41yzx8pNH6L",
+                      "id": "B07DBJQC4S_41Jv3-wdZ3L",
                       "rank": 5
                     },
                     {
-                      "id": "B07DT153M1_418DZS6SpTL",
+                      "id": "B0825CP3NS_41GKLMSqyIL",
                       "rank": 6
                     }
                   ]
                 },
                 "summaries": {
                   "candidate": {
-                    "rank": 3,
-                    "text": "Hyper3 keeps the requested material and finish in the first few results.",
+                    "rank": 2,
+                    "text": "The exact target first appears at rank 2 of 531.",
                     "typePrecision": 0.9
                   },
                   "clip": {
-                    "rank": 31,
-                    "text": "CLIP recognizes lamps, but loses the requested chrome and clear-glass variant.",
+                    "rank": 10,
+                    "text": "The exact target first appears at rank 10 of 531.",
                     "typePrecision": 0.7
                   }
                 },
@@ -1089,8 +1202,8 @@
               },
               {
                 "collectionIds": {
-                  "candidate": "selection:db9fa3359602",
-                  "clip": "selection:2dca57fcfb12"
+                  "candidate": "selection:0f2320c55fc7",
+                  "clip": "selection:5ab36572af15"
                 },
                 "family": "Furniture / chair",
                 "id": "silver-mid-century-chair",
@@ -1103,63 +1216,63 @@
                       "rank": 1
                     },
                     {
+                      "id": "B075Z8769G_918OhgZ71BL",
+                      "rank": 2
+                    },
+                    {
                       "id": "B0853L3W72_81mvF2gJy5L",
-                      "rank": 2,
+                      "rank": 3,
                       "target": true
                     },
                     {
-                      "id": "B0853KZW7Z_71LY8AELiuL",
-                      "rank": 3
-                    },
-                    {
-                      "id": "B07B7B244W_71DNWOd-5bL",
+                      "id": "B07QTD9VPM_81EXO8kXnhL",
                       "rank": 4
                     },
                     {
-                      "id": "B07B7B3RVS_7196wQbG7KL",
+                      "id": "B0853KZW7Z_71LY8AELiuL",
                       "rank": 5
                     },
                     {
-                      "id": "B075YN3HN9_81Rub8QQCvL",
+                      "id": "B07B7B244W_71DNWOd-5bL",
                       "rank": 6
                     }
                   ],
                   "clip": [
                     {
-                      "id": "B075YPTG2Q_710tYWSG8SL",
+                      "id": "B07HSLKKXG_81MUeTeLXVL",
                       "rank": 1
                     },
                     {
-                      "id": "B07HSB4WV6_71k4-giCqJL",
+                      "id": "B07QFRSLZB_81t7ILRrXDL",
                       "rank": 2
                     },
                     {
-                      "id": "B075YP3C53_81tDegaK7zL",
+                      "id": "B075YPTG2Q_710tYWSG8SL",
                       "rank": 3
                     },
                     {
-                      "id": "B07HSLKKXG_81MUeTeLXVL",
+                      "id": "B075YP3C53_81tDegaK7zL",
                       "rank": 4
                     },
                     {
-                      "id": "B07HSK3534_81WypZMR_2L",
+                      "id": "B0853KZW7Z_71LY8AELiuL",
                       "rank": 5
                     },
                     {
-                      "id": "B0853KZW7Z_71LY8AELiuL",
+                      "id": "B07B7B3RVS_7196wQbG7KL",
                       "rank": 6
                     }
                   ]
                 },
                 "summaries": {
                   "candidate": {
-                    "rank": 2,
-                    "text": "Hyper3 brings the requested chair variant to rank 2 while preserving product type.",
+                    "rank": 3,
+                    "text": "The exact target first appears at rank 3 of 531.",
                     "typePrecision": 0.8
                   },
                   "clip": {
-                    "rank": 28,
-                    "text": "CLIP drifts across nearby furniture and misses the exact silver chair until rank 28.",
+                    "rank": 7,
+                    "text": "The exact target first appears at rank 7 of 531.",
                     "typePrecision": 0.3
                   }
                 },
@@ -1175,12 +1288,14 @@
                 "displayName": "CLIP",
                 "key": "clip",
                 "layoutKey": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c__euclidean_umap__2d_1a6bcbc4",
+                "mapPanelId": "clip-catalog-map",
                 "rankPanelId": "clip-nearest-neighbours"
               },
               {
                 "displayName": "Hyper3-CLIP",
                 "key": "candidate",
                 "layoutKey": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
+                "mapPanelId": "candidate-catalog-map",
                 "rankPanelId": "candidate-nearest-neighbours"
               }
             ],
@@ -1189,7 +1304,7 @@
           "reference_panel_id": null,
           "renderer": "module:panel.jsx",
           "source": "extension",
-          "state_revision": 12,
+          "state_revision": 32,
           "title": "Catalog retrieval questions",
           "visible": true,
           "width": 400
@@ -1197,7 +1312,7 @@
       ],
       "has_explicit_view": true,
       "layout": null,
-      "layout_revision": 365,
+      "layout_revision": 366,
       "layout_views": {},
       "panels": {
         "candidate-catalog-map": {
@@ -1225,7 +1340,7 @@
             "activeSection": "text",
             "activeTextCaseId": "grey-velvet-sofa"
           },
-          "state_revision": 12
+          "state_revision": 32
         },
         "clip-catalog-map": {
           "state": {},
@@ -1249,7 +1364,7 @@
         "samples": {
           "state": {
             "collection": {
-              "created_at": 1788344385,
+              "created_at": 1788363744,
               "dataset_id": "abo_catalog_clip_hyper3clip_side_by_side",
               "entity_set_id": "samples",
               "id": "all:bf21a9e8fbc5",
@@ -1262,13 +1377,13 @@
             "mode": "collection",
             "retrieval": null
           },
-          "state_revision": 131
+          "state_revision": 139
         }
       },
       "selected_ids": [
-        "B07HK5WXQP_510lSNJKiyL"
+        "B082VLTCM4_816VP-arPsL"
       ],
-      "view_revision": 74
+      "view_revision": 116
     }
   },
   "workspaces": [
