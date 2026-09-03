@@ -67,6 +67,76 @@
       "label": "Samples",
       "panel_type": "samples",
       "props_schema": {
+        "properties": {
+          "anchorSampleId": {
+            "type": "string"
+          },
+          "anchor_sample_id": {
+            "type": "string"
+          },
+          "collectionId": {
+            "type": "string"
+          },
+          "collection_id": {
+            "type": "string"
+          },
+          "labelField": {
+            "type": "string"
+          },
+          "label_field": {
+            "type": "string"
+          },
+          "mode": {
+            "enum": [
+              "auto",
+              "browse",
+              "ranked",
+              "results"
+            ],
+            "type": "string"
+          },
+          "rank": {
+            "properties": {
+              "anchorSampleId": {
+                "type": "string"
+              },
+              "anchor_sample_id": {
+                "type": "string"
+              },
+              "k": {
+                "type": "integer"
+              },
+              "layoutKey": {
+                "type": "string"
+              },
+              "layout_key": {
+                "type": "string"
+              },
+              "showDistance": {
+                "type": "boolean"
+              },
+              "show_distance": {
+                "type": "boolean"
+              },
+              "source": {
+                "type": "string"
+              },
+              "spaceKey": {
+                "type": "string"
+              },
+              "space_key": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "showTextSearch": {
+            "type": "boolean"
+          },
+          "show_text_search": {
+            "type": "boolean"
+          }
+        },
         "type": "object"
       },
       "queries": [
@@ -139,6 +209,48 @@
       "label": "Scatter",
       "panel_type": "scatter",
       "props_schema": {
+        "properties": {
+          "geometry": {
+            "enum": [
+              "euclidean",
+              "poincare",
+              "spherical"
+            ],
+            "type": "string"
+          },
+          "layoutDimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layoutKey": {
+            "type": "string"
+          },
+          "layout_dimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layout_key": {
+            "type": "string"
+          },
+          "pinnedLayout": {
+            "type": "boolean"
+          },
+          "pinned_layout": {
+            "type": "boolean"
+          },
+          "preset": {
+            "type": "string"
+          },
+          "presets": {
+            "type": "object"
+          }
+        },
         "type": "object"
       },
       "queries": [
@@ -155,7 +267,7 @@
       "title": "Embeddings"
     }
   ],
-  "runtime_id": "d8bf4482609a47638f864516818e0b31",
+  "runtime_id": "ceadf74b7c5e4e3e8144f79f7b7392b7",
   "tools": [],
   "version": 1,
   "workspace": {
@@ -745,7 +857,7 @@
       ],
       "has_explicit_view": true,
       "layout": null,
-      "layout_revision": 13,
+      "layout_revision": 14,
       "layout_views": {},
       "panels": {
         "clip-neighbours": {
@@ -788,7 +900,7 @@
       "selected_ids": [
         "resisc45_airplane_119"
       ],
-      "view_revision": 25
+      "view_revision": 26
     }
   },
   "workspaces": [

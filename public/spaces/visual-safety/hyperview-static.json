@@ -39,7 +39,7 @@
     "similarity_k": 0,
     "text_search": false
   },
-  "created_at": "2026-09-02T10:27:13.992924+00:00",
+  "created_at": "2026-09-03T10:16:56.610662+00:00",
   "deployment": {
     "cloudflare": {
       "command": "npx wrangler deploy --config wrangler.jsonc",
@@ -49,16 +49,77 @@
     },
     "hosting": {
       "mode": "static-assets"
+    },
+    "targets": {
+      "live": {
+        "commands": [
+          "hyperview publish <bundle> --to hf:<owner>/<name> --mode live"
+        ],
+        "space": "Live Space"
+      },
+      "static": {
+        "commands": [
+          "hyperview publish <bundle> --to hf:<owner>/<name> --mode static",
+          "hyperview publish <bundle> --to cloudflare",
+          "hyperview publish <bundle> --to dir:<path>"
+        ],
+        "space": "Static Space"
+      }
     }
   },
-  "hyperview_version": "1.0.1.dev0+ge71a6b37f.d20260902",
+  "hyperview_version": "1.1.0",
   "kind": "hyperview-static-space",
+  "producer": {
+    "hyper_models": "0.3.1",
+    "hyperview": "1.1.0",
+    "python": "3.11.11"
+  },
+  "restore": {
+    "collections": [
+      "all:bf21a9e8fbc5",
+      "selection:04a3f0ce8559",
+      "selection:06201fe1ee8d",
+      "selection:2264d67c3cdc",
+      "selection:317fddd17c44",
+      "selection:3a962046de25",
+      "selection:73c466aa1839",
+      "selection:811af165ae69",
+      "selection:89d735555911",
+      "selection:e0ff0ac6aacb",
+      "selection:fc7c42867d22"
+    ],
+    "dataset": {
+      "fields": "api/dataset.json",
+      "name": "openimages_visual_proxy_evidence_v3",
+      "num_samples": 176,
+      "samples": "api/samples/index.json"
+    },
+    "extensions": [
+      {
+        "add_panels": false,
+        "name": "safety-readout",
+        "panels": [],
+        "path": "extensions/safety-readout",
+        "source": "extension",
+        "workspace_id": "visual-safety-review-queue-evidence-v3"
+      }
+    ],
+    "layouts": [],
+    "media": {
+      "filename": "content",
+      "root": "api/samples"
+    },
+    "schema_version": 1,
+    "spaces": [],
+    "supported": true,
+    "workspace_id": "visual-safety-review-queue-evidence-v3"
+  },
   "schema_version": 1,
   "static": true,
   "warnings": [],
   "workspace": {
     "dataset_name": "openimages_visual_proxy_evidence_v3",
-    "fingerprint": "d046e0d10e84b3fad6692d6920353511c439b5950fbfba2ffaf157e6594e58a7",
+    "fingerprint": "2de79f473b28124503a08b27e73dad1625a61797ce46e21dfbf7047c3aeb16ae",
     "id": "visual-safety-review-queue-evidence-v3"
   }
 }

@@ -1,86 +1,86 @@
 {
   "spaces": [
     {
-      "bundle_bytes": 12369971,
+      "bundle_bytes": 20582062,
       "live_space_id": "hyper3labs/HyperView-ABO-Catalog",
       "live_url": "https://hyper3labs-hyperview-abo-catalog.hf.space",
       "mount_path": "/spaces/abo-catalog",
-      "num_files": 1150,
+      "num_files": 1175,
       "slug": "abo-catalog",
       "source": "static-spaces/abo-catalog",
       "workspace": {
         "dataset_name": "abo_catalog_clip_hyper3clip_side_by_side",
-        "fingerprint": "1f7e2eca1621b845b2b5c211019a0abc95c4a2fdf6b69110ea549d226aa8a017",
+        "fingerprint": "b2bf54c001b06bc22306f7fe2a5d979eb31a2ba1ff596c47c30d1a5a926e0826",
         "id": "abo-catalog-clip-hyper3clip-split"
       }
     },
     {
-      "bundle_bytes": 3622321,
+      "bundle_bytes": 6078652,
       "live_space_id": null,
       "live_url": null,
       "mount_path": "/spaces/precision-regions",
-      "num_files": 140,
+      "num_files": 158,
       "slug": "precision-regions",
       "source": "static-spaces/precision-regions",
       "workspace": {
         "dataset_name": "refcocog_text_region_evidence_v3",
-        "fingerprint": "ad6ebacca744d1c01c13c91804c4d1e0e4f9e1e69c86d4c4ce72e89450f1804e",
+        "fingerprint": "e864f48aafe3efa2875849ab48e05b97c1a50e955d760d2d617dfcd93f686228",
         "id": "precision-region-search-business-evidence-v3"
       }
     },
     {
-      "bundle_bytes": 14129722,
+      "bundle_bytes": 22236195,
       "live_space_id": "hyper3labs/HyperView-DeepFashion-Text-Search",
       "live_url": "https://hyper3labs-hyperview-deepfashion-text-search.hf.space",
       "mount_path": "/spaces/fashion-products",
-      "num_files": 1612,
+      "num_files": 1634,
       "slug": "fashion-products",
       "source": "static-spaces/fashion-products",
       "workspace": {
         "dataset_name": "deepfashion_text_search_clip_hyper3clip",
-        "fingerprint": "042cc03bbe37720f5b2993f51d668e2bfc7a68f616af3fa59a0e38a6b3d40f93",
+        "fingerprint": "6b40751acd60e34ad427c19e7cf164bda058a8b368a5c72db6d63849d4eaf3a8",
         "id": "fashion-typed-search-business-evidence-v3"
       }
     },
     {
-      "bundle_bytes": 7626155,
+      "bundle_bytes": 11311900,
       "live_space_id": "mnm-matin/HyperView-Logo-Brand-Search",
       "live_url": "https://mnm-matin-hyperview-logo-brand-search.hf.space",
       "mount_path": "/spaces/logo-search",
-      "num_files": 365,
+      "num_files": 387,
       "slug": "logo-search",
       "source": "static-spaces/logo-search",
       "workspace": {
         "dataset_name": "logo_brand_search_clip_hyper3clip_hf_live_v4",
-        "fingerprint": "bdf75d586201cb279fedf3918fa3194212746728901a9783a9c4e4fea9a49981",
+        "fingerprint": "3a3fcdc98889cd0af5889f6c546486d4bb2915bbc178f51533f3e2911acda89f",
         "id": "logo-brand-search-clip-hyper3clip-hf-live-v4"
       }
     },
     {
-      "bundle_bytes": 3195253,
+      "bundle_bytes": 6119805,
       "live_space_id": "mnm-matin/HyperView-EuroSAT-Geospatial",
       "live_url": "https://mnm-matin-hyperview-eurosat-geospatial.hf.space",
       "mount_path": "/spaces/geospatial",
-      "num_files": 168,
+      "num_files": 190,
       "slug": "geospatial",
       "source": "static-spaces/geospatial",
       "workspace": {
         "dataset_name": "resisc45_clip_hyper3clip_curated_side_by_side",
-        "fingerprint": "8f906b068d1862616aec6a57d74b258437852d53da2a55cf269d0e098db4d153",
+        "fingerprint": "127412c51534943f0ac738349e94c903e2f3c427a565688667fe920a477ae435",
         "id": "geospatial-resisc45-retrieval-evidence-v2"
       }
     },
     {
-      "bundle_bytes": 15524386,
+      "bundle_bytes": 17989203,
       "live_space_id": "mnm-matin/HyperView-Visual-Safety",
       "live_url": "https://mnm-matin-hyperview-visual-safety.hf.space",
       "mount_path": "/spaces/visual-safety",
-      "num_files": 408,
+      "num_files": 428,
       "slug": "visual-safety",
       "source": "static-spaces/visual-safety",
       "workspace": {
         "dataset_name": "openimages_visual_proxy_evidence_v3",
-        "fingerprint": "d046e0d10e84b3fad6692d6920353511c439b5950fbfba2ffaf157e6594e58a7",
+        "fingerprint": "2de79f473b28124503a08b27e73dad1625a61797ce46e21dfbf7047c3aeb16ae",
         "id": "visual-safety-review-queue-evidence-v3"
       }
     }

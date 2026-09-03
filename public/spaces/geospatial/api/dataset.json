@@ -68,22 +68,14 @@
   },
   "indexes": [
     {
-      "id": "space:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
+      "id": "space:hyper-models__hyper3-clip-v0_5__42052c955756",
       "query_modes": [
-        "nearest"
+        "nearest",
+        "text"
       ],
-      "representation_id": "representation:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
-      "scorer": "cosine",
-      "space_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
-    },
-    {
-      "id": "space:hyper-models__hyper3-clip-v0_5__33d32a431c15",
-      "query_modes": [
-        "nearest"
-      ],
-      "representation_id": "representation:hyper-models__hyper3-clip-v0_5__33d32a431c15",
+      "representation_id": "representation:hyper-models__hyper3-clip-v0_5__42052c955756",
       "scorer": "hyperboloid",
-      "space_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15"
+      "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
     },
     {
       "id": "space:embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c",
@@ -96,14 +88,22 @@
       "space_key": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c"
     },
     {
-      "id": "space:hyper-models__hyper3-clip-v0_5__42052c955756",
+      "id": "space:hyper-models__hyper3-clip-v0_5__33d32a431c15",
       "query_modes": [
-        "nearest",
-        "text"
+        "nearest"
       ],
-      "representation_id": "representation:hyper-models__hyper3-clip-v0_5__42052c955756",
+      "representation_id": "representation:hyper-models__hyper3-clip-v0_5__33d32a431c15",
       "scorer": "hyperboloid",
-      "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
+      "space_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15"
+    },
+    {
+      "id": "space:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
+      "query_modes": [
+        "nearest"
+      ],
+      "representation_id": "representation:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
+      "scorer": "cosine",
+      "space_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
     }
   ],
   "labels": [
@@ -123,51 +123,67 @@
   "layouts": [
     {
       "count": 60,
-      "geometry": "euclidean",
-      "layout_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8__euclidean_umap__2d_1a6bcbc4",
-      "method": "umap",
-      "params": {
-        "metric": "cosine",
-        "min_dist": 0.08,
-        "n_neighbors": 20
-      },
-      "space_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
-    },
-    {
-      "count": 60,
       "geometry": "poincare",
-      "layout_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15__poincare_umap__2d_1a6bcbc4",
+      "layout_dimension": 2,
+      "layout_key": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
       "method": "umap",
+      "modality": "multimodal",
+      "model_id": "hyper3-clip-v0.5",
       "params": {
         "metric": "cosine",
         "min_dist": 0.08,
         "n_neighbors": 20
       },
-      "space_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15"
+      "provider": "hyper-models",
+      "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
     },
     {
       "count": 60,
       "geometry": "euclidean",
+      "layout_dimension": 2,
       "layout_key": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c__euclidean_umap__2d_1a6bcbc4",
       "method": "umap",
+      "modality": "multimodal",
+      "model_id": "openai/clip-vit-base-patch32",
       "params": {
         "metric": "cosine",
         "min_dist": 0.08,
         "n_neighbors": 20
       },
+      "provider": "embed-anything",
       "space_key": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c"
     },
     {
       "count": 60,
       "geometry": "poincare",
-      "layout_key": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
+      "layout_dimension": 2,
+      "layout_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15__poincare_umap__2d_1a6bcbc4",
       "method": "umap",
+      "modality": "image",
+      "model_id": "hyper3-clip-v0.5",
       "params": {
         "metric": "cosine",
         "min_dist": 0.08,
         "n_neighbors": 20
       },
-      "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
+      "provider": "hyper-models",
+      "space_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15"
+    },
+    {
+      "count": 60,
+      "geometry": "euclidean",
+      "layout_dimension": 2,
+      "layout_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8__euclidean_umap__2d_1a6bcbc4",
+      "method": "umap",
+      "modality": "image",
+      "model_id": "openai/clip-vit-base-patch32",
+      "params": {
+        "metric": "cosine",
+        "min_dist": 0.08,
+        "n_neighbors": 20
+      },
+      "provider": "embed-anything",
+      "space_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
     }
   ],
   "name": "resisc45_clip_hyper3clip_curated_side_by_side",
@@ -176,32 +192,17 @@
     {
       "count": 60,
       "entity_set_id": "samples",
-      "field_path": "embeddings.embed-anything__openai_clip-vit-base-patch32__4771034973d8",
-      "geometry": "euclidean",
-      "id": "representation:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
-      "kind": "vector",
-      "modality": "image",
-      "model_id": "openai/clip-vit-base-patch32",
-      "provider": "embed-anything",
-      "shape": [
-        512
-      ],
-      "space_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
-    },
-    {
-      "count": 60,
-      "entity_set_id": "samples",
-      "field_path": "embeddings.hyper-models__hyper3-clip-v0_5__33d32a431c15",
+      "field_path": "embeddings.hyper-models__hyper3-clip-v0_5__42052c955756",
       "geometry": "hyperboloid",
-      "id": "representation:hyper-models__hyper3-clip-v0_5__33d32a431c15",
+      "id": "representation:hyper-models__hyper3-clip-v0_5__42052c955756",
       "kind": "vector",
-      "modality": "image",
+      "modality": "multimodal",
       "model_id": "hyper3-clip-v0.5",
       "provider": "hyper-models",
       "shape": [
         513
       ],
-      "space_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15"
+      "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
     },
     {
       "count": 60,
@@ -221,25 +222,62 @@
     {
       "count": 60,
       "entity_set_id": "samples",
-      "field_path": "embeddings.hyper-models__hyper3-clip-v0_5__42052c955756",
+      "field_path": "embeddings.hyper-models__hyper3-clip-v0_5__33d32a431c15",
       "geometry": "hyperboloid",
-      "id": "representation:hyper-models__hyper3-clip-v0_5__42052c955756",
+      "id": "representation:hyper-models__hyper3-clip-v0_5__33d32a431c15",
       "kind": "vector",
-      "modality": "multimodal",
+      "modality": "image",
       "model_id": "hyper3-clip-v0.5",
       "provider": "hyper-models",
       "shape": [
         513
       ],
-      "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
+      "space_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15"
+    },
+    {
+      "count": 60,
+      "entity_set_id": "samples",
+      "field_path": "embeddings.embed-anything__openai_clip-vit-base-patch32__4771034973d8",
+      "geometry": "euclidean",
+      "id": "representation:embed-anything__openai_clip-vit-base-patch32__4771034973d8",
+      "kind": "vector",
+      "modality": "image",
+      "model_id": "openai/clip-vit-base-patch32",
+      "provider": "embed-anything",
+      "shape": [
+        512
+      ],
+      "space_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
     }
   ],
   "spaces": [
     {
       "config": {
+        "dim": 513,
+        "geometry": "hyperboloid",
+        "modality": "multimodal",
+        "model_id": "hyper3-clip-v0.5",
+        "params": {
+          "curvature": 0.09999999794581678
+        },
+        "params_source": {
+          "curvature": "inferred"
+        },
+        "provider": "hyper-models",
+        "spatial_dim": 512
+      },
+      "count": 60,
+      "dim": 513,
+      "geometry": "hyperboloid",
+      "model_id": "hyper3-clip-v0.5",
+      "provider": "hyper-models",
+      "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
+    },
+    {
+      "config": {
         "dim": 512,
         "geometry": "euclidean",
-        "modality": "image",
+        "modality": "multimodal",
         "model_id": "openai/clip-vit-base-patch32",
         "provider": "embed-anything"
       },
@@ -248,7 +286,7 @@
       "geometry": "euclidean",
       "model_id": "openai/clip-vit-base-patch32",
       "provider": "embed-anything",
-      "space_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
+      "space_key": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c"
     },
     {
       "config": {
@@ -276,7 +314,7 @@
       "config": {
         "dim": 512,
         "geometry": "euclidean",
-        "modality": "multimodal",
+        "modality": "image",
         "model_id": "openai/clip-vit-base-patch32",
         "provider": "embed-anything"
       },
@@ -285,29 +323,7 @@
       "geometry": "euclidean",
       "model_id": "openai/clip-vit-base-patch32",
       "provider": "embed-anything",
-      "space_key": "embed-anything__openai_clip-vit-base-patch32__8da42c3ae90c"
-    },
-    {
-      "config": {
-        "dim": 513,
-        "geometry": "hyperboloid",
-        "modality": "multimodal",
-        "model_id": "hyper3-clip-v0.5",
-        "params": {
-          "curvature": 0.09999999794581678
-        },
-        "params_source": {
-          "curvature": "inferred"
-        },
-        "provider": "hyper-models",
-        "spatial_dim": 512
-      },
-      "count": 60,
-      "dim": 513,
-      "geometry": "hyperboloid",
-      "model_id": "hyper3-clip-v0.5",
-      "provider": "hyper-models",
-      "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
+      "space_key": "embed-anything__openai_clip-vit-base-patch32__4771034973d8"
     }
   ]
 }

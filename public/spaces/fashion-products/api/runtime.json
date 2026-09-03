@@ -67,6 +67,76 @@
       "label": "Samples",
       "panel_type": "samples",
       "props_schema": {
+        "properties": {
+          "anchorSampleId": {
+            "type": "string"
+          },
+          "anchor_sample_id": {
+            "type": "string"
+          },
+          "collectionId": {
+            "type": "string"
+          },
+          "collection_id": {
+            "type": "string"
+          },
+          "labelField": {
+            "type": "string"
+          },
+          "label_field": {
+            "type": "string"
+          },
+          "mode": {
+            "enum": [
+              "auto",
+              "browse",
+              "ranked",
+              "results"
+            ],
+            "type": "string"
+          },
+          "rank": {
+            "properties": {
+              "anchorSampleId": {
+                "type": "string"
+              },
+              "anchor_sample_id": {
+                "type": "string"
+              },
+              "k": {
+                "type": "integer"
+              },
+              "layoutKey": {
+                "type": "string"
+              },
+              "layout_key": {
+                "type": "string"
+              },
+              "showDistance": {
+                "type": "boolean"
+              },
+              "show_distance": {
+                "type": "boolean"
+              },
+              "source": {
+                "type": "string"
+              },
+              "spaceKey": {
+                "type": "string"
+              },
+              "space_key": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "showTextSearch": {
+            "type": "boolean"
+          },
+          "show_text_search": {
+            "type": "boolean"
+          }
+        },
         "type": "object"
       },
       "queries": [
@@ -139,6 +209,48 @@
       "label": "Scatter",
       "panel_type": "scatter",
       "props_schema": {
+        "properties": {
+          "geometry": {
+            "enum": [
+              "euclidean",
+              "poincare",
+              "spherical"
+            ],
+            "type": "string"
+          },
+          "layoutDimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layoutKey": {
+            "type": "string"
+          },
+          "layout_dimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layout_key": {
+            "type": "string"
+          },
+          "pinnedLayout": {
+            "type": "boolean"
+          },
+          "pinned_layout": {
+            "type": "boolean"
+          },
+          "preset": {
+            "type": "string"
+          },
+          "presets": {
+            "type": "object"
+          }
+        },
         "type": "object"
       },
       "queries": [
@@ -155,7 +267,7 @@
       "title": "Embeddings"
     }
   ],
-  "runtime_id": "ccb007d85d3045a18109473de9d88f2f",
+  "runtime_id": "7c90336d57b44c978e9fd7846759ca4a",
   "tools": [],
   "version": 1,
   "workspace": {
@@ -170,23 +282,23 @@
         "scores": null
       },
       {
-        "created_at": 1788256479,
+        "created_at": 1788429637,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
-        "id": "search:f3cfb3ad7429",
-        "kind": "search",
+        "id": "selection:0f91eb45df77",
+        "kind": "selection",
         "query": {
-          "indexId": "space:hyper-models__hyper3-clip-v0_5__42052c955756",
-          "k": 18,
-          "layoutId": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
-          "queryText": "a red floral summer dress",
-          "source": "samples-panel",
-          "spaceKey": "hyper-models__hyper3-clip-v0_5__42052c955756"
+          "ids": [
+            "WOMEN_Rompers_Jumpsuits_id_00000076_01_7_additional",
+            "WOMEN_Graphic_Tees_id_00000044_01_4_full",
+            "WOMEN_Leggings_id_00001867_02_3_back"
+          ],
+          "source": "Fashion case visuals"
         },
         "scores": null
       },
       {
-        "created_at": 1787956925,
+        "created_at": 1788429636,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:0fb56bf806aa",
@@ -205,7 +317,7 @@
         "scores": null
       },
       {
-        "created_at": 1787956926,
+        "created_at": 1788429636,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:243832bc3176",
@@ -224,7 +336,7 @@
         "scores": null
       },
       {
-        "created_at": 1787956922,
+        "created_at": 1788429635,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:52fa8679928a",
@@ -243,7 +355,7 @@
         "scores": null
       },
       {
-        "created_at": 1787956932,
+        "created_at": 1788429634,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:8d3f1c3ed208",
@@ -262,7 +374,7 @@
         "scores": null
       },
       {
-        "created_at": 1787956928,
+        "created_at": 1788429636,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:bdde175d223e",
@@ -281,7 +393,7 @@
         "scores": null
       },
       {
-        "created_at": 1787956923,
+        "created_at": 1788429635,
         "dataset_id": "deepfashion_text_search_clip_hyper3clip",
         "entity_set_id": "samples",
         "id": "selection:e9a3f545c05a",
@@ -349,7 +461,7 @@
           "reference_panel_id": null,
           "renderer": "native:samples",
           "source": "shipped",
-          "state_revision": 201,
+          "state_revision": 203,
           "title": "Hyper3-CLIP \u00b7 Product matches",
           "visible": true,
           "width": null
@@ -607,7 +719,7 @@
             ],
             "claim": "These selected cases expose concrete attribute and garment-category failure modes. The aggregate lift is modest and does not establish a universal text-search advantage.",
             "clipSamplesPanelId": "fashion-clip-results",
-            "collectionId": "all:bf21a9e8fbc5",
+            "collectionId": "selection:0f91eb45df77",
             "dataset": "Marqo/deepfashion-inshop",
             "hyper3SamplesPanelId": "samples",
             "initialPhotoCaseId": "patterned-romper",
@@ -800,7 +912,7 @@
       ],
       "has_explicit_view": true,
       "layout": null,
-      "layout_revision": 16,
+      "layout_revision": 17,
       "layout_views": {},
       "panels": {
         "fashion-clip-results": {
@@ -829,38 +941,36 @@
         "samples": {
           "state": {
             "collection": {
-              "created_at": 1788256479,
+              "created_at": 1788429557,
               "dataset_id": "deepfashion_text_search_clip_hyper3clip",
               "entity_set_id": "samples",
-              "id": "search:f3cfb3ad7429",
-              "kind": "search",
+              "id": "selection:8d3f1c3ed208",
+              "kind": "selection",
               "query": {
-                "indexId": "space:hyper-models__hyper3-clip-v0_5__42052c955756",
-                "k": 18,
-                "layoutId": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
-                "queryText": "a red floral summer dress",
-                "source": "samples-panel",
-                "spaceKey": "hyper-models__hyper3-clip-v0_5__42052c955756"
+                "ids": [
+                  "fashion-evidence-photo-patterned-romper-hyper3-01",
+                  "fashion-evidence-photo-patterned-romper-hyper3-02",
+                  "fashion-evidence-photo-patterned-romper-hyper3-03",
+                  "fashion-evidence-photo-patterned-romper-hyper3-04",
+                  "fashion-evidence-photo-patterned-romper-hyper3-05",
+                  "fashion-evidence-photo-patterned-romper-hyper3-06"
+                ],
+                "source": "Patterned romper \u00b7 Hyper3-CLIP \u00b7 Top 6"
               },
               "scores": null
             },
-            "collection_id": "search:f3cfb3ad7429",
+            "collection_id": "selection:8d3f1c3ed208",
             "focus_request": null,
-            "mode": "retrieval",
-            "retrieval": {
-              "index_id": "space:hyper-models__hyper3-clip-v0_5__42052c955756",
-              "k": 18,
-              "layout_key": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
-              "query_text": "a red floral summer dress",
-              "source": "samples-panel",
-              "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
-            }
+            "mode": "collection",
+            "retrieval": null
           },
-          "state_revision": 201
+          "state_revision": 203
         }
       },
-      "selected_ids": [],
-      "view_revision": 24
+      "selected_ids": [
+        "WOMEN_Rompers_Jumpsuits_id_00000076_01_7_additional"
+      ],
+      "view_revision": 25
     }
   },
   "workspaces": [

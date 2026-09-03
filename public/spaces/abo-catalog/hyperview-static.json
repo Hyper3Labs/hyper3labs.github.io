@@ -57,7 +57,7 @@
     "similarity_k": 10,
     "text_search": false
   },
-  "created_at": "2026-09-03T09:53:12.674610+00:00",
+  "created_at": "2026-09-03T10:16:43.812318+00:00",
   "deployment": {
     "cloudflare": {
       "command": "npx wrangler deploy --config wrangler.jsonc",
@@ -85,11 +85,11 @@
       }
     }
   },
-  "hyperview_version": "1.0.1.dev34+gb8209bff1",
+  "hyperview_version": "1.1.0",
   "kind": "hyperview-static-space",
   "producer": {
     "hyper_models": "0.3.1",
-    "hyperview": "1.0.1.dev34+gb8209bff1",
+    "hyperview": "1.1.0",
     "python": "3.11.11"
   },
   "restore": {
@@ -99,6 +99,7 @@
       "selection:192ad4e543f0",
       "selection:5ab36572af15",
       "selection:9258bc882cd2",
+      "selection:b92d2a21c33f",
       "selection:c8eaafacb88a",
       "selection:edfc19aaf048"
     ],
@@ -316,7 +317,7 @@
   "warnings": [],
   "workspace": {
     "dataset_name": "abo_catalog_clip_hyper3clip_side_by_side",
-    "fingerprint": "6e9f3bb0dde2e2de0bf07109a1262bae30b009499ccfa05296ed34d15db645e7",
+    "fingerprint": "b2bf54c001b06bc22306f7fe2a5d979eb31a2ba1ff596c47c30d1a5a926e0826",
     "id": "abo-catalog-clip-hyper3clip-split"
   }
 }

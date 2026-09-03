@@ -67,6 +67,76 @@
       "label": "Samples",
       "panel_type": "samples",
       "props_schema": {
+        "properties": {
+          "anchorSampleId": {
+            "type": "string"
+          },
+          "anchor_sample_id": {
+            "type": "string"
+          },
+          "collectionId": {
+            "type": "string"
+          },
+          "collection_id": {
+            "type": "string"
+          },
+          "labelField": {
+            "type": "string"
+          },
+          "label_field": {
+            "type": "string"
+          },
+          "mode": {
+            "enum": [
+              "auto",
+              "browse",
+              "ranked",
+              "results"
+            ],
+            "type": "string"
+          },
+          "rank": {
+            "properties": {
+              "anchorSampleId": {
+                "type": "string"
+              },
+              "anchor_sample_id": {
+                "type": "string"
+              },
+              "k": {
+                "type": "integer"
+              },
+              "layoutKey": {
+                "type": "string"
+              },
+              "layout_key": {
+                "type": "string"
+              },
+              "showDistance": {
+                "type": "boolean"
+              },
+              "show_distance": {
+                "type": "boolean"
+              },
+              "source": {
+                "type": "string"
+              },
+              "spaceKey": {
+                "type": "string"
+              },
+              "space_key": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "showTextSearch": {
+            "type": "boolean"
+          },
+          "show_text_search": {
+            "type": "boolean"
+          }
+        },
         "type": "object"
       },
       "queries": [
@@ -139,6 +209,48 @@
       "label": "Scatter",
       "panel_type": "scatter",
       "props_schema": {
+        "properties": {
+          "geometry": {
+            "enum": [
+              "euclidean",
+              "poincare",
+              "spherical"
+            ],
+            "type": "string"
+          },
+          "layoutDimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layoutKey": {
+            "type": "string"
+          },
+          "layout_dimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layout_key": {
+            "type": "string"
+          },
+          "pinnedLayout": {
+            "type": "boolean"
+          },
+          "pinned_layout": {
+            "type": "boolean"
+          },
+          "preset": {
+            "type": "string"
+          },
+          "presets": {
+            "type": "object"
+          }
+        },
         "type": "object"
       },
       "queries": [
@@ -155,7 +267,7 @@
       "title": "Embeddings"
     }
   ],
-  "runtime_id": "a231ff3504654f37a62c2af391b6c913",
+  "runtime_id": "2e91df8d3d6449f29390f00711fde975",
   "tools": [],
   "version": 1,
   "workspace": {
@@ -170,7 +282,7 @@
         "scores": null
       },
       {
-        "created_at": 1787957442,
+        "created_at": 1788429801,
         "dataset_id": "logo_brand_search_clip_hyper3clip_hf_live_v4",
         "entity_set_id": "samples",
         "id": "selection:67b2554aa4a6",
@@ -229,6 +341,7 @@
           "panel_type": "samples",
           "position": "center",
           "props": {
+            "collectionId": "selection:67b2554aa4a6",
             "mode": "results"
           },
           "reference_panel_id": null,
@@ -851,7 +964,7 @@
       ],
       "has_explicit_view": true,
       "layout": null,
-      "layout_revision": 5,
+      "layout_revision": 6,
       "layout_views": {},
       "panels": {
         "logo-brand-readout": {
@@ -892,7 +1005,7 @@
       "selected_ids": [
         "logo_0132"
       ],
-      "view_revision": 9
+      "view_revision": 10
     }
   },
   "workspaces": [

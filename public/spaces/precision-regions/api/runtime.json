@@ -67,6 +67,76 @@
       "label": "Samples",
       "panel_type": "samples",
       "props_schema": {
+        "properties": {
+          "anchorSampleId": {
+            "type": "string"
+          },
+          "anchor_sample_id": {
+            "type": "string"
+          },
+          "collectionId": {
+            "type": "string"
+          },
+          "collection_id": {
+            "type": "string"
+          },
+          "labelField": {
+            "type": "string"
+          },
+          "label_field": {
+            "type": "string"
+          },
+          "mode": {
+            "enum": [
+              "auto",
+              "browse",
+              "ranked",
+              "results"
+            ],
+            "type": "string"
+          },
+          "rank": {
+            "properties": {
+              "anchorSampleId": {
+                "type": "string"
+              },
+              "anchor_sample_id": {
+                "type": "string"
+              },
+              "k": {
+                "type": "integer"
+              },
+              "layoutKey": {
+                "type": "string"
+              },
+              "layout_key": {
+                "type": "string"
+              },
+              "showDistance": {
+                "type": "boolean"
+              },
+              "show_distance": {
+                "type": "boolean"
+              },
+              "source": {
+                "type": "string"
+              },
+              "spaceKey": {
+                "type": "string"
+              },
+              "space_key": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "showTextSearch": {
+            "type": "boolean"
+          },
+          "show_text_search": {
+            "type": "boolean"
+          }
+        },
         "type": "object"
       },
       "queries": [
@@ -81,9 +151,123 @@
       "static_compatible": true,
       "static_reason": null,
       "title": "Samples"
+    },
+    {
+      "allow_multiple": true,
+      "category": "embedding",
+      "commands": [
+        "workspace.panel.state.get",
+        "workspace.panel.state.patch"
+      ],
+      "data_capabilities": [
+        "layout:2d",
+        "layout:3d",
+        "selection",
+        "labels"
+      ],
+      "default_layout": {
+        "direction": "right",
+        "id": "scatter",
+        "order": 20,
+        "position": "center",
+        "preset": "euclidean-2d",
+        "reference_panel_id": "samples"
+      },
+      "default_props": {
+        "preset": "euclidean-2d",
+        "presets": {
+          "euclidean-2d": {
+            "geometry": "euclidean",
+            "label": "Euclidean",
+            "layout_dimension": 2
+          },
+          "euclidean-3d": {
+            "geometry": "euclidean",
+            "label": "Euclidean 3D",
+            "layout_dimension": 3
+          },
+          "poincare-2d": {
+            "geometry": "poincare",
+            "label": "Hyperbolic",
+            "layout_dimension": 2
+          },
+          "spherical-2d": {
+            "geometry": "spherical",
+            "label": "Spherical",
+            "layout_dimension": 2
+          },
+          "spherical-3d": {
+            "geometry": "spherical",
+            "label": "Sphere 3D",
+            "layout_dimension": 3
+          }
+        }
+      },
+      "default_state": {},
+      "extension": "core",
+      "icon": "scatter",
+      "label": "Scatter",
+      "panel_type": "scatter",
+      "props_schema": {
+        "properties": {
+          "geometry": {
+            "enum": [
+              "euclidean",
+              "poincare",
+              "spherical"
+            ],
+            "type": "string"
+          },
+          "layoutDimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layoutKey": {
+            "type": "string"
+          },
+          "layout_dimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layout_key": {
+            "type": "string"
+          },
+          "pinnedLayout": {
+            "type": "boolean"
+          },
+          "pinned_layout": {
+            "type": "boolean"
+          },
+          "preset": {
+            "type": "string"
+          },
+          "presets": {
+            "type": "object"
+          }
+        },
+        "type": "object"
+      },
+      "queries": [
+        "embeddings",
+        "layouts"
+      ],
+      "renderer": "native:scatter",
+      "source": "shipped",
+      "state_schema": {
+        "type": "object"
+      },
+      "static_compatible": false,
+      "static_reason": "No layouts in this dataset",
+      "title": "Embeddings"
     }
   ],
-  "runtime_id": "c8c3f4e0d2094cdeba3d97bec0adead6",
+  "runtime_id": "a39b71dcf5a740f986c4a641d66c75e7",
   "tools": [],
   "version": 1,
   "workspace": {
@@ -98,7 +282,7 @@
         "scores": null
       },
       {
-        "created_at": 1788280213,
+        "created_at": 1788429730,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:02d17fa2f043",
@@ -116,7 +300,7 @@
         "scores": null
       },
       {
-        "created_at": 1788280213,
+        "created_at": 1788429729,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:1b93f76781c4",
@@ -134,7 +318,7 @@
         "scores": null
       },
       {
-        "created_at": 1788280214,
+        "created_at": 1788429732,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:2033ffc1cd10",
@@ -152,7 +336,7 @@
         "scores": null
       },
       {
-        "created_at": 1788280214,
+        "created_at": 1788429731,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:5830ea2abca4",
@@ -170,7 +354,7 @@
         "scores": null
       },
       {
-        "created_at": 1788280214,
+        "created_at": 1788429731,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:98a6065d3255",
@@ -188,7 +372,7 @@
         "scores": null
       },
       {
-        "created_at": 1788280215,
+        "created_at": 1788429727,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:ba1b4d715faa",
@@ -206,7 +390,7 @@
         "scores": null
       },
       {
-        "created_at": 1788280214,
+        "created_at": 1788429731,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:c66621f9f75e",
@@ -224,7 +408,7 @@
         "scores": null
       },
       {
-        "created_at": 1788280213,
+        "created_at": 1788429730,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:d29d28532e90",

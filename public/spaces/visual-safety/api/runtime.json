@@ -67,6 +67,76 @@
       "label": "Samples",
       "panel_type": "samples",
       "props_schema": {
+        "properties": {
+          "anchorSampleId": {
+            "type": "string"
+          },
+          "anchor_sample_id": {
+            "type": "string"
+          },
+          "collectionId": {
+            "type": "string"
+          },
+          "collection_id": {
+            "type": "string"
+          },
+          "labelField": {
+            "type": "string"
+          },
+          "label_field": {
+            "type": "string"
+          },
+          "mode": {
+            "enum": [
+              "auto",
+              "browse",
+              "ranked",
+              "results"
+            ],
+            "type": "string"
+          },
+          "rank": {
+            "properties": {
+              "anchorSampleId": {
+                "type": "string"
+              },
+              "anchor_sample_id": {
+                "type": "string"
+              },
+              "k": {
+                "type": "integer"
+              },
+              "layoutKey": {
+                "type": "string"
+              },
+              "layout_key": {
+                "type": "string"
+              },
+              "showDistance": {
+                "type": "boolean"
+              },
+              "show_distance": {
+                "type": "boolean"
+              },
+              "source": {
+                "type": "string"
+              },
+              "spaceKey": {
+                "type": "string"
+              },
+              "space_key": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "showTextSearch": {
+            "type": "boolean"
+          },
+          "show_text_search": {
+            "type": "boolean"
+          }
+        },
         "type": "object"
       },
       "queries": [
@@ -81,9 +151,123 @@
       "static_compatible": true,
       "static_reason": null,
       "title": "Samples"
+    },
+    {
+      "allow_multiple": true,
+      "category": "embedding",
+      "commands": [
+        "workspace.panel.state.get",
+        "workspace.panel.state.patch"
+      ],
+      "data_capabilities": [
+        "layout:2d",
+        "layout:3d",
+        "selection",
+        "labels"
+      ],
+      "default_layout": {
+        "direction": "right",
+        "id": "scatter",
+        "order": 20,
+        "position": "center",
+        "preset": "euclidean-2d",
+        "reference_panel_id": "samples"
+      },
+      "default_props": {
+        "preset": "euclidean-2d",
+        "presets": {
+          "euclidean-2d": {
+            "geometry": "euclidean",
+            "label": "Euclidean",
+            "layout_dimension": 2
+          },
+          "euclidean-3d": {
+            "geometry": "euclidean",
+            "label": "Euclidean 3D",
+            "layout_dimension": 3
+          },
+          "poincare-2d": {
+            "geometry": "poincare",
+            "label": "Hyperbolic",
+            "layout_dimension": 2
+          },
+          "spherical-2d": {
+            "geometry": "spherical",
+            "label": "Spherical",
+            "layout_dimension": 2
+          },
+          "spherical-3d": {
+            "geometry": "spherical",
+            "label": "Sphere 3D",
+            "layout_dimension": 3
+          }
+        }
+      },
+      "default_state": {},
+      "extension": "core",
+      "icon": "scatter",
+      "label": "Scatter",
+      "panel_type": "scatter",
+      "props_schema": {
+        "properties": {
+          "geometry": {
+            "enum": [
+              "euclidean",
+              "poincare",
+              "spherical"
+            ],
+            "type": "string"
+          },
+          "layoutDimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layoutKey": {
+            "type": "string"
+          },
+          "layout_dimension": {
+            "enum": [
+              2,
+              3
+            ],
+            "type": "integer"
+          },
+          "layout_key": {
+            "type": "string"
+          },
+          "pinnedLayout": {
+            "type": "boolean"
+          },
+          "pinned_layout": {
+            "type": "boolean"
+          },
+          "preset": {
+            "type": "string"
+          },
+          "presets": {
+            "type": "object"
+          }
+        },
+        "type": "object"
+      },
+      "queries": [
+        "embeddings",
+        "layouts"
+      ],
+      "renderer": "native:scatter",
+      "source": "shipped",
+      "state_schema": {
+        "type": "object"
+      },
+      "static_compatible": false,
+      "static_reason": "No layouts in this dataset",
+      "title": "Embeddings"
     }
   ],
-  "runtime_id": "364e52af805a4df4a879273f042ca82c",
+  "runtime_id": "1045a23b65a141ddb985ab1e2321b508",
   "tools": [],
   "version": 1,
   "workspace": {
@@ -98,7 +282,7 @@
         "scores": null
       },
       {
-        "created_at": 1787478339,
+        "created_at": 1788429987,
         "dataset_id": "openimages_visual_proxy_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:04a3f0ce8559",
@@ -118,7 +302,7 @@
         "scores": null
       },
       {
-        "created_at": 1787478338,
+        "created_at": 1788429986,
         "dataset_id": "openimages_visual_proxy_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:06201fe1ee8d",
@@ -158,7 +342,7 @@
         "scores": null
       },
       {
-        "created_at": 1787478339,
+        "created_at": 1788429987,
         "dataset_id": "openimages_visual_proxy_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:317fddd17c44",
@@ -178,7 +362,7 @@
         "scores": null
       },
       {
-        "created_at": 1787478338,
+        "created_at": 1788429986,
         "dataset_id": "openimages_visual_proxy_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:3a962046de25",
@@ -198,7 +382,7 @@
         "scores": null
       },
       {
-        "created_at": 1787478339,
+        "created_at": 1788429987,
         "dataset_id": "openimages_visual_proxy_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:73c466aa1839",
@@ -218,7 +402,7 @@
         "scores": null
       },
       {
-        "created_at": 1787478339,
+        "created_at": 1788429988,
         "dataset_id": "openimages_visual_proxy_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:811af165ae69",
@@ -238,7 +422,7 @@
         "scores": null
       },
       {
-        "created_at": 1787478338,
+        "created_at": 1788429986,
         "dataset_id": "openimages_visual_proxy_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:89d735555911",
@@ -258,7 +442,24 @@
         "scores": null
       },
       {
-        "created_at": 1787478339,
+        "created_at": 1788429988,
+        "dataset_id": "openimages_visual_proxy_evidence_v3",
+        "entity_set_id": "samples",
+        "id": "selection:e0ff0ac6aacb",
+        "kind": "selection",
+        "query": {
+          "ids": [
+            "openimages_000_needs_review_e0c0a275bf9cdbff",
+            "openimages_001_needs_review_58edc439809229e6",
+            "openimages_083_needs_review_0c4b629e801e8181",
+            "openimages_104_needs_review_b053b1f12641af60"
+          ],
+          "source": "Visual Safety case anchors"
+        },
+        "scores": null
+      },
+      {
+        "created_at": 1788429987,
         "dataset_id": "openimages_visual_proxy_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:fc7c42867d22",
@@ -582,7 +783,7 @@
               }
             ],
             "clipSamplesPanelId": "visual-safety-clip-queue",
-            "collectionId": "all:bf21a9e8fbc5",
+            "collectionId": "selection:e0ff0ac6aacb",
             "hyper3SamplesPanelId": "samples",
             "initialCaseId": "knife",
             "metrics": {
@@ -629,7 +830,7 @@
       ],
       "has_explicit_view": true,
       "layout": null,
-      "layout_revision": 9,
+      "layout_revision": 10,
       "layout_views": {},
       "panels": {
         "samples": {
@@ -686,7 +887,7 @@
       "selected_ids": [
         "openimages_000_needs_review_e0c0a275bf9cdbff"
       ],
-      "view_revision": 14
+      "view_revision": 15
     }
   },
   "workspaces": [
