@@ -6,16 +6,16 @@
       "count": 43,
       "label_counts": [
         {
-          "count": 1,
-          "value": "#1 \u00b7 Brown loveseat with cushions."
+          "count": 2,
+          "value": "#1 \u00b7 A banana on a fork to the left of all the other bananas."
         },
         {
           "count": 1,
-          "value": "#1 \u00b7 Green bus."
+          "value": "#1 \u00b7 A beige loveseat with a throw pillow on it."
         },
         {
           "count": 1,
-          "value": "#1 \u00b7 White sink."
+          "value": "#1 \u00b7 a red colored bus"
         },
         {
           "count": 1,
@@ -23,31 +23,19 @@
         },
         {
           "count": 1,
+          "value": "#2 \u00b7 A dark red armchair"
+        },
+        {
+          "count": 1,
+          "value": "#2 \u00b7 A white arm chair by the fireplace"
+        },
+        {
+          "count": 1,
+          "value": "#2 \u00b7 An empty hotdog bun."
+        },
+        {
+          "count": 1,
           "value": "#2 \u00b7 An office chair closest to the corner."
-        },
-        {
-          "count": 1,
-          "value": "#2 \u00b7 Brown loveseat with cushions."
-        },
-        {
-          "count": 1,
-          "value": "#2 \u00b7 Bus in front of other vehicles."
-        },
-        {
-          "count": 1,
-          "value": "#2 \u00b7 Cream couch in a different room."
-        },
-        {
-          "count": 1,
-          "value": "#2 \u00b7 Milk bottle."
-        },
-        {
-          "count": 1,
-          "value": "#2 \u00b7 Person holding a sandwich."
-        },
-        {
-          "count": 1,
-          "value": "#2 \u00b7 Red single-decker bus."
         },
         {
           "count": 1,
@@ -55,15 +43,27 @@
         },
         {
           "count": 1,
-          "value": "#3 \u00b7 Beige armchair."
+          "value": "#2 \u00b7 a red colored bus"
         },
         {
           "count": 1,
-          "value": "#3 \u00b7 Chair beside curtains."
+          "value": "#3 \u00b7 A brown couch sitting against the window."
         },
         {
           "count": 1,
-          "value": "#3 \u00b7 Green bus."
+          "value": "#3 \u00b7 A dark red armchair"
+        },
+        {
+          "count": 1,
+          "value": "#3 \u00b7 A utensil with a wooden handle sitting to the right of a pizza."
+        },
+        {
+          "count": 1,
+          "value": "#3 \u00b7 A white tabletop."
+        },
+        {
+          "count": 2,
+          "value": "#3 \u00b7 A woman in a yellow skirt retrieves a purchase from a vending machine."
         },
         {
           "count": 1,
@@ -71,43 +71,31 @@
         },
         {
           "count": 1,
-          "value": "#3 \u00b7 White sink."
-        },
-        {
-          "count": 1,
-          "value": "#3 \u00b7 White tabletop."
-        },
-        {
-          "count": 1,
-          "value": "#3 \u00b7 White van."
-        },
-        {
-          "count": 1,
           "value": "#3 \u00b7 the front bleacher"
         },
         {
           "count": 1,
-          "value": "#4 \u00b7 An office chair with wheels"
+          "value": "#4 \u00b7 A pizza is being eaten by a man."
         },
         {
           "count": 1,
-          "value": "#4 \u00b7 Cream sofa in a living room."
+          "value": "#4 \u00b7 A white arm chair by the fireplace"
         },
         {
           "count": 2,
-          "value": "#4 \u00b7 Tabletop edge."
-        },
-        {
-          "count": 1,
-          "value": "#4 \u00b7 Tan armchair."
+          "value": "#4 \u00b7 An office chair with wheels"
         },
         {
           "count": 1,
           "value": "#4 \u00b7 The empty chair on the end of the row."
         },
         {
+          "count": 2,
+          "value": "#4 \u00b7 a truck number 14 on a snow bank."
+        },
+        {
           "count": 1,
-          "value": "#4 \u00b7 White van."
+          "value": "#4 \u00b7 the chair the man in the red shirt is sitting in"
         },
         {
           "count": 1,
@@ -115,35 +103,31 @@
         },
         {
           "count": 1,
-          "value": "#5 \u00b7 Bus marked SAI."
+          "value": "#5 \u00b7 A black and white designed chair on the outside dinning table"
         },
         {
           "count": 1,
-          "value": "#5 \u00b7 Clear drink bottle."
+          "value": "#5 \u00b7 A doughnut with white frosting and red confetti sprinkles."
         },
         {
           "count": 1,
-          "value": "#5 \u00b7 Knife in a jar."
+          "value": "#5 \u00b7 A muffin next to some larger food items."
         },
         {
           "count": 1,
-          "value": "#5 \u00b7 Person sitting on a bench."
+          "value": "#5 \u00b7 A white truck with a worker standing on it, which is in front of the man who is directing traffic."
         },
         {
           "count": 1,
-          "value": "#5 \u00b7 Red single-decker bus."
+          "value": "#5 \u00b7 The open cabinet."
         },
         {
-          "count": 1,
-          "value": "#5 \u00b7 Tan armchair."
-        },
-        {
-          "count": 1,
+          "count": 2,
           "value": "#5 \u00b7 The wicker chair to the left."
         },
         {
           "count": 1,
-          "value": "Double-decker bus source scene"
+          "value": "Apple slice source scene"
         },
         {
           "count": 1,
@@ -151,15 +135,15 @@
         },
         {
           "count": 1,
-          "value": "Soap bottle source scene"
+          "value": "Green bus source scene"
         },
         {
           "count": 1,
-          "value": "Sofa with pillows source scene"
+          "value": "Grey couch source scene"
         },
         {
           "count": 1,
-          "value": "TARGET \u00b7 A double decker bus parked on the right side of the street facing forward."
+          "value": "TARGET \u00b7 A green and white bus next to people standing."
         },
         {
           "count": 1,
@@ -171,7 +155,7 @@
         },
         {
           "count": 1,
-          "value": "TARGET \u00b7 The bottle of soap to the left."
+          "value": "TARGET \u00b7 the slice of apple closest to the red bananas"
         }
       ],
       "offset": 0,
@@ -190,7 +174,7 @@
         "precision-facilities-clip-05",
         "precision-retail-source",
         "precision-retail-target",
-        "precision-retail-hyper3-02",
+        "precision-retail-hyper3-01",
         "precision-retail-hyper3-03",
         "precision-retail-hyper3-04",
         "precision-retail-hyper3-05",
@@ -206,8 +190,8 @@
         "precision-fleet-hyper3-04",
         "precision-fleet-hyper3-05",
         "precision-fleet-clip-01",
-        "precision-fleet-clip-02",
         "precision-fleet-clip-03",
+        "precision-fleet-clip-04",
         "precision-fleet-clip-05",
         "precision-bench-source",
         "precision-bench-target",
