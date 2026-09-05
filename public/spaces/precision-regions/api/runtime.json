@@ -270,13 +270,13 @@
       "title": "Embeddings"
     }
   ],
-  "runtime_id": "b122052eac5c4f07b7633d15e7a64309",
+  "runtime_id": "ea911f0389cb4cdd81a184e93770ac8f",
   "tools": [],
   "version": 1,
   "workspace": {
     "collections": [
       {
-        "created_at": 1788573144,
+        "created_at": 1788594448,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:2033ffc1cd10",
@@ -294,7 +294,7 @@
         "scores": null
       },
       {
-        "created_at": 1788573144,
+        "created_at": 1788594447,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:344da96ddf90",
@@ -312,7 +312,7 @@
         "scores": null
       },
       {
-        "created_at": 1788573144,
+        "created_at": 1788594448,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:549b0befa4ae",
@@ -330,7 +330,7 @@
         "scores": null
       },
       {
-        "created_at": 1788573144,
+        "created_at": 1788594448,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:5830ea2abca4",
@@ -348,7 +348,7 @@
         "scores": null
       },
       {
-        "created_at": 1788573144,
+        "created_at": 1788594447,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:5c0cab6d75af",
@@ -366,7 +366,7 @@
         "scores": null
       },
       {
-        "created_at": 1788573144,
+        "created_at": 1788594447,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:6bbec6536ac2",
@@ -384,7 +384,7 @@
         "scores": null
       },
       {
-        "created_at": 1788573144,
+        "created_at": 1788594447,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:90cd325bb14b",
@@ -402,7 +402,7 @@
         "scores": null
       },
       {
-        "created_at": 1788573144,
+        "created_at": 1788594447,
         "dataset_id": "refcocog_text_region_evidence_v3",
         "entity_set_id": "samples",
         "id": "selection:d5acafc29797",
@@ -440,7 +440,6 @@
           "geometry": null,
           "height": null,
           "id": "samples",
-          "kind": "builtin",
           "layout": {
             "direction": null,
             "height": null,
@@ -486,7 +485,6 @@
           "geometry": null,
           "height": null,
           "id": "precision-clip-results",
-          "kind": "builtin",
           "layout": {
             "direction": "right",
             "height": null,
@@ -532,7 +530,6 @@
           "geometry": null,
           "height": null,
           "id": "precision-region-readout",
-          "kind": "module",
           "layout": {
             "direction": null,
             "height": null,
@@ -1287,7 +1284,7 @@
         "precision-clip-results": {
           "state": {
             "collection": {
-              "created_at": 1788573144,
+              "created_at": 1788594447,
               "dataset_id": "refcocog_text_region_evidence_v3",
               "entity_set_id": "samples",
               "id": "selection:5c0cab6d75af",
@@ -1317,7 +1314,7 @@
         "samples": {
           "state": {
             "collection": {
-              "created_at": 1788573144,
+              "created_at": 1788594447,
               "dataset_id": "refcocog_text_region_evidence_v3",
               "entity_set_id": "samples",
               "id": "selection:6bbec6536ac2",

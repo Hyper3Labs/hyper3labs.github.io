@@ -15,7 +15,7 @@
       }
     },
     {
-      "bundle_bytes": 3107110,
+      "bundle_bytes": 3109672,
       "live_space_id": null,
       "live_url": null,
       "mount_path": "/spaces/precision-regions",
@@ -24,7 +24,7 @@
       "source": "static-spaces/precision-regions",
       "workspace": {
         "dataset_name": "refcocog_text_region_evidence_v3",
-        "fingerprint": "f18aaf28a6acf13222c2a209d1fc0b0bc587af15aa3e12c7a8a5f395966f5034",
+        "fingerprint": "0ed478e1af0f2151545323db5164e667a293bbe26ae376132b9d42e4d436f5de",
         "id": "precision-region-search-business-evidence-v3"
       }
     },
