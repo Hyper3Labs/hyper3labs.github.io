@@ -183,7 +183,7 @@
       "layout_key": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
       "method": "umap",
       "modality": "multimodal",
-      "model_id": "hyper3-clip-v0.5",
+      "model_id": "hyper3-clip-v1",
       "params": {
         "metric": "cosine",
         "min_dist": 0.08,
@@ -215,7 +215,7 @@
       "layout_key": "hyper3-clip__hyper3labs_hyper3-clip-v0_5__3ba218e7cbb8__poincare_umap__2d_1a6bcbc4",
       "method": "umap",
       "modality": "image",
-      "model_id": "hyper3labs/hyper3-clip-v0.5",
+      "model_id": "hyper3labs/hyper3-clip-v1",
       "params": {
         "metric": "cosine",
         "min_dist": 0.08,
@@ -247,7 +247,7 @@
       "layout_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15__poincare_umap__2d_1a6bcbc4",
       "method": "umap",
       "modality": "image",
-      "model_id": "hyper3-clip-v0.5",
+      "model_id": "hyper3-clip-v1",
       "params": {
         "metric": "cosine",
         "min_dist": 0.08,
@@ -268,7 +268,7 @@
       "id": "representation:hyper-models__hyper3-clip-v0_5__42052c955756",
       "kind": "vector",
       "modality": "multimodal",
-      "model_id": "hyper3-clip-v0.5",
+      "model_id": "hyper3-clip-v1",
       "provider": "hyper-models",
       "shape": [
         513
@@ -298,7 +298,7 @@
       "id": "representation:hyper3-clip__hyper3labs_hyper3-clip-v0_5__3ba218e7cbb8",
       "kind": "vector",
       "modality": "image",
-      "model_id": "hyper3labs/hyper3-clip-v0.5",
+      "model_id": "hyper3labs/hyper3-clip-v1",
       "provider": "hyper3-clip",
       "shape": [
         513
@@ -328,7 +328,7 @@
       "id": "representation:hyper-models__hyper3-clip-v0_5__33d32a431c15",
       "kind": "vector",
       "modality": "image",
-      "model_id": "hyper3-clip-v0.5",
+      "model_id": "hyper3-clip-v1",
       "provider": "hyper-models",
       "shape": [
         513
@@ -342,7 +342,7 @@
         "dim": 513,
         "geometry": "hyperboloid",
         "modality": "multimodal",
-        "model_id": "hyper3-clip-v0.5",
+        "model_id": "hyper3-clip-v1",
         "params": {
           "curvature": 0.10000000134646432
         },
@@ -355,7 +355,7 @@
       "count": 531,
       "dim": 513,
       "geometry": "hyperboloid",
-      "model_id": "hyper3-clip-v0.5",
+      "model_id": "hyper3-clip-v1",
       "provider": "hyper-models",
       "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756"
     },
@@ -379,7 +379,7 @@
         "dim": 513,
         "geometry": "hyperboloid",
         "modality": "image",
-        "model_id": "hyper3labs/hyper3-clip-v0.5",
+        "model_id": "hyper3labs/hyper3-clip-v1",
         "params": {
           "curvature": 0.10000000149011612
         },
@@ -392,7 +392,7 @@
       "count": 500,
       "dim": 513,
       "geometry": "hyperboloid",
-      "model_id": "hyper3labs/hyper3-clip-v0.5",
+      "model_id": "hyper3labs/hyper3-clip-v1",
       "provider": "hyper3-clip",
       "space_key": "hyper3-clip__hyper3labs_hyper3-clip-v0_5__3ba218e7cbb8"
     },
@@ -416,7 +416,7 @@
         "dim": 513,
         "geometry": "hyperboloid",
         "modality": "image",
-        "model_id": "hyper3-clip-v0.5",
+        "model_id": "hyper3-clip-v1",
         "params": {
           "curvature": 0.10000000131773623
         },
@@ -429,7 +429,7 @@
       "count": 530,
       "dim": 513,
       "geometry": "hyperboloid",
-      "model_id": "hyper3-clip-v0.5",
+      "model_id": "hyper3-clip-v1",
       "provider": "hyper-models",
       "space_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15"
     }

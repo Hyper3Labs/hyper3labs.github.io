@@ -329,7 +329,7 @@
               "k": 10,
               "layoutKey": "hyper-models__hyper3-clip-v0_5__42052c955756__poincare_umap__2d_1a6bcbc4",
               "showDistance": false,
-              "source": "Hyper3-CLIP v0.5 \u00b7 aerial neighbours"
+              "source": "Hyper3-CLIP v1 \u00b7 aerial neighbours"
             }
           },
           "reference_panel_id": null,
@@ -821,7 +821,7 @@
             },
             "models": {
               "clip": "OpenAI CLIP ViT-B/32",
-              "hyper3": "Hyper3-CLIP v0.5"
+              "hyper3": "Hyper3-CLIP v1"
             },
             "neighbourK": 10,
             "panelIds": {
@@ -832,7 +832,7 @@
             },
             "protocol": {
               "baselineModel": "openai/clip-vit-base-patch32",
-              "candidateModel": "hyper3-clip-v0.5",
+              "candidateModel": "hyper3-clip-v1",
               "claimBoundary": "A bounded neighborhood-quality probe, not a specialist remote-sensing benchmark.",
               "dataset": "tanganke/resisc45",
               "distance": "Hyper3 hyperbolic; CLIP cosine",

@@ -944,7 +944,7 @@
             "initialModelKey": "hyper3",
             "models": {
               "clip": "OpenAI CLIP ViT-B/32",
-              "hyper3": "Hyper3-CLIP v0.5"
+              "hyper3": "Hyper3-CLIP v1"
             },
             "protocol": "160 paired image-caption rows; each dataset caption ranks the same 160 logo images, and only the paired row is an exact positive.",
             "samplesPanelId": "samples",

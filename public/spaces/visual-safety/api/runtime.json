@@ -816,7 +816,7 @@
             },
             "models": {
               "clip": "OpenAI CLIP",
-              "hyper3": "Hyper3-CLIP v0.5"
+              "hyper3": "Hyper3-CLIP v1"
             }
           },
           "reference_panel_id": null,

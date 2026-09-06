@@ -307,7 +307,7 @@
             "precision-fleet-hyper3-04",
             "precision-fleet-hyper3-05"
           ],
-          "source": "Green bus \u00b7 hyper3-clip-v0.5 \u00b7 Top 5"
+          "source": "Green bus \u00b7 hyper3-clip-v1 \u00b7 Top 5"
         },
         "scores": null
       },
@@ -343,7 +343,7 @@
             "precision-bench-hyper3-04",
             "precision-bench-hyper3-05"
           ],
-          "source": "Empty bench seat \u00b7 hyper3-clip-v0.5 \u00b7 Top 5"
+          "source": "Empty bench seat \u00b7 hyper3-clip-v1 \u00b7 Top 5"
         },
         "scores": null
       },
@@ -379,7 +379,7 @@
             "precision-facilities-hyper3-04",
             "precision-facilities-hyper3-05"
           ],
-          "source": "Grey couch \u00b7 hyper3-clip-v0.5 \u00b7 Top 5"
+          "source": "Grey couch \u00b7 hyper3-clip-v1 \u00b7 Top 5"
         },
         "scores": null
       },
@@ -415,7 +415,7 @@
             "precision-retail-hyper3-04",
             "precision-retail-hyper3-05"
           ],
-          "source": "Apple slice \u00b7 hyper3-clip-v0.5 \u00b7 Top 5"
+          "source": "Apple slice \u00b7 hyper3-clip-v1 \u00b7 Top 5"
         },
         "scores": null
       }
@@ -1262,7 +1262,7 @@
             "initialCaseId": "facilities",
             "models": {
               "clip": "openai/clip-vit-base-patch32",
-              "hyper3": "hyper3-clip-v0.5"
+              "hyper3": "hyper3-clip-v1"
             },
             "protocol": "precomputed text-to-region ranking over the same evaluation crop pool for both models",
             "split": "val"
@@ -1327,7 +1327,7 @@
                   "precision-facilities-hyper3-04",
                   "precision-facilities-hyper3-05"
                 ],
-                "source": "Grey couch \u00b7 hyper3-clip-v0.5 \u00b7 Top 5"
+                "source": "Grey couch \u00b7 hyper3-clip-v1 \u00b7 Top 5"
               },
               "scores": null
             },

@@ -726,7 +726,7 @@
             "initialTextCaseId": "light-denim-leggings",
             "models": {
               "clip": "OpenAI CLIP ViT-B/32",
-              "hyper3": "Hyper3-CLIP v0.5"
+              "hyper3": "Hyper3-CLIP v1"
             },
             "photoArtifact": {
               "hashProjection": "canonical JSON of {photoBenchmark, photoCases}",

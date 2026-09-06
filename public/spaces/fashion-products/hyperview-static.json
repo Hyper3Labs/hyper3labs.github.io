@@ -191,7 +191,7 @@
           "dim": 513,
           "geometry": "hyperboloid",
           "modality": "image",
-          "model_id": "hyper3-clip-v0.5",
+          "model_id": "hyper3-clip-v1",
           "params": {
             "curvature": 0.10000000085302468
           },
@@ -206,7 +206,7 @@
         "geometry": "hyperboloid",
         "index_id": "space:hyper-models__hyper3-clip-v0_5__33d32a431c15",
         "modality": "image",
-        "model_id": "hyper3-clip-v0.5",
+        "model_id": "hyper3-clip-v1",
         "provider": "hyper-models",
         "representation_id": "representation:hyper-models__hyper3-clip-v0_5__33d32a431c15",
         "space_key": "hyper-models__hyper3-clip-v0_5__33d32a431c15",
@@ -236,7 +236,7 @@
           "dim": 513,
           "geometry": "hyperboloid",
           "modality": "multimodal",
-          "model_id": "hyper3-clip-v0.5",
+          "model_id": "hyper3-clip-v1",
           "params": {
             "curvature": 0.10000000091064717
           },
@@ -251,7 +251,7 @@
         "geometry": "hyperboloid",
         "index_id": "space:hyper-models__hyper3-clip-v0_5__42052c955756",
         "modality": "multimodal",
-        "model_id": "hyper3-clip-v0.5",
+        "model_id": "hyper3-clip-v1",
         "provider": "hyper-models",
         "representation_id": "representation:hyper-models__hyper3-clip-v0_5__42052c955756",
         "space_key": "hyper-models__hyper3-clip-v0_5__42052c955756",
