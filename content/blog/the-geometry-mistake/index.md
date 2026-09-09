@@ -1,6 +1,6 @@
 ---
 title: "The Geometry Mistake Behind Modern Embedding Models"
-date: "2024-04-10"
+date: "2026-06-11"
 description: "Why mainstream ML's reliance on Euclidean manifolds is a mistake, and how hyperbolic spaces can efficiently encode hierarchical data with fewer dimensions."
 cover: "./assets/cover.png"
 coverAlt: "The geometry mistake — Euclidean vs hyperbolic embedding spaces"
