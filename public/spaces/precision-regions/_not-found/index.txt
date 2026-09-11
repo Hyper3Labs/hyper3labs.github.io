@@ -13,4 +13,4 @@ c:I[75115,["./_next/static/chunks/3xaos2q7f0t1a.js"],"default",1]
 9:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 d:I[12843,["./_next/static/chunks/3xaos2q7f0t1a.js"],"IconMark"]
 6:null
-b:[["$","title","0",{"children":"HyperView"}],["$","meta","1",{"name":"description","content":"Dataset visualization with hyperbolic embeddings"}],["$","link","2",{"rel":"icon","href":"/icon.png?icon.0nasg43ry7r55.png","sizes":"192x192","type":"image/png"}],["$","$Ld","3",{}]]
+b:[["$","title","0",{"children":"HyperView"}],["$","meta","1",{"name":"description","content":"Dataset visualization with hyperbolic embeddings"}],["$","link","2",{"rel":"icon","href":"./hyperview-icon.c1b98a3b49b7.png","sizes":"256x256","type":"image/png"}],["$","$Ld","3",{}]]
