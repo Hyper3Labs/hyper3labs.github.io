@@ -49,6 +49,10 @@ def main() -> None:
     for entry in static_spaces:
         if not isinstance(entry, dict):
             raise RuntimeError(f"Invalid Static Space entry: {entry!r}")
+        # Entries with explicit deploy targets elsewhere (for example a
+        # paper Space kept on Hugging Face) are listed, not mounted.
+        if "site" not in entry.get("deploy_targets", ["site"]):
+            continue
         slug = entry.get("slug")
         bundle_folder = entry.get("bundle_folder")
         if (

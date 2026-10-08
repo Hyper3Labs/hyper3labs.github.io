@@ -2,16 +2,16 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 const siteUrl = 'https://hyper3labs.github.io';
-const siteName = 'hyper³labs';
-const title = 'hyper³labs Docs — HyperView';
+const siteName = 'HyperView';
+const title = 'HyperView — open-source embedding workbench';
 const description =
-  'Documentation and explorable Spaces for HyperView, the agent-native multimodal data workbench from hyper³labs.';
+  'Documentation and examples for HyperView, the open-source workbench for exploring image datasets and embedding spaces in Euclidean, spherical and hyperbolic geometry.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: title,
-    template: '%s — hyper³labs',
+    template: '%s — HyperView',
   },
   description,
   applicationName: siteName,
@@ -24,8 +24,10 @@ export const metadata: Metadata = {
     'multimodal data workbench',
     'dataset visualization',
     'embedding visualization',
+    'hyperbolic embeddings',
+    'Poincaré disk',
     'agent-native tools',
-    'developer documentation',
+    'documentation',
     'open source',
     'hyper3labs',
   ],

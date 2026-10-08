@@ -1,66 +1,21 @@
-import { SiDiscord, SiGithub } from '@icons-pack/react-simple-icons';
+import { GITHUB_URL, DISCORD_URL } from '@/components/Header';
 
 export default function Footer() {
   return (
-    <footer className="relative py-8 px-6">
-      <div className="max-w-[1440px] mx-auto">
-        {/* Liquid Glass Container */}
-        <div
-          className="
-            relative overflow-hidden rounded-2xl
-            bg-white/[0.04] 
-            backdrop-blur-xl backdrop-saturate-150
-            border border-white/[0.08]
-            shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.06)]
-          "
-          style={{
-            background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 50%, rgba(255,255,255,0.04) 100%)',
-          }}
-        >
-          {/* Specular highlight - top edge shine */}
-          <div 
-            className="absolute inset-x-0 top-0 h-px opacity-40"
-            style={{
-              background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 20%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.3) 80%, transparent 100%)',
-            }}
-          />
-
-          {/* Footer content */}
-          <div className="relative px-6 py-5">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="flex items-center gap-2.5 text-gray-400">
-                <img
-                  src="/brand-assets/hyper3labs-logo-primary.svg"
-                  alt=""
-                  className="h-7 w-7"
-                />
-                <span className="text-sm font-mono text-gray-300">
-                  hyper<sup className="text-[10px]">3</sup>labs
-                </span>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <a
-                  href="https://discord.gg/Qf2pXtY4Vf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 text-gray-400 hover:text-white hover:bg-white/[0.06] rounded-xl transition-all duration-200 text-xs font-mono"
-                >
-                  <SiDiscord className="w-4 h-4" />
-                  discord
-                </a>
-                <a
-                  href="https://github.com/Hyper3Labs"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 text-gray-400 hover:text-white hover:bg-white/[0.06] rounded-xl transition-all duration-200 text-xs font-mono"
-                >
-                  <SiGithub className="w-4 h-4" />
-                  github
-                </a>
-              </div>
-            </div>
-          </div>
+    <footer className="border-t border-white/[0.07]">
+      <div className="mx-auto flex max-w-[1400px] flex-col gap-4 px-4 py-8 text-sm text-gray-500 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <p>
+          HyperView is open source under the MIT licence, built by{' '}
+          <a href="https://hyper3labs.com" className="text-gray-300 hover:text-white">
+            hyper<sup className="text-[9px]">3</sup>labs
+          </a>
+          .
+        </p>
+        <div className="flex gap-5">
+          <a href={GITHUB_URL} className="hover:text-white">GitHub</a>
+          <a href="https://pypi.org/project/hyperview/" className="hover:text-white">PyPI</a>
+          <a href="https://huggingface.co/hyper3labs" className="hover:text-white">Hugging Face</a>
+          <a href={DISCORD_URL} className="hover:text-white">Discord</a>
         </div>
       </div>
     </footer>

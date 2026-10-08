@@ -47,11 +47,12 @@ AGENTS.md
 .specstory/
 .tmp-logo/
 
-# Generated from content/blog/* at dev/build time
-public/blog/
+# Registry checkout used by CI to refresh content/examples.json
+.hyperview-spaces/
 
-# Post-local scratch space and non-published working files
-content/blog/**/work/
+# Former blog scratch files (the blog moved to hyper3labs.com)
+content/blog/
+public/blog/
 
 # ===========================================
 # ARCHIVED SHADERS - Keep files but don't track

@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
   --foreground: #ededed;
@@ -17,37 +17,54 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
-  background: linear-gradient(135deg, #0a0a0a 0%, #0f0f1a 50%, #0a0a0a 100%);
   font-family: 'Inter', system-ui, sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-/* Shader background canvas styling */
-#shader-web-background {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  right: 0 !important;
-  bottom: 0 !important;
-  width: 100%;
-  height: 100%;
-  z-index: 0 !important;
-  pointer-events: none;
+/* Documentation body copy rendered from content/docs/*.md */
+.docs-prose {
+  @apply text-[15px] leading-7 text-gray-300;
 }
-
-/* Fallback for when shader fails */
-.shader-web-background-fallback,
-.shader-web-background-fallback body {
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%) !important;
+.docs-prose > * + * {
+  @apply mt-5;
 }
-
-/* Reduce motion preference */
-@media (prefers-reduced-motion: reduce) {
-  #shader-web-background {
-    display: none;
-  }
-  body {
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
-  }
+.docs-prose h2 {
+  @apply mt-12 border-t border-white/[0.07] pt-8 text-2xl font-semibold tracking-tight text-white;
+}
+.docs-prose h2 a {
+  @apply text-white no-underline;
+}
+.docs-prose h3 {
+  @apply mt-8 text-lg font-semibold text-white;
+}
+.docs-prose a {
+  @apply text-cyan-200 underline decoration-cyan-200/30 underline-offset-2 hover:decoration-cyan-200;
+}
+.docs-prose strong {
+  @apply font-semibold text-white;
+}
+.docs-prose ul {
+  @apply list-disc space-y-1.5 pl-5 marker:text-gray-600;
+}
+.docs-prose ol {
+  @apply list-decimal space-y-1.5 pl-5 marker:text-gray-500;
+}
+.docs-prose :not(pre) > code {
+  @apply rounded bg-white/[0.07] px-1.5 py-0.5 font-mono text-[0.85em] text-gray-100;
+}
+.docs-prose pre {
+  @apply overflow-x-auto rounded-lg border border-white/[0.08] bg-[#0d1117] p-4 pr-12 font-mono text-[13px] leading-relaxed text-gray-200;
+}
+.docs-prose table {
+  @apply w-full border-collapse text-left text-sm;
+}
+.docs-prose th {
+  @apply border-b border-white/[0.12] px-3 py-2 font-medium text-gray-200;
+}
+.docs-prose td {
+  @apply border-b border-white/[0.06] px-3 py-2 align-top text-gray-400;
+}
+.docs-prose blockquote {
+  @apply border-l-2 border-cyan-300/40 pl-4 text-gray-400;
 }

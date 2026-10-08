@@ -1,25 +1,13 @@
 import type { Metadata } from 'next';
-import ShaderController from '@/components/ShaderController';
-import Header from '@/components/Header';
-import SpacesGallery from '@/components/SpacesGallery';
-import Footer from '@/components/Footer';
+import Redirect from '@/components/Redirect';
 
 export const metadata: Metadata = {
-  title: 'HyperView Spaces',
-  description:
-    'Browse HyperView Static Spaces and open their runtime-connected Live Spaces.',
-  alternates: {
-    canonical: '/spaces/',
-  },
+  title: 'Examples',
+  alternates: { canonical: '/examples/' },
+  robots: { index: false },
 };
 
-export default function SpacesPage() {
-  return (
-    <>
-      <ShaderController />
-      <Header />
-      <SpacesGallery />
-      <Footer />
-    </>
-  );
+/** The gallery moved to /examples/. Individual Spaces stay at /spaces/<slug>/. */
+export default function SpacesIndex() {
+  return <Redirect to="/examples/" />;
 }

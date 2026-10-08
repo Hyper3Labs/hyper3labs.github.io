@@ -1,27 +1,18 @@
 import type { MetadataRoute } from 'next';
-import { getAllPosts } from '@/lib/blog';
+import { getAllDocs } from '@/lib/docs';
 
 const siteUrl = 'https://hyper3labs.github.io';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const posts = getAllPosts();
-
-  const staticEntries: MetadataRoute.Sitemap = [
-    {
-      url: `${siteUrl}/`,
+  return [
+    { url: `${siteUrl}/`, lastModified: now, changeFrequency: 'weekly', priority: 1 },
+    { url: `${siteUrl}/examples/`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
+    ...getAllDocs().map((doc) => ({
+      url: `${siteUrl}/docs/${doc.slug}/`,
       lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
   ];
-
-  const postEntries: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${siteUrl}/blog/${post.slug}/`,
-    lastModified: new Date(post.date),
-    changeFrequency: 'monthly',
-    priority: 0.8,
-  }));
-
-  return [...staticEntries, ...postEntries];
 }
