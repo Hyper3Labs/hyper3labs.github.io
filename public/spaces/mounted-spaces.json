@@ -1,6 +1,20 @@
 {
   "spaces": [
     {
+      "bundle_bytes": 29078186,
+      "live_space_id": "hyper3labs/HyperView",
+      "live_url": "https://hyper3labs-hyperview.hf.space",
+      "mount_path": "/spaces/hello-world",
+      "num_files": 653,
+      "slug": "hello-world",
+      "source": "static-spaces/hello-world",
+      "workspace": {
+        "dataset_name": "hello_world_inat24_multigeometry",
+        "fingerprint": "22403815d47efd51784b70378eb34b3f8bcf3f4cd0cf5769ca738023be383d81",
+        "id": "hello-world"
+      }
+    },
+    {
       "bundle_bytes": 20582062,
       "live_space_id": "hyper3labs/HyperView-ABO-Catalog",
       "live_url": "https://hyper3labs-hyperview-abo-catalog.hf.space",

@@ -1,7 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { getAllDocs } from '@/lib/docs';
-
-const siteUrl = 'https://hyper3labs.github.io';
+import { SITE_URL as siteUrl } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

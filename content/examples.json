@@ -1,6 +1,20 @@
 {
   "examples": [
     {
+      "slug": "hello-world",
+      "name": "Hello World",
+      "description": "Compare CLIP in Euclidean and spherical geometry with Hyper3-CLIP in hyperbolic Poincar\u00e9 geometry, on 300 iNaturalist photos.",
+      "question": "How does the same image collection change across Euclidean, spherical, and hyperbolic views?",
+      "workflow": "Geometry intro",
+      "modality": "iNaturalist images \u00b7 three geometries \u00b7 custom panel",
+      "mode": "static",
+      "url": "/spaces/hello-world/",
+      "host": "site",
+      "live": null,
+      "preview": "/spaces/previews/hello-world.png",
+      "source": "https://github.com/Hyper3Labs/hyperview-spaces/tree/main/demos/hello-world-inat24-clip-hyper3clip"
+    },
+    {
       "slug": "abo-catalog",
       "name": "ABO Catalog",
       "description": "Inspect product-catalog neighborhoods across CLIP and Hyper3-CLIP embeddings.",
@@ -90,7 +104,7 @@
     {
       "slug": "jaguar-multigeometry",
       "name": "Jaguar Multi-Geometry",
-      "description": "Explore the preserved Euclidean, spherical and Poincare views from the Jaguar re-identification study. Static, with original cosine neighbors.",
+      "description": "Compare Euclidean, spherical and Poincar\u00e9 views of jaguar re-identification embeddings, with each image's nearest neighbors as computed in the original study.",
       "question": "Is the representation recognizing the jaguar or its background?",
       "workflow": "Research",
       "modality": "Jaguar imagery \u00b7 re-identification \u00b7 multiple geometries",

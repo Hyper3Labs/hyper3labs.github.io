@@ -11,7 +11,7 @@ const navigation = [
 ];
 
 export const GITHUB_URL = 'https://github.com/Hyper3Labs/HyperView';
-export const DISCORD_URL = 'https://discord.gg/Qf2pXtY4Vf';
+export const DISCORD_URL = 'https://discord.gg/Za3rBkTPSf';
 
 export default function Header() {
   const pathname = usePathname() || '/';

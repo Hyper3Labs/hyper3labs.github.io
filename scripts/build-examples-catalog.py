@@ -27,6 +27,7 @@ REACHABLE_STAGES = {"RUNNING", "SLEEPING", "RUNNING_BUILDING", "APP_STARTING"}
 
 # Gallery order. Entries not listed here follow in registry order.
 ORDER = [
+    "hello-world",
     "abo-catalog",
     "fashion-products",
     "precision-regions",

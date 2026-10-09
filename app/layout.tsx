@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { SITE_URL as siteUrl } from '@/lib/site';
 
-const siteUrl = 'https://hyper3labs.github.io';
 const siteName = 'HyperView';
 const title = 'HyperView — open-source embedding workbench';
 const description =
