@@ -2,16 +2,16 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { SITE_URL as siteUrl } from '@/lib/site';
 
-const siteName = 'HyperView';
-const title = 'HyperView — open-source embedding workbench';
+const siteName = 'hyper³labs docs';
+const title = 'hyper³labs docs — HyperView, hyper-models, hyper-scatter';
 const description =
-  'Documentation and examples for HyperView, the open-source workbench for exploring image datasets and embedding spaces in Euclidean, spherical and hyperbolic geometry.';
+  'Documentation for HyperView, hyper-models and hyper-scatter: open-source tools for exploring and visualizing embeddings in Euclidean, spherical and hyperbolic geometry.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: title,
-    template: '%s — HyperView',
+    template: '%s · hyper³labs docs',
   },
   description,
   applicationName: siteName,
@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   publisher: 'hyper³labs',
   keywords: [
     'HyperView',
+    'hyper-models',
+    'hyper-scatter',
     'multimodal data workbench',
     'dataset visualization',
     'embedding visualization',

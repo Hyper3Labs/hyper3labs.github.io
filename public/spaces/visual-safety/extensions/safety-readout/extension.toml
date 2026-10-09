@@ -1,8 +1,0 @@
-name = "safety-readout"
-description = "Review-batch workflow for visually related items"
-
-[[panels]]
-id = "safety-comparison"
-title = "Review batch walkthrough"
-position = "right"
-file = "panel.jsx"

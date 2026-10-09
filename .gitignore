@@ -47,8 +47,6 @@ AGENTS.md
 .specstory/
 .tmp-logo/
 
-# Registry checkout used by CI to refresh content/examples.json
-.hyperview-spaces/
 
 # Former blog scratch files (the blog moved to hyper3labs.com)
 content/blog/

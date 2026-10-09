@@ -21,12 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Checkout HyperView Space registry
-        uses: actions/checkout@v4
-        with:
-          repository: Hyper3Labs/hyperview-spaces
-          path: .hyperview-spaces
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -48,9 +42,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Refresh examples catalog from the registry
-        run: python3 scripts/build-examples-catalog.py --spaces-repo .hyperview-spaces
 
       - name: Build with Next.js
         run: npm run build

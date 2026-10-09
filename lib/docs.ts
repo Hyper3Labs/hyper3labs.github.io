@@ -5,6 +5,7 @@ import { parse } from 'yaml';
 export type DocHeading = { id: string; text: string };
 
 export type Doc = {
+  project: string;
   slug: string;
   title: string;
   description: string;
@@ -27,10 +28,10 @@ export function slugify(text: string): string {
     .replace(/\s+/g, '-');
 }
 
-function readDoc(file: string): Doc {
-  const raw = fs.readFileSync(path.join(DOCS_DIR, file), 'utf-8');
+function readDoc(project: string, file: string): Doc {
+  const raw = fs.readFileSync(path.join(DOCS_DIR, project, file), 'utf-8');
   const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
-  if (!match) throw new Error(`Missing frontmatter in content/docs/${file}`);
+  if (!match) throw new Error(`Missing frontmatter in content/docs/${project}/${file}`);
   const meta = parse(match[1]) as Partial<Doc>;
   const content = match[2].trim();
 
@@ -45,6 +46,7 @@ function readDoc(file: string): Doc {
   }
 
   return {
+    project,
     slug: file.replace(/\.md$/, ''),
     title: meta.title ?? file,
     description: meta.description ?? '',
@@ -55,14 +57,24 @@ function readDoc(file: string): Doc {
   };
 }
 
-export function getAllDocs(): Doc[] {
+// Docs live in content/docs/<project>/<slug>.md and render at /docs/<project>/<slug>/.
+export function getProjectDocs(project: string): Doc[] {
+  const dir = path.join(DOCS_DIR, project);
+  if (!fs.existsSync(dir)) return [];
   return fs
-    .readdirSync(DOCS_DIR)
+    .readdirSync(dir)
     .filter((file) => file.endsWith('.md'))
-    .map(readDoc)
+    .map((file) => readDoc(project, file))
     .sort((a, b) => a.order - b.order);
 }
 
-export function getDoc(slug: string): Doc | undefined {
-  return getAllDocs().find((doc) => doc.slug === slug);
+export function getAllDocs(): Doc[] {
+  return fs
+    .readdirSync(DOCS_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .flatMap((entry) => getProjectDocs(entry.name));
+}
+
+export function docHref(doc: Pick<Doc, 'project' | 'slug'>): string {
+  return `/docs/${doc.project}/${doc.slug}/`;
 }

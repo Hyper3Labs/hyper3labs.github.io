@@ -1,16 +1,18 @@
 'use client';
 
-import { Menu, X } from 'lucide-react';
+import { ArrowUpRight, Menu, X } from 'lucide-react';
 import { SiDiscord, SiGithub } from '@icons-pack/react-simple-icons';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { PROJECTS, SPACES_URL } from '@/lib/projects';
 
-const navigation = [
-  { label: 'Docs', href: '/docs/installation/', match: '/docs' },
-  { label: 'Examples', href: '/examples/', match: '/examples' },
-];
+const navigation = PROJECTS.map((project) => ({
+  label: project.name,
+  href: `/docs/${project.id}/`,
+  match: `/docs/${project.id}/`,
+}));
 
-export const GITHUB_URL = 'https://github.com/Hyper3Labs/HyperView';
+export const GITHUB_URL = 'https://github.com/Hyper3Labs';
 export const DISCORD_URL = 'https://discord.gg/Za3rBkTPSf';
 
 export default function Header() {
@@ -21,9 +23,11 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-white/[0.07] bg-[#0a0a0a]/85 backdrop-blur-xl">
       <nav className="mx-auto flex h-14 max-w-[1400px] items-center justify-between px-4 sm:px-6" aria-label="Primary">
         <div className="flex items-center gap-6">
-          <a href="/" className="flex items-center gap-2.5">
-            <img src="/brand-assets/hyperview-icon.svg" alt="" className="h-6 w-6" />
-            <span className="text-[15px] font-semibold tracking-tight text-white">HyperView</span>
+          <a href="/" className="flex items-baseline gap-2">
+            <span className="text-[15px] font-semibold tracking-tight text-white">
+              hyper<sup className="text-[9px]">3</sup>labs
+            </span>
+            <span className="text-sm text-gray-500">docs</span>
           </a>
           <div className="hidden items-center gap-1 md:flex">
             {navigation.map((item) => {
@@ -38,14 +42,17 @@ export default function Header() {
                 </a>
               );
             })}
+            <a href={SPACES_URL} className="inline-flex items-center gap-1 rounded-md px-3 py-1.5 text-sm text-gray-400 transition hover:text-white">
+              Spaces <ArrowUpRight className="h-3.5 w-3.5" />
+            </a>
           </div>
         </div>
 
         <div className="hidden items-center gap-1 md:flex">
-          <a href="https://hyper3labs.com" className="mr-2 font-mono text-xs text-gray-500 transition hover:text-gray-200">
-            hyper<sup className="text-[8px]">3</sup>labs
+          <a href="https://hyper3labs.com" className="mr-2 text-xs text-gray-500 transition hover:text-gray-200">
+            hyper3labs.com
           </a>
-          <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="rounded-md p-2 text-gray-400 transition hover:bg-white/[0.06] hover:text-white" aria-label="HyperView on GitHub">
+          <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="rounded-md p-2 text-gray-400 transition hover:bg-white/[0.06] hover:text-white" aria-label="hyper³labs on GitHub">
             <SiGithub className="h-4 w-4" />
           </a>
           <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" className="rounded-md p-2 text-gray-400 transition hover:bg-white/[0.06] hover:text-white" aria-label="Discord">
@@ -71,6 +78,7 @@ export default function Header() {
               {item.label}
             </a>
           ))}
+          <a href={SPACES_URL} className="block rounded-md px-3 py-2.5 text-sm text-gray-200 hover:bg-white/[0.06]">Spaces</a>
           <a href={GITHUB_URL} className="block rounded-md px-3 py-2.5 text-sm text-gray-200 hover:bg-white/[0.06]">GitHub</a>
           <a href={DISCORD_URL} className="block rounded-md px-3 py-2.5 text-sm text-gray-200 hover:bg-white/[0.06]">Discord</a>
         </div>

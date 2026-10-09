@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'hyper³labs Docs',
     short_name: 'hyper³labs',
     description:
-      'Documentation and explorable Spaces for HyperView, the agent-native multimodal data workbench from hyper³labs.',
+      'Documentation for HyperView, hyper-models and hyper-scatter, open-source tools from hyper³labs.',
     start_url: '/',
     display: 'standalone',
     background_color: '#0a0a0a',
