@@ -48,7 +48,7 @@ export default function Home() {
         <a href={SPACES_URL} className="mt-5 flex items-center justify-between rounded-xl border border-white/[0.08] bg-white/[0.02] p-6 transition hover:border-cyan-300/30">
           <span>
             <span className="block text-base font-semibold text-white">HyperView Spaces</span>
-            <span className="mt-1 block text-sm text-gray-400">Complete HyperView workspaces you can open in the browser, with the code that built them.</span>
+            <span className="mt-1 block text-sm text-gray-400">Interactive HyperView workspaces that open in the browser, with the code that built them.</span>
           </span>
           <ArrowUpRight className="h-5 w-5 shrink-0 text-gray-400" />
         </a>
